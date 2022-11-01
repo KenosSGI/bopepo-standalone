@@ -176,7 +176,7 @@ public enum BancosSuportados{
 	 * 
 	 * @since 0.2
 	 */
-	BANCO_INTEMEDIUM("077", "00416968000101", "BANCO INTERMEDIUM S.A.", "Banco Múltiplo"),
+	BANCO_INTEMEDIUM("077", "00416968000101", "BANCO INTER S.A.", "Banco Múltiplo"),
 
 	/**
 	 * Tipo enumerado que representa o CECRED, <strong>Cooperativa Central de Crédito Urbano</strong>,

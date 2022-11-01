@@ -32,7 +32,6 @@ package org.jrimum.bopepo.campolivre;
 import org.jrimum.domkee.financeiro.banco.febraban.Titulo;
 import org.jrimum.texgit.type.component.Fillers;
 import org.jrimum.texgit.type.component.FixedField;
-import org.jrimum.utilix.Exceptions;
 
 
 /**
@@ -93,49 +92,86 @@ import org.jrimum.utilix.Exceptions;
  * @version 0.2
  */
 class CLBancoIntermedium extends AbstractCLBancoIntermedium { 
+	
+	/**
+	 * 	Serial ID
+	 */
+	private static final long serialVersionUID = 3453853195116485662L;
 
 	/**
-	 * 
+	 * Número de campos = 5.
 	 */
-	private static final long serialVersionUID = 858563493013156459L;
-	
-	/**
-	 * 
-	 */
-	private static final Integer FIELDS_LENGTH = 6;
-	
-	private static final Integer CONSTANTE_70 = Integer.valueOf(70);
-	
-	private static final Integer CONSTANTE_0 = Integer.valueOf(0);
+	private static final Integer FIELDS_LENGTH = Integer.valueOf(5);
 
 	/**
-	 * <p>
-	 *   Dado um título, cria um campo livre para banco Intermedium (077).  
-	 * </p>
-	 * 
-	 * @param titulo - título com as informações para geração do campo livre titulo - título com as informações para geração do campo livre
+	 * Tamanho do campo Agência = 4. 
 	 */
-	CLBancoIntermedium(Titulo titulo) {
+	private static final Integer AGENCIA_LENGTH = Integer.valueOf(4);
+	
+	/**
+	 * Tamanho do campo Carteira = 2. 
+	 */
+	private static final Integer CARTEIRA_LENGTH = Integer.valueOf(3);
+	
+	/**
+	 * Tamanho do campo Nosso Número = 10. 
+	 */
+	private static final Integer NOSSO_NUMERO_LENGTH = Integer.valueOf(10);
+	
+	/**
+	 * Tamanho do campo Dígito Verificador do Nosso Número = 1. 
+	 */
+	private static final Integer DV_NOSSO_NUMERO_LENGTH = Integer.valueOf(1);
+	
+	/**
+	 * Tamanho do campo Conta = 7. 
+	 */
+	private static final Integer CONTA_LENGTH = Integer.valueOf(7);
+	
+	/**
+	 * Cria um campo livre instanciando o número de fields ({@code FIELDS_LENGTH}) deste campo.
+	 * 
+	 * @since 0.2
+	 */
+	protected CLBancoIntermedium() {
 		
 		super(FIELDS_LENGTH);
-		
-		this.add(new FixedField<Integer>(titulo.getContaBancaria().getAgencia().getCodigo(), 4, Fillers.ZERO_LEFT));
-		this.add(new FixedField<Integer>(CONSTANTE_70, 2));
-		this.add(new FixedField<String>(titulo.getNossoNumero(), 11, Fillers.ZERO_LEFT));	
-		this.add(new FixedField<Integer>( titulo.getContaBancaria().getNumeroDaConta().getCodigoDaConta(), 6, Fillers.ZERO_LEFT));
-		this.add(new FixedField<String>( titulo.getContaBancaria().getNumeroDaConta().getDigitoDaConta(), 1, Fillers.ZERO_LEFT));
-		this.add(new FixedField<Integer>(CONSTANTE_0, 1));
 	}
-
+	
+	/**
+	 * {@inheritDoc}
+	 * 
+	 * @see org.jrimum.bopepo.campolivre.AbstractCampoLivre#checkValues(org.jrimum.domkee.financeiro.banco.febraban.Titulo)
+	 */
+	@Override
+	protected void checkValues(Titulo titulo){
+		
+		checkAgenciaNotNull(titulo);
+		checkCodigoDaAgencia(titulo);
+		checkCodigoDaAgenciaMenorOuIgualQue(titulo, 9999);
+		checkCarteiraNotNull(titulo);
+		checkCodigoDaCarteira(titulo);
+		checkCodigoDaCarteiraMenorOuIgualQue(titulo, 999);
+		checkNossoNumero(titulo);
+		checkTamanhoDoNossoNumero(titulo, NN10);
+		checkTamanhoDigitoDoNossoNumero(titulo, 1);
+		checkNumeroDaContaNotNull(titulo);
+		checkCodigoDoNumeroDaConta(titulo);
+		checkCodigoDoNumeroDaContaMenorOuIgualQue(titulo, 9999999);
+	}
+	
+	/**
+	 *  {@inheritDoc}
+	 *  
+	 * @see org.jrimum.bopepo.campolivre.AbstractCampoLivre#addFields(org.jrimum.domkee.financeiro.banco.febraban.Titulo)
+	 */
 	@Override
 	protected void addFields(Titulo titulo) {
-		// TODO IMPLEMENTAR
-		Exceptions.throwUnsupportedOperationException("AINDA NÃO IMPLEMENTADO!");
-	}
-
-	@Override
-	protected void checkValues(Titulo titulo) {
-		// TODO IMPLEMENTAR
-		Exceptions.throwUnsupportedOperationException("AINDA NÃO IMPLEMENTADO!");
+		
+		this.add(new FixedField<Integer>(titulo.getContaBancaria().getAgencia().getCodigo(), AGENCIA_LENGTH, Fillers.ZERO_LEFT));
+		this.add(new FixedField<Integer>(titulo.getContaBancaria().getCarteira().getCodigo(), CARTEIRA_LENGTH, Fillers.ZERO_LEFT));
+		this.add(new FixedField<Integer>(titulo.getContaBancaria().getNumeroDaConta().getCodigoDaConta(), CONTA_LENGTH, Fillers.ZERO_LEFT));
+		this.add(new FixedField<String>(titulo.getNossoNumero(), NOSSO_NUMERO_LENGTH, Fillers.ZERO_LEFT));
+		this.add(new FixedField<String>(titulo.getDigitoDoNossoNumero(), DV_NOSSO_NUMERO_LENGTH, Fillers.ZERO_LEFT));
 	}
 }

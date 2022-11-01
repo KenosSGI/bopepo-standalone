@@ -68,6 +68,6 @@ abstract class AbstractCLBancoIntermedium extends AbstractCampoLivre {
 
 	protected static CampoLivre create(Titulo titulo){
 		
-		return new CLBancoIntermedium(titulo);
+		return new CLBancoIntermedium().build(titulo);
 	}
 }

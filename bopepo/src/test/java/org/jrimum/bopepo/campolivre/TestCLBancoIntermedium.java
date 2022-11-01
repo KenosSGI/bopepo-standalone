@@ -21,14 +21,14 @@ public class TestCLBancoIntermedium extends AbstractCampoLivreBaseTest<CLBancoIn
 	public void setUp(){
 
 		titulo.getContaBancaria().setBanco(BancosSuportados.BANCO_INTEMEDIUM.create());
-		titulo.getContaBancaria().setAgencia( new Agencia(54, "0"));
-		titulo.getContaBancaria().setNumeroDaConta(new NumeroDaConta(149666,"6"));
-		titulo.getContaBancaria().setCarteira(new Carteira(5));
-		titulo.setNossoNumero("5611002");
+		titulo.getContaBancaria().setAgencia( new Agencia(1, "9"));
+		titulo.getContaBancaria().setNumeroDaConta(new NumeroDaConta(123555));
+		titulo.getContaBancaria().setCarteira(new Carteira(112));
+		titulo.setNossoNumero("0054882025");
+		titulo.setDigitoDoNossoNumero("1");
 
 		createCampoLivreToTest();
 
-		setCampoLivreEsperadoComoString("0054700000561100214966660");
+		setCampoLivreEsperadoComoString("0001112012355500548820251");
 	}
-	
 }
