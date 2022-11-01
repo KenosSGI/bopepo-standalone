@@ -39,9 +39,9 @@ import org.jrimum.utilix.Exceptions;
  * 	O campo livre do HSBC, para cobrança registrada(CSB), deve seguir esta forma:
  * </p>
  * 
- * 	<table border="1" cellpadding="0" cellspacing="0" style="border-collapse:
- * 	collapse" bordercolor="#111111" width="100%" id="campolivre">
- * 		<thead bgcolor="#DEDEDE">
+ * 	<table>
+ * <caption>table</caption>
+ * 		
  * 			<tr>
  *				<th>Posição </th>
  * 				<th>Tamanho</th>
@@ -49,8 +49,8 @@ import org.jrimum.utilix.Exceptions;
  * 				<th>Conteúdo (terminologia padrão)</th>
  * 				<th>Conteúdo (terminologia do banco)</th>
  * 			</tr>
- * 		</thead>
- *		<tbody style="text-align:center">
+ * 		
+ *		
  * 		<tr>
  * 			<td>20-30</td>
  * 			<td>11</td>
@@ -86,7 +86,7 @@ import org.jrimum.utilix.Exceptions;
  * 			<td style="text-align:left;padding-left:10">Constante="1"</td>
  * 			<td style="text-align:left;padding-left:10">Código do aplicativo da Cobrança (COB) = "1"</td>
  * 		</tr>
- * 		</tbody>
+ * 		
  * </table>
  * 
  * 
@@ -116,7 +116,7 @@ class CLHSBCCobrancaRegistrada extends AbstractCLHSBC{
 	 *   Dado um título, cria um campo livre para cobrança registrada do banco HSBC.
 	 * </p>
 	 * 
-	 * @param titulo - título com as informações para geração do campo livre
+	 * @param titulo - título com as informações para geração do campo livre titulo - título com as informações para geração do campo livre
 	 */
 	CLHSBCCobrancaRegistrada(Titulo titulo) {
 		

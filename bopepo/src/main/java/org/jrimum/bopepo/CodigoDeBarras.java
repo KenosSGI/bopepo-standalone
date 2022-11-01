@@ -51,18 +51,15 @@ import org.jrimum.vallia.digitoverificador.BoletoCodigoDeBarrasDV;
  * <p>
  * É um número único para cada Boleto composto dos seguintes campos:
  * </p>
- * <div>
- * <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:
- * 	collapse" bordercolor="#111111" width="100%"> 
- * <thead bgcolor="#DEDEDE">
+ * <table>
+ * <caption>table</caption>
  * <tr>
  * <th>Posição </th>
  * <th>Tamanho</th>
  * <th>Picture</th>
  * <th>Conteúdo</th>
  * </tr>
- * </thead>
- * <tbody style="text-align:center">
+ * 
  * <tr>
  * <td>01-03</td>
  * <td>3</td>
@@ -100,9 +97,8 @@ import org.jrimum.vallia.digitoverificador.BoletoCodigoDeBarrasDV;
  * <td style="text-align:left;padding-left:10px">FixedField livre – utilizado de acordo com a especificação interna do banco
  * emissor</td>
  * </tr>
- * </tbody>
+ * 
  * </table>
- * </div>
  * 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L</a>
  * @author <a href="mailto:misaelbarreto@gmail.com">Misael Barreto</a> 
@@ -172,8 +168,8 @@ public class CodigoDeBarras extends BlockOfFields{
 	 * Cria um Código de Barras a partir do título e campo livre passados.
 	 * </p>
 	 * 
-	 * @param titulo
-	 * @param campoLivre
+	 * @param titulo titulo
+	 * @param campoLivre campoLivre
 	 * 
 	 * @see CampoLivre
 	 */
@@ -261,7 +257,7 @@ public class CodigoDeBarras extends BlockOfFields{
 	 * forma, a data do vencimento do bloqueto.
 	 * </p>
 	 * 
-	 * @param vencimento
+	 * @param vencimento vencimento
 	 */
 	private void calculateAndSetFatorDeVencimento(Date vencimento) {
 
@@ -277,7 +273,7 @@ public class CodigoDeBarras extends BlockOfFields{
 	}
 
 	/**
-	 * @param codigoDoBanco the codigoDoBanco to set
+	 * @param codigoDoBanco the codigoDoBanco to set codigoDoBanco the codigoDoBanco to set
 	 */
 	void setCodigoDoBanco(FixedField<String> codigoDoBanco) {
 		this.codigoDoBanco = codigoDoBanco;
@@ -291,7 +287,7 @@ public class CodigoDeBarras extends BlockOfFields{
 	}
 
 	/**
-	 * @param codigoDaMoeda the codigoDaMoeda to set
+	 * @param codigoDaMoeda the codigoDaMoeda to set codigoDaMoeda the codigoDaMoeda to set
 	 */
 	void setCodigoDaMoeda(FixedField<Integer> codigoDaMoeda) {
 		this.codigoDaMoeda = codigoDaMoeda;
@@ -305,7 +301,7 @@ public class CodigoDeBarras extends BlockOfFields{
 	}
 
 	/**
-	 * @param digitoVerificadorGeral the digitoVerificadorGeral to set
+	 * @param digitoVerificadorGeral the digitoVerificadorGeral to set digitoVerificadorGeral the digitoVerificadorGeral to set
 	 */
 	void setDigitoVerificadorGeral(FixedField<Integer> digitoVerificadorGeral) {
 		this.digitoVerificadorGeral = digitoVerificadorGeral;
@@ -319,7 +315,7 @@ public class CodigoDeBarras extends BlockOfFields{
 	}
 
 	/**
-	 * @param fatorDeVencimento the fatorDeVencimento to set
+	 * @param fatorDeVencimento the fatorDeVencimento to set fatorDeVencimento the fatorDeVencimento to set
 	 */
 	void setFatorDeVencimento(FixedField<Integer> fatorDeVencimento) {
 		this.fatorDeVencimento = fatorDeVencimento;
@@ -333,7 +329,7 @@ public class CodigoDeBarras extends BlockOfFields{
 	}
 
 	/**
-	 * @param valorNominalDoTitulo the valorNominalDoTitulo to set
+	 * @param valorNominalDoTitulo the valorNominalDoTitulo to set valorNominalDoTitulo the valorNominalDoTitulo to set
 	 */
 	void setValorNominalDoTitulo(FixedField<BigDecimal> valorNominalDoTitulo) {
 		this.valorNominalDoTitulo = valorNominalDoTitulo;
@@ -347,7 +343,7 @@ public class CodigoDeBarras extends BlockOfFields{
 	}
 
 	/**
-	 * @param campoLivre the campoLivre to set
+	 * @param campoLivre the campoLivre to set campoLivre the campoLivre to set
 	 */
 	void setCampoLivre(FixedField<String> campoLivre) {
 		this.campoLivre = campoLivre;

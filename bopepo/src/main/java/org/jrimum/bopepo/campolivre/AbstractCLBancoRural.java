@@ -28,7 +28,7 @@ abstract class AbstractCLBancoRural extends AbstractCampoLivre {
 	 * 
 	 * @see AbstractCampoLivre
 	 * 
-	 * @param fieldsLength - Número de campos
+	 * @param fieldsLength - Número de campos fieldsLength - Número de campos
 	 */
 	protected AbstractCLBancoRural(Integer fieldsLength) {
 		
@@ -53,7 +53,7 @@ abstract class AbstractCLBancoRural extends AbstractCampoLivre {
 	/**
 	 * Determina e cria um campo livre de cobrança não registrada.
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 *            - título com as informações para geração do campo livre
 	 * @return campo livre ou null
 	 */

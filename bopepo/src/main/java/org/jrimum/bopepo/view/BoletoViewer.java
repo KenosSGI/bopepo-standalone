@@ -57,7 +57,6 @@ import org.jrimum.utilix.text.Strings;
  * Agrupa as formas de <strong>"visão"</strong> de um boleto.
  * </p>
  * 
- * <p>
  * Exemplo de formas de visualização:
  * <ul>
  * <li>PDF</li>
@@ -65,7 +64,6 @@ import org.jrimum.utilix.text.Strings;
  * <li>Array de Bytes</li>
  * <li>Outros</li>
  * </ul>
- * </p>
  * 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L.</a>
  * @author <a href="mailto:misaelbarreto@gmail.com">Misael Barreto</a>
@@ -95,10 +93,10 @@ public class BoletoViewer {
 	 * Instancia o visualizador com o template padrão.
 	 * </p>
 	 * 
-	 * @param boleto
+	 * @param boleto boleto
 	 *            Boleto preenchido
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code boleto} seja nulo
 	 */
 	public BoletoViewer(Boleto boleto) {
@@ -113,12 +111,12 @@ public class BoletoViewer {
 	 * Instancia o visualizador com um template determinado.
 	 * </p>
 	 * 
-	 * @param boleto
+	 * @param boleto boleto
 	 *            Boleto preenchido
-	 * @param templatePath
+	 * @param templatePath templatePath
 	 *            Template PDF o qual o boleto será gerado
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code boleto} ou {@code template} seja nulo
 	 */
 	public BoletoViewer(Boleto boleto, String templatePath) {
@@ -136,12 +134,12 @@ public class BoletoViewer {
 	 * Instancia o visualizador com um template determinado.
 	 * </p>
 	 * 
-	 * @param boleto
+	 * @param boleto boleto
 	 *            Boleto preenchido
-	 * @param templateFile
+	 * @param templateFile templateFile
 	 *            Template PDF o qual o boleto será gerado
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code boleto} ou {@code template} seja nulo
 	 */
 	public BoletoViewer(Boleto boleto, File templateFile) {
@@ -159,12 +157,12 @@ public class BoletoViewer {
 	 * Instancia o visualizador com um template determinado.
 	 * </p>
 	 * 
-	 * @param boleto
+	 * @param boleto boleto
 	 *            Boleto preenchido
-	 * @param templateUrl
+	 * @param templateUrl templateUrl
 	 *            Template PDF o qual o boleto será gerado
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code boleto} ou {@code template} seja nulo
 	 */
 	public BoletoViewer(Boleto boleto, URL templateUrl) {
@@ -182,12 +180,12 @@ public class BoletoViewer {
 	 * Instancia o visualizador com um template determinado.
 	 * </p>
 	 * 
-	 * @param boleto
+	 * @param boleto boleto
 	 *            Boleto preenchido
-	 * @param templateInput
+	 * @param templateInput templateInput
 	 *            Template PDF o qual o boleto será gerado
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code boleto} ou {@code template} seja nulo
 	 */
 	public BoletoViewer(Boleto boleto, InputStream templateInput) {
@@ -205,12 +203,12 @@ public class BoletoViewer {
 	 * Instancia o visualizador com um template determinado.
 	 * </p>
 	 * 
-	 * @param boleto
+	 * @param boleto boleto
 	 *            Boleto preenchido
-	 * @param template
+	 * @param template template
 	 *            Template PDF o qual o boleto será gerado
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code boleto} ou {@code template} seja nulo
 	 */
 	public BoletoViewer(Boleto boleto, byte[] template) {
@@ -233,6 +231,7 @@ public class BoletoViewer {
 
 	/**
 	 * Para uso interno do componente
+	 * @param pdfViewer pdfViewer
 	 */
 	protected BoletoViewer(PdfViewer pdfViewer) {
 		
@@ -245,11 +244,12 @@ public class BoletoViewer {
 	 * nenhuma instância do viewer é criada.
 	 * </p>
 	 * 
-	 * @param boleto
+	 * @param boleto boleto
 	 *            Boleto preenchido
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code boleto} seja nulo
+	 * @return BoletoViewer
 	 */
 	public static BoletoViewer create(Boleto boleto) {
 
@@ -266,7 +266,7 @@ public class BoletoViewer {
 	 * </p>
 	 * 
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
 	 * 
 	 * @return Arquivo PDF em array de bytes gerado com os boletos da lista
@@ -289,9 +289,9 @@ public class BoletoViewer {
 	 * </p>
 	 * 
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param destPath
+	 * @param destPath destPath
 	 *            Caminho para o arquivo que armazenará os boletos
 	 * 
 	 * @return Arquivo PDF gerado com os boletos da lista
@@ -316,9 +316,9 @@ public class BoletoViewer {
 	 * </p>
 	 * 
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param destFile
+	 * @param destFile destFile
 	 *            Arquivo que armazenará os boletos
 	 * 
 	 * @return Arquivo PDF gerado com os boletos da lista
@@ -342,9 +342,9 @@ public class BoletoViewer {
 	 * </p>
 	 * 
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param templatePath
+	 * @param templatePath templatePath
 	 *            Caminho para o arquivo com o template para geração
 	 * @return Arquivo PDF em array de bytes gerado com os boletos da lista
 	 * 
@@ -366,9 +366,9 @@ public class BoletoViewer {
 	 * </p>
 	 * 
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param templateUrl
+	 * @param templateUrl templateUrl
 	 *            Arquivo com o template para geração
 	 * @return Arquivo PDF em array de bytes gerado com os boletos da lista
 	 * 
@@ -390,9 +390,9 @@ public class BoletoViewer {
 	 * </p>
 	 * 
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param templateFile
+	 * @param templateFile templateFile
 	 *            Arquivo com o template para geração
 	 * @return Arquivo PDF em array de bytes gerado com os boletos da lista
 	 * 
@@ -414,9 +414,9 @@ public class BoletoViewer {
 	 * </p>
 	 * 
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param templateInput
+	 * @param templateInput templateInput
 	 *            Arquivo com o template para geração
 	 * @return Arquivo PDF em array de bytes gerado com os boletos da lista
 	 * 
@@ -438,9 +438,9 @@ public class BoletoViewer {
 	 * </p>
 	 * 
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param template
+	 * @param template template
 	 *            Arquivo com o template para geração
 	 * @return Arquivo PDF em array de bytes gerado com os boletos da lista
 	 * 
@@ -463,11 +463,11 @@ public class BoletoViewer {
 	 * </p>
 	 * 
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param destPath
+	 * @param destPath destPath
 	 *            Caminho para o arquivo que armazenará os boletos
-	 * @param templatePath
+	 * @param templatePath templatePath
 	 *            Caminho para o arquivo com o template para geração
 	 * @return Arquivo PDF gerado com os boletos da lista
 	 * 
@@ -493,11 +493,11 @@ public class BoletoViewer {
 	 * </p>
 	 * 
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param destPath
+	 * @param destPath destPath
 	 *            Caminho para o arquivo que armazenará os boletos
-	 * @param templateFile
+	 * @param templateFile templateFile
 	 *            Arquivo com o template para geração
 	 * @return Arquivo PDF gerado com os boletos da lista
 	 * 
@@ -523,11 +523,11 @@ public class BoletoViewer {
 	 * </p>
 	 * 
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param destFile
+	 * @param destFile destFile
 	 *            Arquivo que armazenará os boletos
-	 * @param templatePath
+	 * @param templatePath templatePath
 	 *            Caminho para o arquivo com o template para geração
 	 * @return Arquivo PDF gerado com os boletos da lista
 	 * 
@@ -553,11 +553,11 @@ public class BoletoViewer {
 	 * </p>
 	 * 
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param destFile
+	 * @param destFile destFile
 	 *            Arquivo que armazenará os boletos
-	 * @param templateFile
+	 * @param templateFile templateFile
 	 *            Arquivo com o template para geração
 	 * @return Arquivo PDF gerado com os boletos da lista
 	 * 
@@ -581,7 +581,7 @@ public class BoletoViewer {
 	 * </p>
 	 * 
 	 * 
-	 * @param templatesAndBoletos
+	 * @param templatesAndBoletos templatesAndBoletos
 	 *            Coleção de templates e boletos a serem agrupados
 	 * 
 	 * @return Arquivo PDF em array de bytes gerado com os boletos fornecidos
@@ -602,10 +602,10 @@ public class BoletoViewer {
 	 * </p>
 	 * 
 	 * 
-	 * @param templatesAndBoletos
+	 * @param templatesAndBoletos templatesAndBoletos
 	 *            Coleção de templates e boletos a serem agrupados
 	 * 
-	 * @param destFile
+	 * @param destFile destFile
 	 *            Arquivo que armazenará os boletos
 	 * 
 	 * @return Arquivo PDF em array de bytes gerado com os boletos fornecidos
@@ -635,7 +635,7 @@ public class BoletoViewer {
 	 * </p>
 	 * 
 	 * 
-	 * @param templatesAndBoletos
+	 * @param templatesAndBoletos templatesAndBoletos
 	 *            Mapa de templates e boletos a serem agrupados
 	 * 
 	 * @return Arquivo PDF em array de bytes gerado com os boletos fornecidos
@@ -657,10 +657,10 @@ public class BoletoViewer {
 	 * </p>
 	 * 
 	 * 
-	 * @param templatesAndBoletos
+	 * @param templatesAndBoletos templatesAndBoletos
 	 *            Mapa de templates e boletos a serem agrupados
 	 * 
-	 * @param destFile
+	 * @param destFile destFile
 	 *            Arquivo que armazenará os boletos
 	 * 
 	 * @return Arquivo PDF em array de bytes gerado com os boletos fornecidos
@@ -682,7 +682,7 @@ public class BoletoViewer {
 	 * ao método {@link java.util.Map#entrySet() entrySet} do mesmo.
 	 * </p>
 	 * 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem gerados 
 	 * 
 	 * @return Arquivo PDF em array de bytes gerado com os boletos fornecidos
@@ -699,25 +699,23 @@ public class BoletoViewer {
 	/**
 	 * <p>
 	 * Gera o arquivo PDF para cada boleto contido na lista. O nome do arquivo
-	 * segue a forma:<br />
-	 * <br />
-	 * <tt>diretorio + (/ ou \\) + (indice do arquivo na lista + 1) + ".pdf"</tt>
+	 * segue a forma:
+	 * 
+	 * diretorio + (/ ou \\) + (indice do arquivo na lista + 1) + ".pdf"
 	 * </p>
 	 * 
-	 * <p>
-	 * Exemplo, uma lista com 3 boletos: {@code onePerPDF(boletos, file);} <br />
-	 * <br />
+	 * Exemplo, uma lista com 3 boletos: {@code onePerPDF(boletos, file);} 
+	 * 
 	 * Arquivos gerados:
 	 * <ul>
 	 * <li><strong>1.pdf</strong></li>
 	 * <li><strong>2.pdf</strong></li>
 	 * <li><strong>3.pdf</strong></li>
 	 * </ul>
-	 * </p>
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param destPath
+	 * @param destPath destPath
 	 *            Diretório o qual os boletos serão criados
 	 * 
 	 * @return Lista contendo os arquivos PDF gerados a partir da lista de
@@ -736,25 +734,23 @@ public class BoletoViewer {
 	/**
 	 * <p>
 	 * Gera o arquivo PDF para cada boleto contido na lista. O nome do arquivo
-	 * segue a forma:<br />
-	 * <br />
-	 * <tt>diretorio + (/ ou \\) + (indice do arquivo na lista + 1) + ".pdf"</tt>
+	 * segue a forma:
+	 * 
+	 * diretorio + (/ ou \\) + (indice do arquivo na lista + 1) + ".pdf"
 	 * </p>
 	 * 
-	 * <p>
-	 * Exemplo, uma lista com 3 boletos: {@code onePerPDF(boletos, file);} <br />
-	 * <br />
+	 * Exemplo, uma lista com 3 boletos: {@code onePerPDF(boletos, file);} 
+	 * 
 	 * Arquivos gerados:
 	 * <ul>
 	 * <li><strong>1.pdf</strong></li>
 	 * <li><strong>2.pdf</strong></li>
 	 * <li><strong>3.pdf</strong></li>
 	 * </ul>
-	 * </p>
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param destDir
+	 * @param destDir destDir
 	 *            Diretório o qual os boletos serão criados
 	 * 
 	 * @return Lista contendo os arquivos PDF gerados a partir da lista de
@@ -773,28 +769,26 @@ public class BoletoViewer {
 	/**
 	 * <p>
 	 * Gera o arquivo PDF para cada boleto contido na lista. O nome do arquivo
-	 * segue a forma:<br />
-	 * <br />
-	 * <tt>diretorio + (/ ou \\) prefixo + (indice do arquivo na lista + 1) + ".pdf"</tt>
+	 * segue a forma:
+	 * 
+	 * diretorio + (/ ou \\) prefixo + (indice do arquivo na lista + 1) + ".pdf"
 	 * </p>
 	 * 
-	 * <p>
 	 * Exemplo, uma lista com 3 boletos: {@code onePerPDF(boletos, file,
-	 * "BoletoPrefixo");} <br />
-	 * <br />
+	 * "BoletoPrefixo");} 
+	 * 
 	 * Arquivos gerados:
 	 * <ul>
 	 * <li><strong>BoletoPrefixo1.pdf</strong></li>
 	 * <li><strong>BoletoPrefixo2.pdf</strong></li>
 	 * <li><strong>BoletoPrefixo3.pdf</strong></li>
 	 * </ul>
-	 * </p>
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param destPath
+	 * @param destPath destPath
 	 *            Diretório o qual os boletos serão criados
-	 * @param prefixo
+	 * @param prefixo prefixo
 	 *            Prefixo do nome do arquivo
 	 * 
 	 * @return Lista contendo os arquivos PDF gerados a partir da lista de
@@ -813,28 +807,26 @@ public class BoletoViewer {
 	/**
 	 * <p>
 	 * Gera o arquivo PDF para cada boleto contido na lista. O nome do arquivo
-	 * segue a forma:<br />
-	 * <br />
-	 * <tt>diretorio + (/ ou \\) prefixo + (indice do arquivo na lista + 1) + ".pdf"</tt>
+	 * segue a forma:
+	 * 
+	 * diretorio + (/ ou \\) prefixo + (indice do arquivo na lista + 1) + ".pdf"
 	 * </p>
 	 * 
-	 * <p>
 	 * Exemplo, uma lista com 3 boletos: {@code onePerPDF(boletos, file,
-	 * "BoletoPrefixo");} <br />
-	 * <br />
+	 * "BoletoPrefixo");} 
+	 * 
 	 * Arquivos gerados:
 	 * <ul>
 	 * <li><strong>BoletoPrefixo1.pdf</strong></li>
 	 * <li><strong>BoletoPrefixo2.pdf</strong></li>
 	 * <li><strong>BoletoPrefixo3.pdf</strong></li>
 	 * </ul>
-	 * </p>
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param destDir
+	 * @param destDir destDir
 	 *            Diretório o qual os boletos serão criados
-	 * @param prefixo
+	 * @param prefixo prefixo
 	 *            Prefixo do nome do arquivo
 	 * 
 	 * @return Lista contendo os arquivos PDF gerados a partir da lista de
@@ -853,30 +845,28 @@ public class BoletoViewer {
 	/**
 	 * <p>
 	 * Gera o arquivo PDF para cada boleto contido na lista. O nome do arquivo
-	 * segue a forma:<br />
-	 * <br />
-	 * <tt>diretorio + (/ ou \\) prefixo + (indice do arquivo na lista + 1) + sufixo + ".pdf"</tt>
+	 * segue a forma:
+	 * 
+	 * diretorio + (/ ou \\) prefixo + (indice do arquivo na lista + 1) + sufixo + ".pdf"
 	 * </p>
 	 * 
-	 * <p>
 	 * Exemplo, uma lista com 3 boletos: {@code onePerPDF(boletos, file,
-	 * "BoletoPrefixo", "exSufixo");} <br />
-	 * <br />
+	 * "BoletoPrefixo", "exSufixo");} 
+	 * 
 	 * Arquivos gerados:
 	 * <ul>
 	 * <li><strong>BoletoPrefixo1exSufixo.pdf</strong></li>
 	 * <li><strong>BoletoPrefixo2exSufixo.pdf</strong></li>
 	 * <li><strong>BoletoPrefixo3exSufixo.pdf</strong></li>
 	 * </ul>
-	 * </p>
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param destPath
+	 * @param destPath destPath
 	 *            Diretório o qual os boletos serão criados
-	 * @param prefixo
+	 * @param prefixo prefixo
 	 *            Prefixo do nome do arquivo
-	 * @param sufixo
+	 * @param sufixo sufixo
 	 *            Sufixo do nome do arquivo
 	 * @return Lista contendo os arquivos PDF gerados a partir da lista de
 	 *         boletos
@@ -894,30 +884,28 @@ public class BoletoViewer {
 	/**
 	 * <p>
 	 * Gera o arquivo PDF para cada boleto contido na lista. O nome do arquivo
-	 * segue a forma:<br />
-	 * <br />
-	 * <tt>diretorio + (/ ou \\) prefixo + (indice do arquivo na lista + 1) + sufixo + ".pdf"</tt>
+	 * segue a forma:
+	 * 
+	 * diretorio + (/ ou \\) prefixo + (indice do arquivo na lista + 1) + sufixo + ".pdf"
 	 * </p>
 	 * 
-	 * <p>
 	 * Exemplo, uma lista com 3 boletos: {@code onePerPDF(boletos, file,
-	 * "BoletoPrefixo", "exSufixo");} <br />
-	 * <br />
+	 * "BoletoPrefixo", "exSufixo");} 
+	 * 
 	 * Arquivos gerados:
 	 * <ul>
 	 * <li><strong>BoletoPrefixo1exSufixo.pdf</strong></li>
 	 * <li><strong>BoletoPrefixo2exSufixo.pdf</strong></li>
 	 * <li><strong>BoletoPrefixo3exSufixo.pdf</strong></li>
 	 * </ul>
-	 * </p>
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param destDir
+	 * @param destDir destDir
 	 *            Diretório o qual os boletos serão criados
-	 * @param prefixo
+	 * @param prefixo prefixo
 	 *            Prefixo do nome do arquivo
-	 * @param sufixo
+	 * @param sufixo sufixo
 	 *            Sufixo do nome do arquivo
 	 * @return Lista contendo os arquivos PDF gerados a partir da lista de
 	 *         boletos
@@ -983,7 +971,7 @@ public class BoletoViewer {
 	 * </p>
 	 * 
 	 * 
-	 * @param templatesAndBoletos
+	 * @param templatesAndBoletos templatesAndBoletos
 	 *            Coleção de templates e boletos a serem agrupados
 	 * 
 	 * @return Arquivo PDF em array de bytes gerado com os boletos fornecidos
@@ -1015,7 +1003,7 @@ public class BoletoViewer {
 	 * tal qual Acrobat Reader 5 ou superior.
 	 * </p>
 	 * 
-	 * @param option  Escolha de compressão
+	 * @param option  Escolha de compressão option  Escolha de compressão
 	 * 
 	 * @return Esta instância após a operação
 	 * 
@@ -1031,7 +1019,7 @@ public class BoletoViewer {
 	/**
 	 * Define o título do documento PDF gerado.
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 *            para ser exibido como título do documento PDF
 	 * @return Esta instância após a operação
 	 * 
@@ -1047,7 +1035,7 @@ public class BoletoViewer {
 	/**
 	 * Define se o título do documento PDF gerado será mostrado ou não (padrão true).
 	 * 
-	 * @param opcao
+	 * @param opcao opcao
 	 *            para exibir título do documento PDF (true)
 	 * @return Esta instância após a operação
 	 * 
@@ -1063,7 +1051,7 @@ public class BoletoViewer {
 	/**
 	 * Define o autor do documento PDF gerado.
 	 * 
-	 * @param autor
+	 * @param autor autor
 	 *            do documento PDF
 	 * @return Esta instância após a operação
 	 * 
@@ -1079,7 +1067,7 @@ public class BoletoViewer {
 	/**
 	 * Define o assunto do documento PDF gerado.
 	 * 
-	 * @param assunto
+	 * @param assunto assunto
 	 *            do documento PDF
 	 * @return Esta instância após a operação
 	 * 
@@ -1095,7 +1083,7 @@ public class BoletoViewer {
 	/**
 	 * Define as palavras chave do documento PDF gerado.
 	 * 
-	 * @param palavrasChave
+	 * @param palavrasChave palavrasChave
 	 *            do documento PDF
 	 * @return Esta instância após a operação
 	 * 
@@ -1111,7 +1099,7 @@ public class BoletoViewer {
 	/**
 	 * Define se o os campos do documento PDF gerado devem ser removidos ou não (padrão true).
 	 * 
-	 * @param opcao
+	 * @param opcao opcao
 	 *            para remover campos do documento PDF (true)
 	 * @return Esta instância após a operação
 	 * 
@@ -1127,11 +1115,11 @@ public class BoletoViewer {
 	/**
 	 * Define o template que será utilizado para construir o boleto.
 	 * 
-	 * @param template
+	 * @param template template
 	 * 
 	 * @return Esta instância após a operação
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 * 
 	 * @since 0.2
@@ -1148,13 +1136,13 @@ public class BoletoViewer {
 	/**
 	 * Define o template que será utilizado para construir o boleto.
 	 * 
-	 * @param templateUrl
+	 * @param templateUrl templateUrl
 	 * 
 	 * @since 0.2
 	 * 
 	 * @return Esta instância após a operação
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public BoletoViewer setTemplate(URL templateUrl) {
@@ -1169,13 +1157,13 @@ public class BoletoViewer {
 	/**
 	 * Define o template que será utilizado para construir o boleto.
 	 * 
-	 * @param templateInput
+	 * @param templateInput templateInput
 	 * 
 	 * @since 0.2
 	 * 
 	 * @return Esta instância após a operação
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public BoletoViewer setTemplate(InputStream templateInput) {
@@ -1190,13 +1178,13 @@ public class BoletoViewer {
 	/**
 	 * Define o template que será utilizado para construir o boleto.
 	 * 
-	 * @param templatePath
+	 * @param templatePath templatePath
 	 * 
 	 * @since 0.2
 	 * 
 	 * @return Esta instância após a operação
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public BoletoViewer setTemplate(String templatePath) {
@@ -1211,13 +1199,13 @@ public class BoletoViewer {
 	/**
 	 * Define o template que será utilizado para construir o boleto.
 	 * 
-	 * @param templateFile
+	 * @param templateFile templateFile
 	 * 
 	 * @since 0.2
 	 * 
 	 * @return Esta instância após a operação
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public BoletoViewer setTemplate(File templateFile) {
@@ -1234,7 +1222,7 @@ public class BoletoViewer {
 	 * Atribui um boleto para uso no visualizador. {@code Null} não é permitido.
 	 * </p>
 	 * 
-	 * @param boleto
+	 * @param boleto boleto
 	 *            Boleto a ser visualizado
 	 * 
 	 * @since 0.2
@@ -1305,7 +1293,7 @@ public class BoletoViewer {
 	 * Retorna o boleto em um arquivo pdf.
 	 * </p>
 	 * 
-	 * @param destPath
+	 * @param destPath destPath
 	 *            Caminho onde será criado o arquivo pdf
 	 * @return Boleo em File
 	 * 
@@ -1325,7 +1313,7 @@ public class BoletoViewer {
 	 * Retorna o boleto em um arquivo pdf.
 	 * </p>
 	 * 
-	 * @param destFile
+	 * @param destFile destFile
 	 *            Caminho onde será criado o arquivo pdf
 	 * @return Boleto em File
 	 * 
@@ -1382,7 +1370,7 @@ public class BoletoViewer {
 	 * Atualiza o objeto BoletoViewer mantendo as "invariantes".
 	 * </p>
 	 * 
-	 * @param boleto
+	 * @param boleto boleto
 	 * 
 	 * @since 0.2
 	 */

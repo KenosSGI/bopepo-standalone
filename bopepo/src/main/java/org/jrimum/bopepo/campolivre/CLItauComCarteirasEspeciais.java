@@ -44,20 +44,18 @@ import org.jrimum.utilix.Exceptions;
  * 106, 107, 122, 142, 143, 195, 196 ou 198.
  * </p>
  * 
- * <p>
  * <h2>Layout do Banco Itaú para o campo livre ESPECIAL</h2>
- * <pre>
- * <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:
- * collapse" bordercolor="#111111" id="campolivre">
- * <thead>
+ * <table>
+ * <caption>table</caption>
+ * 
  * <tr>
  * <th>Posição</th>
  * <th>Tamanho</th>
  * <th>Picture</th>
  * <th>Conteúdo</th>
  * </tr>
- * </thead>
- * <tbody>
+ * 
+ * 
  * <tr>
  * <td >20 a 22</td>
  * <td >3</td>
@@ -95,10 +93,8 @@ import org.jrimum.utilix.Exceptions;
  * <td >9(01)</td>
  * <td >Zero</td>
  * </tr>
- * </tbody>
+ * 
  * </table>
- * <pre>
- * </p>
  * 
  * @author <a href="mailto:romulomail@gmail.com">Rômulo Augusto</a>
  * 
@@ -122,7 +118,7 @@ class CLItauComCarteirasEspeciais extends AbstractCLItau {
 	 * Dado um título, cria o campo livre do Banco Itaú para carteiras
 	 * especiais.
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 *            título com as informações para geração do campo livre
 	 */
 	public CLItauComCarteirasEspeciais(Titulo titulo) {
@@ -150,10 +146,10 @@ class CLItauComCarteirasEspeciais extends AbstractCLItau {
 	 * código da carteira, do nosso número, do número do documento e do código
 	 * da conta.
 	 * 
-	 * @param codigoDaCarteira
-	 * @param nossoNumero
-	 * @param numeroDoDocumento
-	 * @param codigoDaConta
+	 * @param codigoDaCarteira codigoDaCarteira
+	 * @param nossoNumero nossoNumero
+	 * @param numeroDoDocumento numeroDoDocumento
+	 * @param codigoDaConta codigoDaConta
 	 * @return Integer digito
 	 * 
 	 * @since 0.2

@@ -42,7 +42,7 @@ public interface FixedField<G> extends Field<G>, FixedLength{
 	public abstract Filler getFiller();
 
 	/**
-	 * @param filler the filler to set
+	 * @param filler the filler to set filler the filler to set
 	 */
 	public abstract void setFiller(Filler filler);
 }

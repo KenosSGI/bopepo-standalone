@@ -46,15 +46,13 @@ import org.jrimum.utilix.Objects;
  * <p>
  * É utilizado o método <code>toString()</code> do objeto preenchedor.
  * </p>
- * <p>
- * Exemplo:<br/>
+ * Exemplo:
  * <pre>
- * Filler<Integer> filler = new Filler(new Integer(10), SideToFill.LEFT);
+ * Filler&lt;Integer&gt; filler = new Filler(new Integer(10), SideToFill.LEFT);
  * String outPut = filler.fill("TESTE", 8);
  * 
- * outPut -> "101TESTE"
+ * outPut -&gt; "101TESTE"
  * </pre>
- * </p> 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L</a>
  * @author <a href="mailto:misaelbarreto@gmail.com">Misael Barreto</a>
  * @author <a href="mailto:romulomail@gmail.com">Rômulo Augusto</a>
@@ -78,7 +76,7 @@ public class Filler<G> implements org.jrimum.texgit.type.Filler{
 	}
 
 	/**
-	 * @param fillWith
+	 * @param fillWith fillWith
 	 */
 	public Filler(G fillWith) {
 		
@@ -87,8 +85,8 @@ public class Filler<G> implements org.jrimum.texgit.type.Filler{
 	}
 
 	/**
-	 * @param fillWith
-	 * @param sideToFill
+	 * @param fillWith fillWith
+	 * @param sideToFill sideToFill
 	 */
 	public Filler(G fillWith, Side sideToFill) {
 		
@@ -97,14 +95,14 @@ public class Filler<G> implements org.jrimum.texgit.type.Filler{
 	}
 	
 	/**
-	 * @see org.jrimum.texgit.type#getPadding()
+	 * 
 	 */
 	public G getPadding() {
 		return padding;
 	}
 
 	/**
-	 * @see org.jrimum.texgit.type#setPadding(G)
+	 * 
 	 */
 	public void setPadding(G fillWith) {
 		
@@ -116,14 +114,14 @@ public class Filler<G> implements org.jrimum.texgit.type.Filler{
 	}
 
 	/**
-	 * @see org.jrimum.texgit.type#getSideToFill()
+	 * 
 	 */
 	public Side getSideToFill() {
 		return sideToFill;
 	}
 
 	/**
-	 * @see org.jrimum.texgit.type#setSideToFill(org.jrimum.texgit.type.component.Side)
+	 * 
 	 */
 	public void setSideToFill(Side sideToFill) {
 		
@@ -135,7 +133,7 @@ public class Filler<G> implements org.jrimum.texgit.type.Filler{
 	}
 	
 	/**
-	 * @see org.jrimum.texgit.type#fill(java.lang.String, int)
+	 * 
 	 */
 	public String fill(String toFill, int length){
 		
@@ -156,56 +154,56 @@ public class Filler<G> implements org.jrimum.texgit.type.Filler{
 	}
 	
 	/**
-	 * @see org.jrimum.texgit.type#fill(long, int)
+	 * 
 	 */
 	public String fill(long tofill, int length){
 		return fill(String.valueOf(tofill), length);
 	}
 	
 	/**
-	 * @see org.jrimum.texgit.type#fill(int, int)
+	 * 
 	 */
 	public String fill(int tofill, int length){
 		return fill(String.valueOf(tofill), length);
 	}
 	
 	/**
-	 * @see org.jrimum.texgit.type#fill(short, int)
+	 * 
 	 */
 	public String fill(short tofill, int length){
 		return fill(String.valueOf(tofill), length);
 	}
 	
 	/**
-	 * @see org.jrimum.texgit.type#fill(byte, int)
+	 * 
 	 */
 	public String fill(byte tofill, int length){
 		return fill(String.valueOf(tofill), length);
 	}
 	
 	/**
-	 * @see org.jrimum.texgit.type#fill(char, int)
+	 * 
 	 */
 	public String fill(char tofill, int length){
 		return fill(String.valueOf(tofill), length);
 	}
 	
 	/**
-	 * @see org.jrimum.texgit.type#fill(double, int)
+	 * 
 	 */
 	public String fill(double tofill, int length){
 		return fill(String.valueOf(tofill), length);
 	}
 	
 	/**
-	 * @see org.jrimum.texgit.type#fill(float, int)
+	 * 
 	 */
 	public String fill(float tofill, int length){
 		return fill(String.valueOf(tofill), length);
 	}
 	
 	/**
-	 * @see org.jrimum.texgit.type#fill(java.lang.Object, int)
+	 * 
 	 */
 	public String fill(Object tofill, int length){
 		
@@ -219,7 +217,7 @@ public class Filler<G> implements org.jrimum.texgit.type.Filler{
 	}
 	
 	/**
-	 * @see org.jrimum.texgit.type#fill(org.jrimum.texgit.TextStream, int)
+	 * 
 	 */
 	public String fill(TextStream tofill, int length){
 
@@ -233,8 +231,8 @@ public class Filler<G> implements org.jrimum.texgit.type.Filler{
 	}
 	
 	/**
-	 * @param toFill
-	 * @param length
+	 * @param toFill toFill
+	 * @param length length
 	 * @return String preenchida
 	 */
 	private String fillRight(String toFill, int length) {
@@ -243,8 +241,8 @@ public class Filler<G> implements org.jrimum.texgit.type.Filler{
 	}
 
 	/**
-	 * @param toFill
-	 * @param length
+	 * @param toFill toFill
+	 * @param length length
 	 * @return String preenchida
 	 */
 	private String fillLeft(String toFill, int length) {

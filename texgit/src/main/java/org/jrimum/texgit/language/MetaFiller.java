@@ -77,7 +77,7 @@ public class MetaFiller {
 	/**
 	 * Sets the value of the padding property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -102,7 +102,7 @@ public class MetaFiller {
 	/**
 	 * Sets the value of the sideToFill property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link Side }
 	 * 
 	 */

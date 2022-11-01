@@ -240,105 +240,105 @@ public abstract class TestAbstractCPRF{
 	 */
 	
 	/**
-	 * @param tipo the tipo to set
+	 * @param tipo the tipo to set tipo the tipo to set
 	 */
 	public final void setTipo(TipoDeCPRF tipo) {
 		this.tipo = tipo;
 	}
 
 	/**
-	 * @param cprfStringFormatada the cprfStringFormatada to set
+	 * @param cprfStringFormatada the cprfStringFormatada to set cprfStringFormatada the cprfStringFormatada to set
 	 */
 	public final void setCprfStringFormatada(String cprfStringFormatada) {
 		this.cprfStringFormatada = cprfStringFormatada;
 	}
 
 	/**
-	 * @param cprfStringFormatadaErr the cprfStringFormatadaErr to set
+	 * @param cprfStringFormatadaErr the cprfStringFormatadaErr to set cprfStringFormatadaErr the cprfStringFormatadaErr to set
 	 */
 	public final void setCprfStringFormatadaErr(String cprfStringFormatadaErr) {
 		this.cprfStringFormatadaErr = cprfStringFormatadaErr;
 	}
 
 	/**
-	 * @param cprfString the cprfString to set
+	 * @param cprfString the cprfString to set cprfString the cprfString to set
 	 */
 	public final void setCprfString(String cprfString) {
 		this.cprfString = cprfString;
 	}
 
 	/**
-	 * @param cprfStringErr the cprfStringErr to set
+	 * @param cprfStringErr the cprfStringErr to set cprfStringErr the cprfStringErr to set
 	 */
 	public final void setCprfStringErr(String cprfStringErr) {
 		this.cprfStringErr = cprfStringErr;
 	}
 
 	/**
-	 * @param cprfLong the cprfLong to set
+	 * @param cprfLong the cprfLong to set cprfLong the cprfLong to set
 	 */
 	public final void setCprfLong(Long cprfLong) {
 		this.cprfLong = cprfLong;
 	}
 
 	/**
-	 * @param cprfLongErr the cprfLongErr to set
+	 * @param cprfLongErr the cprfLongErr to set cprfLongErr the cprfLongErr to set
 	 */
 	public final void setCprfLongErr(Long cprfLongErr) {
 		this.cprfLongErr = cprfLongErr;
 	}
 
 	/**
-	 * @param cprfRaizLong the cprfRaizLong to set
+	 * @param cprfRaizLong the cprfRaizLong to set cprfRaizLong the cprfRaizLong to set
 	 */
 	public final void setCprfRaizLong(Long cprfRaizLong) {
 		this.cprfRaizLong = cprfRaizLong;
 	}
 
 	/**
-	 * @param cprfRaizLongErr the cprfRaizLongErr to set
+	 * @param cprfRaizLongErr the cprfRaizLongErr to set cprfRaizLongErr the cprfRaizLongErr to set
 	 */
 	public final void setCprfRaizLongErr(Long cprfRaizLongErr) {
 		this.cprfRaizLongErr = cprfRaizLongErr;
 	}
 
 	/**
-	 * @param cprfRaizFormatada the cprfRaizFormatado to set
+	 * @param cprfRaizFormatada the cprfRaizFormatado to set cprfRaizFormatada the cprfRaizFormatado to set
 	 */
 	public final void setCprfRaizFormatada(String cprfRaizFormatada) {
 		this.cprfRaizFormatada = cprfRaizFormatada;
 	}
 
 	/**
-	 * @param cprfRaizFormatadaErr the cprfRaizFormatadoErr to set
+	 * @param cprfRaizFormatadaErr the cprfRaizFormatadoErr to set cprfRaizFormatadaErr the cprfRaizFormatadoErr to set
 	 */
 	public final void setCprfRaizFormatadaErr(String cprfRaizFormatadaErr) {
 		this.cprfRaizFormatadaErr = cprfRaizFormatadaErr;
 	}
 
 	/**
-	 * @param cprfDv the cprfDv to set
+	 * @param cprfDv the cprfDv to set cprfDv the cprfDv to set
 	 */
 	public final void setCprfDv(Integer cprfDv) {
 		this.cprfDv = cprfDv;
 	}
 
 	/**
-	 * @param cprfDvErr the cprfDvErr to set
+	 * @param cprfDvErr the cprfDvErr to set cprfDvErr the cprfDvErr to set
 	 */
 	public final void setCprfDvErr(Integer cprfDvErr) {
 		this.cprfDvErr = cprfDvErr;
 	}
 
 	/**
-	 * @param cprf the cprf to set
+	 * @param cprf the cprf to set cprf the cprf to set
 	 */
 	public final void setCprf(CPRF cprf) {
 		this.cprf = cprf;
 	}
 	
 	/**
-	 * @param cprfOutro the cprfOutro to set
+	 * @param cprfOutro the cprfOutro to set cprfOutro the cprfOutro to set
 	 */
 	public final void setCprfOutro(CPRF cprfOutro) {
 		this.cprfOutro = cprfOutro;

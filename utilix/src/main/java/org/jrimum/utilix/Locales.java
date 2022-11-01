@@ -54,7 +54,7 @@ public final class Locales {
 	 * Utility class pattern: classe não instanciável
 	 * </p>
 	 * 
-	 * @throws IllegalStateException
+	 * @throws IllegalStateException IllegalStateException
 	 *             Caso haja alguma tentativa de utilização deste construtor.
 	 */
 	private Locales() {

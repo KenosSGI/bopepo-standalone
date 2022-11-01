@@ -74,7 +74,7 @@ public class Files {
 	/**
 	 * Utility class pattern: classe não instanciável
 	 * 
-	 * @throws IllegalStateException
+	 * @throws IllegalStateException IllegalStateException
 	 *             Caso haja alguma tentativa de utilização deste construtor.
 	 */
 	private Files() {
@@ -87,16 +87,16 @@ public class Files {
 	 * Transforma um array de bytes em um arquivo.
 	 * </p>
 	 * 
-	 * @param pathName
+	 * @param pathName pathName
 	 *            - Caminho do arquivo para onde os bytes serão escritos.
-	 * @param bytes
+	 * @param bytes bytes
 	 *            - Bytes a serem copiados.
 	 * 
 	 * @return Objeto File com o conteúdo sendo o dos bytes
 	 * 
-	 * @throws FileNotFoundException
-	 * @throws IOException
-	 * @throws IllegalArgumentException
+	 * @throws FileNotFoundException FileNotFoundException
+	 * @throws IOException IOException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso {@code pathName} ou {@code bytes} seja null, vazio ou
 	 *             contenha apenas espaços em branco
 	 * @since 0.2
@@ -115,16 +115,16 @@ public class Files {
 	 * Transforma um array de bytes em um arquivo.
 	 * </p>
 	 * 
-	 * @param file
+	 * @param file file
 	 *            - arquivo para onde os bytes serão escritos.
-	 * @param bytes
+	 * @param bytes bytes
 	 *            - Bytes a serem copiados.
 	 * 
 	 * @return Objeto File com o conteúdo sendo o dos bytes
 	 * 
-	 * @throws FileNotFoundException
-	 * @throws IOException
-	 * @throws IllegalArgumentException
+	 * @throws FileNotFoundException FileNotFoundException
+	 * @throws IOException IOException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso {@code pathName} ou {@code bytes} seja null, vazio ou
 	 *             contenha apenas espaços em branco
 	 * 
@@ -156,13 +156,13 @@ public class Files {
 	 * Transforma um array de bytes em um <code>ByteArrayOutputStream</code>.
 	 * </p>
 	 * 
-	 * @param bytes
+	 * @param bytes bytes
 	 *            - Bytes que serão escritos no objeto ByteArrayOutputStream
 	 * 
 	 * @return ByteArrayOutputStream ou null
 	 * 
-	 * @throws IOException
-	 * @throws IllegalArgumentException
+	 * @throws IOException IOException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso os {@code bytes} sejam {@code null}.
 	 * 
 	 * @since 0.2
@@ -181,10 +181,10 @@ public class Files {
 	/**
 	 * Retorna o conteúdo do arquivo em um array de bytes.
 	 * 
-	 * @param file
+	 * @param file file
 	 * @return Conteúdo em um array de bytes.
-	 * @throws IOException
-	 * @throws IllegalArgumentException
+	 * @throws IOException IOException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code file} seja {@code null}.
 	 */
 	public static byte[] fileToBytes(File file) throws IOException {
@@ -219,10 +219,10 @@ public class Files {
 	 * Fecha o {@code InputStream} após leitura.
 	 * </p>
 	 * 
-	 * @param input
+	 * @param input input
 	 * @return Conteúdo em um array de bytes.
-	 * @throws IOException
-	 * @throws IllegalArgumentException
+	 * @throws IOException IOException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code input} seja {@code null}.
 	 */
 	public static byte[] toByteArray(InputStream input) throws IOException {
@@ -421,7 +421,7 @@ public class Files {
 	 * código para retirar acentos de um texto com Java Os nomes são sem acento
 	 * e ao invés de " " é usado _ .
 	 * 
-	 * @param name
+	 * @param name name
 	 *            string a ser usada como nome borderoArquivo
 	 * @return retorna o nome do borderoArquivo alterado.
 	 */

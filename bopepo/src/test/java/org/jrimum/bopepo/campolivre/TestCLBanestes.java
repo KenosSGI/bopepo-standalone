@@ -71,7 +71,7 @@ public class TestCLBanestes extends AbstractCampoLivreBaseTest<CLBanestes> {
 	/**
 	 * Configura, no título, a carteira utilizada no teste.
 	 * 
-	 * @param carteira
+	 * @param carteira carteira
 	 */
 	private void setCarteiraDoTitulo(Carteira carteira) {
 		titulo.getContaBancaria().setCarteira(carteira);

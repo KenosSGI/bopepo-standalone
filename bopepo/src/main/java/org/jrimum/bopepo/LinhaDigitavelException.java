@@ -64,8 +64,8 @@ public class LinhaDigitavelException extends RuntimeException {
 	}
 
 	/**
-	 * @param message
-	 * @param cause
+	 * @param message message
+	 * @param cause cause
 	 */
 	public LinhaDigitavelException(String message, Throwable cause) {
 		super(message, cause);
@@ -73,7 +73,7 @@ public class LinhaDigitavelException extends RuntimeException {
 	}
 
 	/**
-	 * @param message
+	 * @param message message
 	 */
 	public LinhaDigitavelException(String message) {
 		super(message);
@@ -81,7 +81,7 @@ public class LinhaDigitavelException extends RuntimeException {
 	}
 
 	/**
-	 * @param cause
+	 * @param cause cause
 	 */
 	public LinhaDigitavelException(Throwable cause) {
 		super(cause);

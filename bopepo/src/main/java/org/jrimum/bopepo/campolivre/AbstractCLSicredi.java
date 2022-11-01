@@ -58,7 +58,7 @@ abstract class AbstractCLSicredi extends AbstractCampoLivre {
 	 * 
 	 * @see AbstractCampoLivre
 	 * 
-	 * @param fieldsLength
+	 * @param fieldsLength fieldsLength
 	 *            - Número de campos
 	 */
 	protected AbstractCLSicredi(Integer fieldsLength) {

@@ -62,8 +62,8 @@ public class BoletoException extends RuntimeException {
 	}
 
 	/**
-	 * @param message
-	 * @param cause
+	 * @param message message
+	 * @param cause cause
 	 */
 	public BoletoException(String message, Throwable cause) {
 		super(message, cause);
@@ -71,7 +71,7 @@ public class BoletoException extends RuntimeException {
 	}
 
 	/**
-	 * @param message
+	 * @param message message
 	 */
 	public BoletoException(String message) {
 		super(message);
@@ -79,7 +79,7 @@ public class BoletoException extends RuntimeException {
 	}
 
 	/**
-	 * @param cause
+	 * @param cause cause
 	 */
 	public BoletoException(Throwable cause) {
 		super(cause);

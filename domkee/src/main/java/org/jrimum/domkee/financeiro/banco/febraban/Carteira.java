@@ -71,7 +71,7 @@ public class Carteira {
 	}	
 
 	/**
-	 * @param codigo
+	 * @param codigo codigo
 	 */
 	public Carteira(Integer codigo) {
 		super();
@@ -80,8 +80,8 @@ public class Carteira {
 
 
 	/**
-	 * @param codigo
-	 * @param cobranca
+	 * @param codigo codigo
+	 * @param cobranca cobranca
 	 */
 	public Carteira(Integer codigo, TipoDeCobranca cobranca) {
 		super();
@@ -91,9 +91,9 @@ public class Carteira {
 
 
 	/**
-	 * @param codigo
-	 * @param cobranca
-	 * @param nome
+	 * @param codigo codigo
+	 * @param cobranca cobranca
+	 * @param nome nome
 	 */
 	public Carteira(Integer codigo, TipoDeCobranca cobranca, String nome) {
 		super();
@@ -116,7 +116,7 @@ public class Carteira {
 	 * Nome da modalidade de cobrança (ou serviços) atribuído a carteira.
 	 * </p>
 	 * 
-	 * @param nome the nome to set
+	 * @param nome the nome to set nome the nome to set
 	 */
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -137,7 +137,7 @@ public class Carteira {
 	 * títulos dentro das modalidades de cobrança existentes no banco.
 	 * </p>
 	 * 
-	 * @param codigo the codigo to set
+	 * @param codigo the codigo to set codigo the codigo to set
 	 */
 	public void setCodigo(Integer codigo) {
 		this.codigo = codigo;
@@ -157,7 +157,7 @@ public class Carteira {
 	 * Define o tipo de cobrança da carteira (Registrada ou não-registrada). 
 	 * </p>
 	 * 
-	 * @param cobranca
+	 * @param cobranca cobranca
 	 * 
 	 * @since 0.2
 	 */

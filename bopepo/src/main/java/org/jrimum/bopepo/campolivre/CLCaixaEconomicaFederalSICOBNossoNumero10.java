@@ -15,8 +15,9 @@ import org.jrimum.utilix.Objects;
  * - SICOB, deve seguir esta forma:
  * </p>
  * 
- * <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="campolivre">
- * <thead bgcolor="#DEDEDE">
+ * <table>
+ * <caption>table</caption>
+ * 
  * <tr>
  * <th>Posição</th>
  * <th>Tamanho</th>
@@ -24,7 +25,7 @@ import org.jrimum.utilix.Objects;
  * <th>Conteúdo (terminologia padrão)</th>
  * <th>Conteúdo (terminologia do banco)</th>
  * </tr>
- * </thead> <tbody style="text-align:center">
+ *  
  * <tr>
  * <td>20-29</td>
  * <td>10</td>
@@ -34,9 +35,9 @@ import org.jrimum.utilix.Objects;
  * Nosso Número no padrão de uma das
  * três cobranças (simples, rápida ou sem registro)
  * 
- * <p>Exemplos:<br/>
- * Cobrança Simples - Nosso número inicia com 3. Ex: Carteira 11<br/>
- * Cobrança Rápida - Nosso número inicia com 9. Ex: Carteira 12 <br/>
+ * <p>Exemplos:
+ * Cobrança Simples - Nosso número inicia com 3. Ex: Carteira 11
+ * Cobrança Rápida - Nosso número inicia com 9. Ex: Carteira 12 
  * Cobrança Sem Registro - Nosso número inicia com 80, 81 ou 82. Ex: Carteira 14.
  * </p>
  * 
@@ -63,7 +64,7 @@ import org.jrimum.utilix.Objects;
  * <td style="text-align:left;padding-left:10">Código do número da conta</td>
  * <td style="text-align:left;padding-left:10">Código fornecido pela Agência</td>
  * </tr>
- * </tbody>
+ * 
  * </table>
  * 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L.</a>
@@ -95,7 +96,7 @@ class CLCaixaEconomicaFederalSICOBNossoNumero10 extends AbstractCLCaixaEconomica
 	 *   Federal que tenha o serviço SINCO.
 	 * </p>
 	 * 
-	 * @param titulo - Título com as informações para geração do campo livre
+	 * @param titulo - Título com as informações para geração do campo livre titulo - Título com as informações para geração do campo livre
 	 */
 	CLCaixaEconomicaFederalSICOBNossoNumero10(Titulo titulo) {
 		
@@ -141,7 +142,6 @@ class CLCaixaEconomicaFederalSICOBNossoNumero10 extends AbstractCLCaixaEconomica
 	 * uma {@code IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * <p>
 	 * Padrões aceitos de 10 dígitos:
 	 * <ul>
 	 * <li>3NNNNNNNNN (a ser validado com os colegas da Neogrid)</li>
@@ -150,9 +150,8 @@ class CLCaixaEconomicaFederalSICOBNossoNumero10 extends AbstractCLCaixaEconomica
 	 * <li>81NNNNNNNN</li>
 	 * <li>82NNNNNNNN</li>
 	 * </ul>
-	 * </p>
 	 * 
-	 * @param nn
+	 * @param nn nn
 	 *            - Nosso Número
 	 */
 	private void checkPadraoNossoNumero(String nn){
@@ -175,9 +174,9 @@ class CLCaixaEconomicaFederalSICOBNossoNumero10 extends AbstractCLCaixaEconomica
 	 * carteiras.
 	 * </p>
 	 * 
-	 * @param nossoNumero
+	 * @param nossoNumero nossoNumero
 	 *            - Nosso Número
-	 * @param codigoDaCarteira
+	 * @param codigoDaCarteira codigoDaCarteira
 	 *            - Código da carteira
 	 */
 	@SuppressWarnings("unused")

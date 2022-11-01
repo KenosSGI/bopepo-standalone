@@ -123,7 +123,7 @@ abstract class AbstractCLBancoSafra extends AbstractCampoLivre {
 	 * 
 	 * @see AbstractCampoLivre
 	 * 
-	 * @param fieldsLength
+	 * @param fieldsLength fieldsLength
 	 *            - Número de campos
 	 */
 	protected AbstractCLBancoSafra(Integer fieldsLength) {

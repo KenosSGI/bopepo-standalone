@@ -69,7 +69,7 @@ public class MeuPrimeiroBoleto {
 	/**
 	 * Executa o exemplo.
 	 * 
-	 * @param args
+	 * @param args args
 	 */
 	public static void main(String[] args) {
 		
@@ -150,7 +150,7 @@ public class MeuPrimeiroBoleto {
 	/**
 	 * Preenche os principais dados do boleto.
 	 * 
-	 * @param boleto
+	 * @param boleto boleto
 	 * @return boleto com os dados necssários
 	 */
 	final Boleto crieOsDadosDoNovoBoleto(Boleto boleto) {
@@ -172,7 +172,7 @@ public class MeuPrimeiroBoleto {
 	/**
 	 * Preenche os principais dados do título.
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @return título com os dados necssários
 	 */
@@ -256,7 +256,7 @@ public class MeuPrimeiroBoleto {
 	/**
 	 * Exibe o arquivo na tela.
 	 * 
-	 * @param arquivoBoleto
+	 * @param arquivoBoleto arquivoBoleto
 	 */
 	final void mostreBoletoNaTela(File arquivoBoleto) {
 		

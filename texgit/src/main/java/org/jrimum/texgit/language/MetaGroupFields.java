@@ -78,7 +78,7 @@ public class MetaGroupFields {
 	/**
 	 * Sets the value of the idType property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link MetaOrderedField }
 	 * 
 	 */
@@ -129,7 +129,7 @@ public class MetaGroupFields {
 	/**
 	 * Sets the value of the sequencialNumber property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link MetaOrderedField }
 	 * 
 	 */

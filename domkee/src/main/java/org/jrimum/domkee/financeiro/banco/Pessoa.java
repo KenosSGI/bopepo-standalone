@@ -46,7 +46,6 @@ import org.jrimum.utilix.Objects;
 
 /**
  * 
- * <p>
  * Representa uma pessoa no negócio de boletos bancários.
  * Ela pode assumir três papéis diferentes:
  * <ul>
@@ -54,7 +53,6 @@ import org.jrimum.utilix.Objects;
  * <li>Sacador</li>
  * <li>Sacador Avalista</li>
  * </ul>
- * </p>
  * 
  * @author <a href="http://gilmatryx.googlepages.com">Gilmar P.S.L.</a>
  * @author <a href="mailto:misaelbarreto@gmail.com">Misael Barreto</a>

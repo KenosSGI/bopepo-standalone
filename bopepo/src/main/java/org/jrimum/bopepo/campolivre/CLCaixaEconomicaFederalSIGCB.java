@@ -42,14 +42,15 @@ import org.jrimum.vallia.digitoverificador.Modulo;
  * O campo livre para o modelo SIGCB segue esta forma:
  * </p>
  * 
- * <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: * collapse" bordercolor="#111111" width="60%" id="campolivre">
- * <thead>
+ * <table>
+ * <caption>table</caption>
+ * 
  * <tr>
  * <td>Posição</td>
  * <td>Tamanho</td>
  * <td>Conteúdo</td>
  * </tr>
- * </thead> <tbody>
+ *  
  * <tr>
  * <td>01-05</td>
  * <td>6</td>
@@ -90,7 +91,7 @@ import org.jrimum.vallia.digitoverificador.Modulo;
  * <td>1</td>
  * <td>Dígito Verificador do Campo Livre</td>
  * </tr>
- * </tbody>
+ * 
  * </table>
  * 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L</a>
@@ -134,7 +135,7 @@ class CLCaixaEconomicaFederalSIGCB extends AbstractCLCaixaEconomicaFederal {
 	 * Econômica Federal que tenha o serviço SIGCB.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 *            - Título com as informações para geração do campo livre.
 	 */
 	CLCaixaEconomicaFederalSIGCB(Titulo titulo) {
@@ -179,7 +180,6 @@ class CLCaixaEconomicaFederalSIGCB extends AbstractCLCaixaEconomicaFederal {
 	/**
 	 * Gera o número que serve para calcular o digito verificador do campoLivre, que é todo o campo livre menos o dígito verificador.
 
-	 * <p>
 	 * Os campos utilizados são:
 	 * <ul>
 	 * <li>Código do Cedente: 06 posições</li>
@@ -190,7 +190,6 @@ class CLCaixaEconomicaFederalSIGCB extends AbstractCLCaixaEconomicaFederal {
 	 * <li>Constante 2: 01 posição</li>
 	 * <li>Nosso Número – Seqüência 3: 09 posições</li>
 	 * </ul>
-	 * </p>
 	 * 
 	 * @return String com campos, exceto o dígito verificador.
 	 * 
@@ -204,7 +203,7 @@ class CLCaixaEconomicaFederalSIGCB extends AbstractCLCaixaEconomicaFederal {
 	/**
 	 * Este dígito é calculado através do Módulo 11 com os pesos 2 e 9.
 	 * 
-	 * @param numeroParaCalculo
+	 * @param numeroParaCalculo numeroParaCalculo
 	 * @return digito
 	 * 
 	 * @since 0.2

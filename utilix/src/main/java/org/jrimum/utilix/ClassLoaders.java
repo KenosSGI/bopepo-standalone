@@ -46,7 +46,7 @@ public final class ClassLoaders {
 	/**
 	 * Utility class pattern: classe não instanciável
 	 * 
-	 * @throws IllegalStateException
+	 * @throws IllegalStateException IllegalStateException
 	 *             Caso haja alguma tentativa de utilização deste construtor.
 	 */
 	private ClassLoaders() {
@@ -57,7 +57,7 @@ public final class ClassLoaders {
 	/**
 	 * Carrega um recurso existente no classpath.
 	 * 
-	 * @param resourceName
+	 * @param resourceName resourceName
 	 *            - O nome do resource a ser carregado
 	 * @return URL para o recurso (resource).
 	 */
@@ -75,9 +75,9 @@ public final class ClassLoaders {
 	 * o recurso esteja nele.
 	 * </p>
 	 * 
-	 * @param resourceName
+	 * @param resourceName resourceName
 	 *            - O nome do resource a ser carregado
-	 * @param callingClass
+	 * @param callingClass callingClass
 	 *            - A classe do objeto chamador ou outro.
 	 * @return URL para o recurso (resource).
 	 */
@@ -140,7 +140,7 @@ public final class ClassLoaders {
 	/**
 	 * Carrega um recurso existente no classpath sob a forma de stream.
 	 * 
-	 * @param resourceName
+	 * @param resourceName resourceName
 	 *            - O nome do resource a ser carregado
 	 * @return Stream aberto para o recurso (resource).
 	 */
@@ -153,9 +153,9 @@ public final class ClassLoaders {
 	 * Carrega um recurso existente no classpath sob a forma de stream com ou
 	 * sem uma classe informada.
 	 * 
-	 * @param resourceName
+	 * @param resourceName resourceName
 	 *            - O nome do resource a ser carregado
-	 * @param callingClass
+	 * @param callingClass callingClass
 	 *            - A classe do objeto chamador ou outro.
 	 * @return Stream aberto para o recurso (resource).
 	 */

@@ -45,8 +45,8 @@ import org.jrimum.vallia.digitoverificador.Modulo;
  * O campo livre do BRB - Banco de Brasília deve seguir esta forma:
  * </p>
  * 
- * <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="campolivre">
- * <thead bgcolor="#DEDEDE">
+ * <table>
+ * 
  * <tr>
  * <th>Posição</th>
  * <th>Tamanho</th>
@@ -54,7 +54,7 @@ import org.jrimum.vallia.digitoverificador.Modulo;
  * <th>Conteúdo (terminologia padrão)</th>
  * <th>Conteúdo (terminologia do banco)</th>
  * </tr>
- * </thead> <tbody style="text-align:center">
+ *  
  * <tr>
  * <td >20-22</td>
  * <td >3</td>
@@ -318,7 +318,7 @@ public class CLBancoDeBrasilia extends AbstractCLBancoDeBrasilia{
 	 * Disponibiliza no objeto titulo os dígitos da CHAVE ASBACE = mesmo que o
 	 * campo livre menos os dois ultimos digitos.
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */
@@ -339,11 +339,11 @@ public class CLBancoDeBrasilia extends AbstractCLBancoDeBrasilia{
 	/**
 	 * <p>
 	 * Verifica se o código da carteira da conta bancária do título não é nulo e
-	 * se é um número > 0, caso contrário lança uma {@code
+	 * se é um número &gt; 0, caso contrário lança uma {@code
 	 * IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */

@@ -48,9 +48,9 @@ import org.jrimum.utilix.Exceptions;
  * <h3>Exemplo para um número hipotético 222.333.666-XX:</h3>
  * <p>
  * Primeiramente obtém-se um número R, calculado através da rotina de módulo 11,
- * a partir dos nove primeiros números do CPF, nesse caso 222333666. <br />
- * Para obter o primeiro dígito verificador deve-se seguir a seguinte lógica: <br />
- * <br />
+ * a partir dos nove primeiros números do CPF, nesse caso 222333666. 
+ * Para obter o primeiro dígito verificador deve-se seguir a seguinte lógica: 
+ * 
  * Se o número R for menor que 2, o dígito terá valor 0 (zero); senão, será a
  * subtração do valor do módulo (11) menos o valor do número R, ou seja,
  * <code>DV = 11 - R</code>.
@@ -89,7 +89,7 @@ public class CPFDV extends AbstractDigitoVerificador {
 	/**
 	 * <p>
 	 * Expressão regular para validação dos nove primeiros números do CPF sem
-	 * formatação: <tt>"#########"</tt>.
+	 * formatação: "#########".
 	 * </p>
 	 */
 	private static final String REGEX_CPF_DV = "\\d{9}";
@@ -97,7 +97,7 @@ public class CPFDV extends AbstractDigitoVerificador {
 	/**
 	 * <p>
 	 * Expressão regular para validação dos nove primeiros números do CPF
-	 * formatado: <tt>"###.###.###"</tt>.
+	 * formatado: "###.###.###".
 	 * </p>
 	 */
 	private static final String REGEX_CPF_DV_FORMATTED = "\\d{3}\\.\\d{3}\\.\\d{3}";
@@ -143,7 +143,7 @@ public class CPFDV extends AbstractDigitoVerificador {
 	 * Método null-safe que remove a formatação da String, com a intenção de deixar
 	 * apenas números.
 	 * 
-	 * @param numero - CNPJ que pode estar formatado.
+	 * @param numero - CNPJ que pode estar formatado. numero - CNPJ que pode estar formatado.
 	 * @return Número CNPJ sem formatação.
 	 */
 	private String removaFormatacao(String numero) {
@@ -166,7 +166,7 @@ public class CPFDV extends AbstractDigitoVerificador {
 	 *  <li>Está no formato ##.###.###/#### ou ############</li>
 	 * </ul>
 	 * 
-	 * @param numero - CNPJ para ser validado
+	 * @param numero - CNPJ para ser validado numero - CNPJ para ser validado
 	 * @return <code>true</code> caso o número esteja em um formato válido; <code>false</code>, 
 	 * caso contrário.
 	 */
@@ -195,12 +195,12 @@ public class CPFDV extends AbstractDigitoVerificador {
 	 * Calcula os dígitos separadamente.
 	 * </p>
 	 * 
-	 * @param numero
+	 * @param numero numero
 	 *            - número a partir do qual será extraído o dígito verificador.
-	 * @param limiteMaximoDoModulo
+	 * @param limiteMaximoDoModulo limiteMaximoDoModulo
 	 *            - limite máximo do módulo utilizado, no caso, módulo 11.
 	 * @return um número que faz parte de um dígito verificador.
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             caso o número não esteja no formatador desejável.
 	 * @since 0.2
 	 */

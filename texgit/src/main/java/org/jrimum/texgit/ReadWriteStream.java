@@ -60,7 +60,7 @@ public interface ReadWriteStream<G> extends Serializable {
 	 * Lê o tipo informado.
 	 * </p>
 	 * 
-	 * @param g - Valor a ser lido
+	 * @param g - Valor a ser lido g - Valor a ser lido
 	 * 
 	 * @since 0.2
 	 */

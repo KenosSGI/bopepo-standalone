@@ -80,7 +80,7 @@ public class MetaTexgit {
 	/**
 	 * Sets the value of the flatFile property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link MetaFlatFile }
 	 * 
 	 */
@@ -105,7 +105,7 @@ public class MetaTexgit {
 	/**
 	 * Sets the value of the version property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link String }
 	 * 
 	 */

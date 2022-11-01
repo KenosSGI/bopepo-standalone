@@ -44,19 +44,17 @@ import org.jrimum.vallia.digitoverificador.BoletoLinhaDigitavelDV;
  * 
  * Representa a linha digitável do boleto, embora a linha digitável contenha a
  * mesma informação do código de barras, essa informação é disposta de uma forma
- * diferente e são acrescentados 3 dígitos verificadores. <br />
- * <br />
- * Modelo: <br />
- * <br />
+ * diferente e são acrescentados 3 dígitos verificadores. 
  * 
- * <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:
- * collapse" bordercolor="#111111" width="90%" id="linhaDigitável"> <thead>
+ * Modelo: 
+ * 
+ * <table>
+ * <caption>table</caption>
  * <tr>
  * <th>Posição </th>
  * <th>Tamanho</th>
  * <th>Conteúdo</th>
  * </tr>
- * </thead>
  * <tr>
  * <td>01-03 </td>
  * <td>3 </td>
@@ -117,12 +115,9 @@ import org.jrimum.vallia.digitoverificador.BoletoLinhaDigitavelDV;
  * </tr>
  * </table>
  * 
- * <br />
- * <br />
- * 
  * Observações:
  * 
- * <br />
+ * 
  * <ul>
  * 
  * <li>Em cada um dos três primeiros campos, após a 5a posição, deve ser
@@ -130,7 +125,7 @@ import org.jrimum.vallia.digitoverificador.BoletoLinhaDigitavelDV;
  * quando necessário;</li>
  * <li>Quinto campo:
  * <ul>
- * <br />
+ * 
  * <li>preenchimento com zeros entre o fator de vencimento e o valor até
  * completar 14 posições;
  * <li>a existência de “0000” no campo “fator de vencimento” da linha digitável
@@ -142,7 +137,7 @@ import org.jrimum.vallia.digitoverificador.BoletoLinhaDigitavelDV;
  * barras, a representação deverá ser com zeros;</li>
  * <li>não deverá conter separação por pontos, vírgulas ou espaços;</li>
  * </ul>
- * <br />
+ * 
  * </li>
  * <li>Os dígitos verificadores referentes aos 1º, 2º e 3º campos não são
  * representados no código de barras;</li>
@@ -217,7 +212,7 @@ public class LinhaDigitavel extends BlockOfFields {
 	 * Cria uma linha digitável a partir do código de barras passado.
 	 * </p>
 	 * 
-	 * @param codigoDeBarras
+	 * @param codigoDeBarras codigoDeBarras
 	 * 
 	 * @see CodigoDeBarras
 	 * 
@@ -316,7 +311,7 @@ public class LinhaDigitavel extends BlockOfFields {
 		/**
 		 * <p>
 		 * 
-		 * Aplicação do seguinte requisito da FEBRABAN: <br />
+		 * Aplicação do seguinte requisito da FEBRABAN: 
 		 * Em cada um dos três primeiros campos, após a quinta (5) posição, deve ser
 		 * inserido um ponto “.”, a fim de facilitar a visualização, para a
 		 * digitação, quando necessário.
@@ -343,7 +338,7 @@ public class LinhaDigitavel extends BlockOfFields {
 	}
 	
 	/**
-	 * Componhe o campo 1 da linha digitável com os seguintes dados: <br />
+	 * Componhe o campo 1 da linha digitável com os seguintes dados: 
 	 * <ul>
 	 * <li>Identificação do banco</li>
 	 * <li>Código de moeda (9 – Real)</li>
@@ -351,10 +346,6 @@ public class LinhaDigitavel extends BlockOfFields {
 	 * de barras)</li>
 	 * <li>Dígito verificador do primeiro campo</li>
 	 * </ul>
-	 * 
-	 * @param titulo
-	 * @param codigoDeBarra
-	 * @param calculadorDV
 	 */
 	private class InnerCampo1 extends InnerCampoFormatado{
 		
@@ -364,15 +355,15 @@ public class LinhaDigitavel extends BlockOfFields {
 		private static final long serialVersionUID = 2948116051922000890L;
 
 		/**
-		 * @param fieldsLength
-		 * @param stringLength
+		 * @param fieldsLength fieldsLength
+		 * @param stringLength stringLength
 		 */
 		private InnerCampo1(Integer fieldsLength, Integer stringLength) {
 			super(fieldsLength, stringLength);
 		}
 		
 		/**
-		 * @param codigoDeBarras
+		 * @param codigoDeBarras codigoDeBarras
 		 */
 		private void load(CodigoDeBarras codigoDeBarras){
 				
@@ -395,15 +386,12 @@ public class LinhaDigitavel extends BlockOfFields {
 	}
 	
 	/**
-	 * Componhe o campo 2 da linha digitável com os seguintes dados: <br />
+	 * Componhe o campo 2 da linha digitável com os seguintes dados: 
 	 * <ul>
 	 * <li>6ª a 15ª posições do campo livre (posições 25 a 34 do código de
 	 * barras)</li>
 	 * <li>Dígito verificador do segundo campo</li>
 	 * </ul>
-	 * 
-	 * @param codigoDeBarra
-	 * @param calculadorDV
 	 */
 	private class InnerCampo2 extends InnerCampoFormatado{
 
@@ -413,8 +401,8 @@ public class LinhaDigitavel extends BlockOfFields {
 		private static final long serialVersionUID = -2201847536243988819L;
 
 		/**
-		 * @param fieldsLength
-		 * @param stringLength
+		 * @param fieldsLength fieldsLength
+		 * @param stringLength stringLength
 		 */
 		private InnerCampo2(Integer fieldsLength, Integer stringLength) {
 			super(fieldsLength, stringLength);
@@ -422,7 +410,7 @@ public class LinhaDigitavel extends BlockOfFields {
 		
 		
 		/**
-		 * @param codigoDeBarras
+		 * @param codigoDeBarras codigoDeBarras
 		 */
 		private void load(CodigoDeBarras codigoDeBarras){
 			
@@ -442,15 +430,12 @@ public class LinhaDigitavel extends BlockOfFields {
 	}
 	
 	/**
-	 * Componhe o campo 3 da linha digitável com os seguintes dados: <br />
+	 * Componhe o campo 3 da linha digitável com os seguintes dados: 
 	 * <ul>
 	 * <li>16ª a 25ª posições do campo livre (posições 35 a 44 do código de
 	 * barras)</li>
 	 * <li>Dígito verificador do terceiro campo</li>
 	 * </ul>
-	 * 
-	 * @param codigoDeBarra
-	 * @param calculadorDV
 	 */
 	private class InnerCampo3 extends InnerCampoFormatado{
 		
@@ -460,15 +445,15 @@ public class LinhaDigitavel extends BlockOfFields {
 		private static final long serialVersionUID = -4248472044788156665L;
 
 		/**
-		 * @param fieldsLength
-		 * @param stringLength
+		 * @param fieldsLength fieldsLength
+		 * @param stringLength stringLength
 		 */
 		private InnerCampo3(Integer fieldsLength, Integer stringLength) {
 			super(fieldsLength, stringLength);
 		}
 		
 		/**
-		 * @param codigoDeBarras
+		 * @param codigoDeBarras codigoDeBarras
 		 */
 		private void load(CodigoDeBarras codigoDeBarras){
 			
@@ -489,15 +474,13 @@ public class LinhaDigitavel extends BlockOfFields {
 	}
 	
 	/**
-	 * Componhe o campo 5 da linha digitável com os seguintes dados: <br />
+	 * Componhe o campo 5 da linha digitável com os seguintes dados: 
 	 * <ul>
 	 * <li>Posições 34 a 37 – fator de vencimento (posições 6 a 9 do código de
 	 * barras)</li>
 	 * <li>Posições 38 a 47 – valor nominal do título(posições 10 a 19 do
 	 * código de barras)</li>
 	 * </ul>
-	 * 
-	 * @param codigoDeBarra
 	 */
 	private class InnerCampo5 extends InnerCampo{
 
@@ -507,15 +490,15 @@ public class LinhaDigitavel extends BlockOfFields {
 		private static final long serialVersionUID = -8040082112684009827L;
 
 		/**
-		 * @param fieldsLength
-		 * @param stringLength
+		 * @param fieldsLength fieldsLength
+		 * @param stringLength stringLength
 		 */
 		private InnerCampo5(Integer fieldsLength, Integer stringLength) {
 			super(fieldsLength, stringLength);
 		}
 		
 		/**
-		 * @param codigoDeBarras
+		 * @param codigoDeBarras codigoDeBarras
 		 */
 		private void load(CodigoDeBarras codigoDeBarras){
 			

@@ -105,7 +105,7 @@ public class Endereco {
 	}
 
 	/**
-	 * @param localidade the localidade to set
+	 * @param localidade the localidade to set localidade the localidade to set
 	 */
 	public void setLocalidade(String localidade) {
 		this.localidade = localidade;
@@ -163,7 +163,7 @@ public class Endereco {
 	}
 
 	/**
-	 * @param pais the pais to set
+	 * @param pais the pais to set pais the pais to set
 	 */
 	public void setPais(String pais) {
 		this.pais = pais;

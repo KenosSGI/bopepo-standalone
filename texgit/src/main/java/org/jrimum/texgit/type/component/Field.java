@@ -89,7 +89,7 @@ public class Field<G> implements org.jrimum.texgit.type.Field<G>{
 	}
 
 	/**
-	 * @param value
+	 * @param value value
 	 */
 	public Field(G value) {
 		super();
@@ -102,8 +102,8 @@ public class Field<G> implements org.jrimum.texgit.type.Field<G>{
 	 * será de acordo com o formatador.
 	 * </p>
 	 * 
-	 * @param value
-	 * @param formatter
+	 * @param value value
+	 * @param formatter formatter
 	 */
 	public Field(G value, Format formatter){
 		
@@ -112,8 +112,8 @@ public class Field<G> implements org.jrimum.texgit.type.Field<G>{
 	}
 
 	/**
-	 * @param name
-	 * @param value
+	 * @param name name
+	 * @param value value
 	 */
 	public Field(String name, G value) {
 		super();
@@ -127,9 +127,9 @@ public class Field<G> implements org.jrimum.texgit.type.Field<G>{
 	 * Cria um <code>Field</code> com nome para identificação, valor e um formatador.
 	 * </p>
 	 * 
-	 * @param name
-	 * @param value
-	 * @param formatter
+	 * @param name name
+	 * @param value value
+	 * @param formatter formatter
 	 * 
 	 * @see #Field(Object, Format)
 	 */

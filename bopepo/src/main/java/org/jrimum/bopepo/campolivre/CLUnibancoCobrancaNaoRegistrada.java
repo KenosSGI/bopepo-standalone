@@ -16,47 +16,45 @@ import org.jrimum.utilix.text.Strings;
  * sem registro.
  * </p>
  * 
+ * Layout:
+ * <div>
  * <p>
- * Layout:<br />
- * <div align="center">
- * <p align="center">
- * <font face="Arial">Cobrança Especial (sem registro)</font>
+ * Cobrança Especial (sem registro)
  * </p>
  * 
- * <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:
- * collapse" bordercolor="#111111" >
+ * <table>
+ * <caption>table</caption>
  * <tr>
- * <td align="center" bgcolor="#C0C0C0"><strong><font face="Arial">Posição</font></strong></td>
- * <td bgcolor="#C0C0C0"><strong><font face="Arial">Campo Livre No Código De
- * Barras (20 a 44)</font></strong></td>
+ * <td><strong>Posição</strong></td>
+ * <td><strong>Campo Livre No Código De
+ * Barras (20 a 44)</strong></td>
  * <tr>
- * <td align="center"><font face="Arial">20</font></td>
+ * <td>20</td>
  * 
- * <td><font face="Arial">Código da transação = 5</font></td>
+ * <td>Código da transação = 5</td>
  * </tr>
  * <tr>
- * <td align="center"><font face="Arial">21 a 26</font></td>
- * <td><font face="Arial">Número do Cliente (Espécie de conta)</font></td>
+ * <td>21 a 26</td>
+ * <td>Número do Cliente (Espécie de conta)</td>
  * </tr>
  * <tr>
- * <td align="center"><font face="Arial">27</font></td>
- * <td><font face="Arial">Dígito Verificador do Número do Cliente</font></td>
+ * <td>27</td>
+ * <td>Dígito Verificador do Número do Cliente</td>
  * </tr>
  * <tr>
- * <td align="center"><font face="Arial">28 a 29</font></td>
- * <td><font face="Arial">zeros</font></td>
+ * <td>28 a 29</td>
+ * <td>zeros</td>
  * </tr>
  * <tr>
- * <td align="center"><font face="Arial">30 a 43</font></td>
- * <td><font face="Arial">Referência do Cliente (Nosso Número Gerado Pelo
- * Cliente)</font></td>
+ * <td>30 a 43</td>
+ * <td>Referência do Cliente (Nosso Número Gerado Pelo
+ * Cliente)</td>
  * </tr>
  * <tr>
- * <td align="center"><font face="Arial">44</font></td>
- * <td><font face="Arial">Dígito Verificador da Referência do Cliente</font></td>
+ * <td>44</td>
+ * <td>Dígito Verificador da Referência do Cliente</td>
  * </tr>
  * </table> </div>
- * </p>
  * 
  * 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L.</a>
@@ -87,7 +85,7 @@ class CLUnibancoCobrancaNaoRegistrada extends AbstractCLUnibanco {
 	 *   Dado um título, cria um campo livre para o padrão do Banco Unibanco
 	 *   que tenha o tipo de cobrança não registrada.
 	 * </p>
-	 * @param titulo título com as informações para geração do campo livre
+	 * @param titulo título com as informações para geração do campo livre titulo título com as informações para geração do campo livre
 	 */
 	CLUnibancoCobrancaNaoRegistrada(Titulo titulo) {
 		super(FIELDS_LENGTH);

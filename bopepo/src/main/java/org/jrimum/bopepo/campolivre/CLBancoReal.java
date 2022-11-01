@@ -42,15 +42,15 @@ import org.jrimum.vallia.digitoverificador.TipoDeModulo;
  * <p><strong>*** COBRANÇA SEM REGISTRO ***</strong></p>
  * O campo livre do Banco Real deve seguir esta forma:
  * 
- * <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:
- * collapse" bordercolor="#111111" id="campolivre">
- * <tr> <thead>
+ * <table>
+ * <caption>table</caption>
+ * <tr> 
  * <th >Posição </th>
  * <th >Tamanho</th>
  * <th >Picture</th>
  * <th>Conteúdo (terminologia padrão)</th>
  * <th>Conteúdo (terminologia do banco)</th>
- * </thead> </tr>
+ *  </tr>
  * <tr>
  * <td>20-23</td>
  * <td>4</td>
@@ -108,7 +108,7 @@ class CLBancoReal extends AbstractCLBancoReal {
 	 * <p>
 	 *   Dado um título, cria um campo livre para o padrão do Banco Real.
 	 * </p>
-	 * @param titulo título com as informações para geração do campo livre
+	 * @param titulo título com as informações para geração do campo livre titulo título com as informações para geração do campo livre
 	 */
 	CLBancoReal(Titulo titulo) {
 		
@@ -122,17 +122,18 @@ class CLBancoReal extends AbstractCLBancoReal {
 	
 	/**
 	 * <p>
-	 * Calcula o Dígito da posição <tt>31</tt> deste campo livre (<code>CLBancoReal</code>).
+	 * Calcula o Dígito da posição 31 deste campo livre (<code>CLBancoReal</code>).
 	 * </p>
 	 * 
 	 * <p>
 	 * No cálculo do dígito da posição 31 são considerados, para a obtenção do
-	 * dígito, os dados <em><tt>{[NOSSO NÚMERO],[AGÊNCIA],[CONTA]}</tt></em> calculado pelos
+	 * dígito, os dados <em>{[NOSSO NÚMERO],[AGÊNCIA],[CONTA]}</em> calculado pelos
 	 * critérios do Módulo 10.
 	 * </p>
-	 * <h5>Exemplo:</h5>
+	 * <strong>Exemplo:</strong>
 	 * 
-	 * <div align="center"> <table border="1" cellpadding="3" cellspacing="0">
+	 * <div> <table border="1">
+ 	 * <caption>table</caption>
 	 * <tr>
 	 * <td>Nosso Número</td>
 	 * <td>1234567890123</td>
@@ -147,9 +148,9 @@ class CLBancoReal extends AbstractCLBancoReal {
 	 * </tr>
 	 * </table></div>
 	 * 
-	 * @param nossoNumero
-	 * @param agencia
-	 * @param contaCorrente
+	 * @param nossoNumero nossoNumero
+	 * @param agencia agencia
+	 * @param contaCorrente contaCorrente
 	 * @return Dígito verficador calculado
 	 * 
 	 * @see org.jrimum.vallia.digitoverificador.Modulo

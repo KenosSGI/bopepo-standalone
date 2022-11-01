@@ -43,8 +43,8 @@ public class Images {
 	/**
 	 * Realiza a comparação entre imagens.
 	 * 
-	 * @param b1
-	 * @param b2
+	 * @param b1 b1
+	 * @param b2 b2
 	 * @return true se são iguais.
 	 */
 	public static boolean areEqual(BufferedImage b1, BufferedImage b2) {
@@ -67,7 +67,7 @@ public class Images {
 	/**
 	 * Transforma em um BufferedImage.
 	 * 
-	 * @param image
+	 * @param image image
 	 * @return BufferedImage
 	 */
 	public static BufferedImage toBufferedImage(Image image) {

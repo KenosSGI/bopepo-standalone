@@ -79,9 +79,9 @@ public abstract class AbstractViewer {
 	/**
 	 * Define o conteúdo de um dado campo do template
 	 * 
-	 * @param field
-	 * @param content
-	 * @throws exception
+	 * @param field field
+	 * @param content content
+	 * @throws Exception Exception
 	 */
 	protected abstract void setText(String field, String content) throws Exception;
 	
@@ -94,10 +94,8 @@ public abstract class AbstractViewer {
 	 * Faz o preenchimento dos campos do template
 	 * </p>
 	 * 
-	 * @throws MalformedURLException
-	 * @throws Exception
-	 * 
-	 * @since
+	 * @throws MalformedURLException MalformedURLException
+	 * @throws Exception Exception
 	 */
 	protected void preencher() throws MalformedURLException, Exception {
 		setLogoBanco();
@@ -369,7 +367,7 @@ public abstract class AbstractViewer {
 	/**
 	 * Data no formata "dd/mm/yyyy"
 	 * 
-	 * @throws Exception
+	 * @throws Exception Exception
 	 */
 	private void setDataVencimeto() throws Exception {
 
@@ -536,7 +534,7 @@ public abstract class AbstractViewer {
 	 * boleto atribuídos no map e templante.
 	 * </p>
 	 * 
-	 * @throws Exception
+	 * @throws Exception Exception
 	 * 
 	 * @since 0.2
 	 */
@@ -555,9 +553,9 @@ public abstract class AbstractViewer {
 	 * Coloca uma imagem no pdf de acordo com o nome do field no templante.
 	 * </p>
 	 * 
-	 * @param nomeDoCampo
-	 * @param imagem
-	 * @throws Exception
+	 * @param nomeDoCampo nomeDoCampo
+	 * @param imagem imagem
+	 * @throws Exception Exception
 	 * 
 	 * @since 0.2
 	 */
@@ -573,8 +571,8 @@ public abstract class AbstractViewer {
 	 * sacado.
 	 * </p>
 	 * 
-	 * @param imgLogoBanco
-	 * @throws Exception
+	 * @param imgLogoBanco imgLogoBanco
+	 * @throws Exception Exception
 	 * 
 	 * @since 0.2
 	 */
@@ -607,8 +605,6 @@ public abstract class AbstractViewer {
 	 * 
 	 * @return true caso o template que pode ser definido pelo usuário for null;
 	 *         false caso o usuário tenha definido um template.
-	 * 
-	 * @since
 	 */
 	protected boolean isTemplateFromResource() {
 		
@@ -622,9 +618,9 @@ public abstract class AbstractViewer {
 	 * sacado. 
 	 * </p> 
  	 *  
- 	 * @param nomeBanco 
- 	 * @throws DocumentException 
- 	 * @throws IOException  
+ 	 * @param nomeBanco  nomeBanco 
+ 	 * @throws DocumentException  DocumentException 
+ 	 * @throws IOException   IOException  
  	 *  
  	 * @since 0.2 
  	 */ 

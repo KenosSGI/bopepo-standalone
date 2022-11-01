@@ -63,8 +63,8 @@ public class CodigoDeBarrasException extends RuntimeException {
 	}
 
 	/**
-	 * @param message
-	 * @param cause
+	 * @param message message
+	 * @param cause cause
 	 */
 	public CodigoDeBarrasException(String message, Throwable cause) {
 		super(message, cause);
@@ -72,7 +72,7 @@ public class CodigoDeBarrasException extends RuntimeException {
 	}
 
 	/**
-	 * @param message
+	 * @param message message
 	 */
 	public CodigoDeBarrasException(String message) {
 		super(message);
@@ -80,7 +80,7 @@ public class CodigoDeBarrasException extends RuntimeException {
 	}
 
 	/**
-	 * @param cause
+	 * @param cause cause
 	 */
 	public CodigoDeBarrasException(Throwable cause) {
 		super(cause);

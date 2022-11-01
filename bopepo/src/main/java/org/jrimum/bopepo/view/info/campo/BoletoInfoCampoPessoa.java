@@ -50,7 +50,7 @@ public class BoletoInfoCampoPessoa {
 	 * <li>"Empresa Boa, CNPJ: 00.123.456/0001-78"</li>
 	 * </ul>
 	 * 
-	 * @param pessoa
+	 * @param pessoa pessoa
 	 * @return string formatada para ser exibida no boleto
 	 */
 	public static String getTextoNomeCprfDaPessoa(EntidadeDeCobranca pessoa) {

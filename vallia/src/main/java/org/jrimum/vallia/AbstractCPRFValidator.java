@@ -158,7 +158,6 @@ public abstract class AbstractCPRFValidator {
 	/**
 	 * Recupera uma instância de um validador para o cadastro de pessoa a partir
 	 * de um identificador.
-	 * <p>
 	 * Primeiro é feita uma pré-validação que consiste em:
 	 * <ul>
 	 * <li>Verificar se o parâmetro não é nulo.</li>
@@ -166,9 +165,8 @@ public abstract class AbstractCPRFValidator {
 	 * <li>Verificar se o parâmetro está em algum formatador válido para
 	 * cadastro de pessoa.</li>
 	 * </ul>
-	 * </p>
 	 * 
-	 * @param codigoDoCadastro
+	 * @param codigoDoCadastro codigoDoCadastro
 	 *            - identificador do cadastro de pessoa.
 	 * @return uma instância de <code>AbstractCPRFValidator</code>.
 	 * @exception IllegalArgumentException
@@ -192,7 +190,7 @@ public abstract class AbstractCPRFValidator {
 	/**
 	 * Cria um validador a partir do tipo de CPRF.
 	 * 
-	 * @param tipoDeCadastro
+	 * @param tipoDeCadastro tipoDeCadastro
 	 * @return um validador
 	 * 
 	 * @since 0.2
@@ -218,9 +216,9 @@ public abstract class AbstractCPRFValidator {
 	/**
 	 * Faz a pré-validação e se correto identifica o tipo de cadastro.
 	 * 
-	 * @param codigoDoCadastro
+	 * @param codigoDoCadastro codigoDoCadastro
 	 * @return Tipo de CPRF
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 * 
 	 * @since 0.2
 	 */
@@ -264,10 +262,10 @@ public abstract class AbstractCPRFValidator {
 	/**
 	 * Define se os parâmetros válidos em relação a nulidade e formato de CPRF.
 	 * 
-	 * @param codigoDoCadastro
-	 * @param tipoDeCadastro
+	 * @param codigoDoCadastro codigoDoCadastro
+	 * @param tipoDeCadastro tipoDeCadastro
 	 * @return indicação de aprovação
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 * 
 	 * @since 0.2
 	 */
@@ -300,7 +298,7 @@ public abstract class AbstractCPRFValidator {
 	}
 
 	/**
-	 * Recupera o cadastro de pessoa a ser validado. <br />
+	 * Recupera o cadastro de pessoa a ser validado. 
 	 * Obs.: A String retornada não possui formatação, ou seja, possui apenas os
 	 * dígitos.
 	 * 

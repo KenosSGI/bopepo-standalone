@@ -427,7 +427,7 @@ public abstract class AbstractCampoLivreBaseTest <CL extends CampoLivre>{
 	/**
 	 * Gera um nosso numero randomicamente com o tamanho determinado.
 	 * 
-	 * @param nnLength
+	 * @param nnLength nnLength
 	 * @return geraNossoNumero
 	 */
 	private final String nossoNumeroRadom(int nnLength){

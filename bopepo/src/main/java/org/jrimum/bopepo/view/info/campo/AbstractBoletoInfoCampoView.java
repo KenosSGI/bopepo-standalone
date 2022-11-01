@@ -69,7 +69,7 @@ public abstract class AbstractBoletoInfoCampoView implements BoletoInfoCampoView
 	/**
 	 * Modo de instanciação não permitido.
 	 * 
-	 * @throws IllegalStateException
+	 * @throws IllegalStateException IllegalStateException
 	 *             Caso haja alguma tentativa de utilização deste construtor.
 	 */
 	@SuppressWarnings("unused")

@@ -47,7 +47,7 @@ public class BoletoInfoCampoAgenciaCodigoCedente {
 	 * Retorna a agência e o número da conta no seguinte formato: {@code "1234-1 / 123456-0"}.
 	 * 
 	 * 
-	 * @param conta
+	 * @param conta conta
 	 * @return string formatada para ser exibida no boleto
 	 */
 	public static String getTextoAgenciaCodigoCedente(ContaBancaria conta){

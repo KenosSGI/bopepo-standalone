@@ -84,7 +84,7 @@ public class MetaRecord {
 	/**
 	 * Sets the value of the groupOfFields property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link MetaGroupFields }
 	 * 
 	 */
@@ -105,7 +105,7 @@ public class MetaRecord {
 	/**
 	 * Sets the value of the groupOfInnerRecords property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link MetaGroupRecords }
 	 * 
 	 */
@@ -126,7 +126,7 @@ public class MetaRecord {
 	/**
 	 * Sets the value of the description property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -147,7 +147,7 @@ public class MetaRecord {
 	/**
 	 * Sets the value of the name property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -172,7 +172,7 @@ public class MetaRecord {
 	/**
 	 * Sets the value of the repeatable property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */

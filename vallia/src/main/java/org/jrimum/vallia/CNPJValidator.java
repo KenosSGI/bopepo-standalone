@@ -32,7 +32,6 @@ package org.jrimum.vallia;
 /**
  * Validador especialista para CNPJ.
  * 
- * <p>
  * O cadastro de pessoa jurídica tem as seguintes características:
  * <ul>
  * <li>Contém apenas números.</li>
@@ -40,11 +39,8 @@ package org.jrimum.vallia;
  * <li>Pode estar no formato ##.###.###/####-XX, onde XX é o dígito verificador.
  * </li>
  * </ul>
- * </p>
- * <p>
  * A validação consiste em verificar essas características e se o dígito
  * verificador é válido.
- * </p>
  * 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L</a>
  * @author <a href="mailto:misaelbarreto@gmail.com">Misael Barreto</a>

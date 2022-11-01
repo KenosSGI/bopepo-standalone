@@ -48,46 +48,43 @@ import org.jrimum.vallia.digitoverificador.TipoDeModulo;
  * da carteira.
  * </p>
  * 
+ * Layout:
  * <p>
- * Layout:<br />
- * <div align="center">
- * <p align="center">
- * <font face="Arial">Cobrança Normal - CAMPO LIVRE - Chave ASBACE</font>
+ * Cobrança Normal - CAMPO LIVRE - Chave ASBACE
  * </p>
  * 
- * <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:
- * collapse" bordercolor="#111111" >
+ * <table>
+ * <caption>table</caption>
  * <tr>
- * <td align="center" bgcolor="#C0C0C0"><strong><font face="Arial">Posição</font></strong></td>
- * <td bgcolor="#C0C0C0"><strong><font face="Arial">Campo Livre No Código De
- * Barras (20 a 44)</font></strong></td>
+ * <td><strong>Posição</strong></td>
+ * <td><strong>Campo Livre No Código De
+ * Barras (20 a 44)</strong></td>
  * <tr>
- * <td align="center"><font face="Arial">20 a 27</font></td>
- * <td><font face="Arial">Nosso Número (sem os dois dígitos)</font></td>
+ * <td>20 a 27</td>
+ * <td>Nosso Número (sem os dois dígitos)</td>
  * 
  * </tr>
  * <tr>
- * <td align="center"><font face="Arial">28 a 38</font></td>
- * <td><font face="Arial">Conta Corrente</font></td>
+ * <td>28 a 38</td>
+ * <td>Conta Corrente</td>
  * </tr>
  * <tr>
- * <td align="center"><font face="Arial">39 a 39</font></td>
+ * <td>39 a 39</td>
  * 
- * <td><font face="Arial">Produto = 2-Sem registro; 3-Caucionada; 4,5,6 e 7-Cobrança com registro</font></td>
- * </tr>
- * 
- * <tr>
- * <td align="center"><font face="Arial">40 a 42</font></td>
- * <td><font face="Arial">Constante = "021" Código do BANESTES </font></td>
+ * <td>Produto = 2-Sem registro; 3-Caucionada; 4,5,6 e 7-Cobrança com registro</td>
  * </tr>
  * 
  * <tr>
- * <td align="center"><font face="Arial">43 a 44</font></td>
- * <td><font face="Arial">Duplo Dígito referente às posições 20 a 42</font></td>
+ * <td>40 a 42</td>
+ * <td>Constante = "021" Código do BANESTES </td>
  * </tr>
  * 
- * </table> </div>
- * </p>
+ * <tr>
+ * <td>43 a 44</td>
+ * <td>Duplo Dígito referente às posições 20 a 42</td>
+ * </tr>
+ * 
+ * </table>
  * 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L.</a>
  * @author <a href="mailto:misaelbarreto@gmail.com">Misael Barreto</a>
@@ -191,7 +188,7 @@ class CLBanestes extends AbstractCLBanestes {
 	/**
 	 * Calcula o primeiro dígito verificador.
 	 * 
-	 * @param fields 
+	 * @param fields  fields 
 	 * 
 	 * @return O primeiro dígito verificador dos dois existentes na chave ASBACE (Campo livre).
 	 */

@@ -59,7 +59,7 @@ abstract class AbstractCLBancoDoBrasil extends AbstractCampoLivre {
 	 * 
 	 * @see AbstractCampoLivre
 	 * 
-	 * @param fieldsLength - Número de campos
+	 * @param fieldsLength - Número de campos fieldsLength - Número de campos
 	 */
 	protected AbstractCLBancoDoBrasil(Integer fieldsLength) {
 		

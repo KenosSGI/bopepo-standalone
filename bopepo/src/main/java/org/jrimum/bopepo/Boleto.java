@@ -141,9 +141,9 @@ public class Boleto {
 	/**
 	 * Cria um boleto pronto para ser gerado.
 	 * 
-	 * @param titulo
-	 * @throws NotSupportedBancoException 
-	 * @throws NotSupportedCampoLivreException 
+	 * @param titulo titulo
+	 * @throws NotSupportedBancoException  NotSupportedBancoException 
+	 * @throws NotSupportedCampoLivreException  NotSupportedCampoLivreException 
 	 */
 	public Boleto(Titulo titulo)throws IllegalArgumentException, NotSupportedBancoException, NotSupportedCampoLivreException{
 
@@ -179,8 +179,8 @@ public class Boleto {
 	}
 
 	/**
-	 * @param titulo
-	 * @param campoLivre
+	 * @param titulo titulo
+	 * @param campoLivre campoLivre
 	 */
 	public Boleto(Titulo titulo, CampoLivre campoLivre) {
 		super();
@@ -237,7 +237,7 @@ public class Boleto {
 	}
 
 	/**
-	 * @param campoLivre the campoLivre to set
+	 * @param campoLivre the campoLivre to set campoLivre the campoLivre to set
 	 */
 	private void setCampoLivre(CampoLivre campoLivre) {
 		
@@ -267,7 +267,7 @@ public class Boleto {
 	}
 
 	/**
-	 * @param titulo the titulo to set
+	 * @param titulo the titulo to set titulo the titulo to set
 	 */
 	public void setTitulo(Titulo titulo) {
 		this.titulo = titulo;
@@ -287,7 +287,7 @@ public class Boleto {
 	 * Data de emissão do boleto de cobrança.
 	 * </p>
 	 * 
-	 * @param dataDeProcessamento the dataDeProcessamento to set
+	 * @param dataDeProcessamento the dataDeProcessamento to set dataDeProcessamento the dataDeProcessamento to set
 	 */
 	public void setDataDeProcessamento(Date dataDeProcessamento) {
 		this.dataDeProcessamento = dataDeProcessamento;
@@ -301,7 +301,7 @@ public class Boleto {
 	}
 
 	/**
-	 * @param codigoDeBarras the codigoDeBarras to set
+	 * @param codigoDeBarras the codigoDeBarras to set codigoDeBarras the codigoDeBarras to set
 	 */
 	public void setCodigoDeBarras(CodigoDeBarras codigoDeBarras) {
 		this.codigoDeBarras = codigoDeBarras;
@@ -315,7 +315,7 @@ public class Boleto {
 	}
 
 	/**
-	 * @param linhaDigitavel the linhaDigitavel to set
+	 * @param linhaDigitavel the linhaDigitavel to set linhaDigitavel the linhaDigitavel to set
 	 */
 	public void setLinhaDigitavel(LinhaDigitavel linhaDigitavel) {
 		this.linhaDigitavel = linhaDigitavel;
@@ -339,7 +339,7 @@ public class Boleto {
 	 * o Vencimento.</em>
 	 * </p>
 	 * 
-	 * @param localPagamento1 the localPagamento1 to set
+	 * @param localPagamento1 the localPagamento1 to set localPagamento1 the localPagamento1 to set
 	 */
 	public void setLocalPagamento(String localPagamento1) {
 		this.localPagamento = localPagamento1;
@@ -360,7 +360,7 @@ public class Boleto {
 	 * <a href="http://www.jrimum.org/bopepo">glossário</a>.
 	 * </p>
 	 * 
-	 * @param insturcaoAoSacado the insturcaoAoSacado to set
+	 * @param insturcaoAoSacado the insturcaoAoSacado to set insturcaoAoSacado the insturcaoAoSacado to set
 	 */
 	public void setInstrucaoAoSacado(String insturcaoAoSacado) {
 		this.instrucaoAoSacado = insturcaoAoSacado;
@@ -374,7 +374,7 @@ public class Boleto {
 	}
 
 	/**
-	 * @param instrucao1 the instrucao1 to set
+	 * @param instrucao1 the instrucao1 to set instrucao1 the instrucao1 to set
 	 */
 	public void setInstrucao1(String instrucao1) {
 		this.instrucao1 = instrucao1;
@@ -388,7 +388,7 @@ public class Boleto {
 	}
 
 	/**
-	 * @param instrucao2 the instrucao2 to set
+	 * @param instrucao2 the instrucao2 to set instrucao2 the instrucao2 to set
 	 */
 	public void setInstrucao2(String instrucao2) {
 		this.instrucao2 = instrucao2;
@@ -402,7 +402,7 @@ public class Boleto {
 	}
 
 	/**
-	 * @param instrucao3 the instrucao3 to set
+	 * @param instrucao3 the instrucao3 to set instrucao3 the instrucao3 to set
 	 */
 	public void setInstrucao3(String instrucao3) {
 		this.instrucao3 = instrucao3;
@@ -416,7 +416,7 @@ public class Boleto {
 	}
 
 	/**
-	 * @param instrucao4 the instrucao4 to set
+	 * @param instrucao4 the instrucao4 to set instrucao4 the instrucao4 to set
 	 */
 	public void setInstrucao4(String instrucao4) {
 		this.instrucao4 = instrucao4;
@@ -430,7 +430,7 @@ public class Boleto {
 	}
 
 	/**
-	 * @param instrucao5 the instrucao5 to set
+	 * @param instrucao5 the instrucao5 to set instrucao5 the instrucao5 to set
 	 */
 	public void setInstrucao5(String instrucao5) {
 		this.instrucao5 = instrucao5;
@@ -444,7 +444,7 @@ public class Boleto {
 	}
 
 	/**
-	 * @param instrucao6 the instrucao6 to set
+	 * @param instrucao6 the instrucao6 to set instrucao6 the instrucao6 to set
 	 */
 	public void setInstrucao6(String instrucao6) {
 		this.instrucao6 = instrucao6;
@@ -458,7 +458,7 @@ public class Boleto {
 	}
 
 	/**
-	 * @param instrucao7 the instrucao7 to set
+	 * @param instrucao7 the instrucao7 to set instrucao7 the instrucao7 to set
 	 */
 	public void setInstrucao7(String instrucao7) {
 		this.instrucao7 = instrucao7;
@@ -472,7 +472,7 @@ public class Boleto {
 	}
 
 	/**
-	 * @param instrucao8 the instrucao8 to set
+	 * @param instrucao8 the instrucao8 to set instrucao8 the instrucao8 to set
 	 */
 	public void setInstrucao8(String instrucao8) {
 		this.instrucao8 = instrucao8;
@@ -481,9 +481,9 @@ public class Boleto {
 	/**
 	 * Sobrescreve um campo padrão do boleto.
 	 * 
-	 * @param campo
+	 * @param campo campo
 	 *            Nome do campo no template
-	 * @param conteudo
+	 * @param conteudo conteudo
 	 *            Texto a ser adicionado ao campo no template
 	 */
 	public void sobrescrevaCampo(BoletoCampo campo, String conteudo){
@@ -504,7 +504,7 @@ public class Boleto {
 	/**
 	 * Substitui todos os campos extra da instância caso exista.
 	 * 
-	 * @param textosExtras
+	 * @param textosExtras textosExtras
 	 *            Campos atribuídos
 	 */
 	public void setTextosExtras(Map<String,String> textosExtras) {
@@ -516,9 +516,9 @@ public class Boleto {
 	 * Adiciona um campo de texto no boleto caso o campo informado tenha o mesmo
 	 * nome no template da instância.
 	 * 
-	 * @param campo
+	 * @param campo campo
 	 *            Nome do campo no template
-	 * @param conteudo
+	 * @param conteudo conteudo
 	 *            Texto a ser adicionado ao campo no template
 	 */
 	public void addTextosExtras(String campo, String conteudo) {
@@ -541,7 +541,7 @@ public class Boleto {
 	/**
 	 * Substitui todos os campos extra da instância caso exista.
 	 * 
-	 * @param imagensExtras
+	 * @param imagensExtras imagensExtras
 	 *            Campos atribuídos
 	 */
 	public void setImagensExtras(Map<String,Image> imagensExtras) {
@@ -552,9 +552,9 @@ public class Boleto {
 	 * Adiciona um campo de imagem no boleto caso o campo informado tenha o
 	 * mesmo nome no template da instância.
 	 * 
-	 * @param campo
+	 * @param campo campo
 	 *            Nome do campo no template
-	 * @param conteudo
+	 * @param conteudo conteudo
 	 *            Imagem a ser adicionada ao campo no template
 	 */
 	public void addImagensExtras(String campo, Image conteudo) {

@@ -71,8 +71,8 @@ public class Record extends BlockOfFields implements org.jrimum.texgit.Record{
 	}
 	
 	/**
-	 * @param length
-	 * @param size
+	 * @param length length
+	 * @param size size
 	 */
 	public Record(Integer length, Integer size) {
 		super(length, size);

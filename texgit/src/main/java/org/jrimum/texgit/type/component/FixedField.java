@@ -134,7 +134,7 @@ public class FixedField<G> extends Field<G> implements org.jrimum.texgit.type.Fi
 	}
 
 	/**
-	 * @see org.jrimum.texgit.type.component.Field#read(java.lang.String)
+	 * 
 	 */
 	@Override
 	public void read(String str) {
@@ -148,7 +148,7 @@ public class FixedField<G> extends Field<G> implements org.jrimum.texgit.type.Fi
 	}
 
 	/**
-	 * @see org.jrimum.texgit.type.component.Field#write()
+	 * 
 	 */
 	@Override
 	public String write() {

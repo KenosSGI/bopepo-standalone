@@ -74,7 +74,7 @@ public class MetaFormatter {
 	/**
 	 * Sets the value of the format property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -95,7 +95,7 @@ public class MetaFormatter {
 	/**
 	 * Sets the value of the type property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link EnumFormatsTypes }
 	 * 
 	 */

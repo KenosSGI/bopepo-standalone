@@ -74,7 +74,7 @@ public class PdfDocReader{
 	/**
 	 * Ler e analisa o documento.
 	 * 
-	 * @param pdfIn
+	 * @param pdfIn pdfIn
 	 *            Byte array contendo o documento
 	 */
 	@SuppressWarnings("unchecked")
@@ -93,7 +93,7 @@ public class PdfDocReader{
 	/**
 	 * Ler e analisa o documento.
 	 * 
-	 * @param is
+	 * @param is is
 	 *            Stream contendo o documento
 	 */
 	@SuppressWarnings("unchecked")
@@ -112,7 +112,7 @@ public class PdfDocReader{
 	/**
 	 * Ler e analisa o documento.
 	 * 
-	 * @param url
+	 * @param url url
 	 *            URL do documento
 	 */
 	@SuppressWarnings("unchecked")
@@ -131,7 +131,7 @@ public class PdfDocReader{
 	/**
 	 * Ler e analisa o documento.
 	 * 
-	 * @param file
+	 * @param file file
 	 *            Arquivo contendo o documento
 	 */
 	@SuppressWarnings("unchecked")
@@ -150,9 +150,9 @@ public class PdfDocReader{
 	/**
 	 * Ler e analisa o documento.
 	 * 
-	 * @param pdfIn
+	 * @param pdfIn pdfIn
 	 *            Byte array contendo o documento
-	 * @param ownerPassword
+	 * @param ownerPassword ownerPassword
 	 *            Senha para ler o documento.
 	 */
 	@SuppressWarnings("unchecked")
@@ -171,9 +171,9 @@ public class PdfDocReader{
 	/**
 	 * Ler e analisa o documento.
 	 * 
-	 * @param is
+	 * @param is is
 	 *            Stream contendo o documento
-	 * @param ownerPassword
+	 * @param ownerPassword ownerPassword
 	 *            Senha para ler o documento.
 	 */
 	@SuppressWarnings("unchecked")
@@ -192,9 +192,9 @@ public class PdfDocReader{
 	/**
 	 * Ler e analisa o documento.
 	 * 
-	 * @param url
+	 * @param url url
 	 *            URL do documento
-	 * @param ownerPassword
+	 * @param ownerPassword ownerPassword
 	 *            Senha para ler o documento.
 	 */
 	@SuppressWarnings("unchecked")
@@ -213,9 +213,9 @@ public class PdfDocReader{
 	/**
 	 * Ler e analisa o documento.
 	 * 
-	 * @param file
+	 * @param file file
 	 *            Arquivo contendo o documento
-	 * @param ownerPassword
+	 * @param ownerPassword ownerPassword
 	 *            Senha para ler o documento.
 	 */
 	@SuppressWarnings("unchecked")
@@ -235,7 +235,7 @@ public class PdfDocReader{
 	 * Retorna, ou não, o valor de um campo procurando pelo seu nome
 	 * ("fully qualified" ou não).
 	 * 
-	 * @param name
+	 * @param name name
 	 *            Nome do campo
 	 * @return Valor do campo
 	 */

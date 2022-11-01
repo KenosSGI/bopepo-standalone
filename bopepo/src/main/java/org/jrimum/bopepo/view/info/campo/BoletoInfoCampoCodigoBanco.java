@@ -41,7 +41,7 @@ public class BoletoInfoCampoCodigoBanco {
 	 * Retorna o código de compensação do banco fomatado no estilo "001-9".
 	 * 
 	 * 
-	 * @param conta
+	 * @param conta conta
 	 * @return string formatada para ser exibida no boleto
 	 */
 	public static String getTextoCodigoDoBanco(ContaBancaria conta){

@@ -54,10 +54,10 @@ public abstract class AbstractDigitoVerificador {
 	 * específica.
 	 * </p>
 	 * 
-	 * @param numero
+	 * @param numero numero
 	 *            - número que será calculado o dígito verificador.
 	 * @return dígito verificador.
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             caso a String não esteja em um formato aceitável. (O
 	 *             formato é definido nas subclasses implementadoras).
 	 * @since 0.2
@@ -73,7 +73,7 @@ public abstract class AbstractDigitoVerificador {
 	 * Se não sobrescrito o retorno é sempre igual a 0 (zero).
 	 * </p>
 	 * 
-	 * @param numero
+	 * @param numero numero
 	 *            - número que será calculado o dígito verificador.
 	 * @return dígito verificador
 	 * @since 0.2

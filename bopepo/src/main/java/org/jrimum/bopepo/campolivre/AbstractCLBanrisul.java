@@ -61,7 +61,7 @@ abstract class AbstractCLBanrisul extends AbstractCampoLivre {
 	 * 
 	 * @see AbstractCampoLivre
 	 * 
-	 * @param fieldsLength - Número de campos
+	 * @param fieldsLength - Número de campos fieldsLength - Número de campos
 	 */
 	protected AbstractCLBanrisul(Integer fieldsLength) {
 		
@@ -90,7 +90,7 @@ abstract class AbstractCLBanrisul extends AbstractCampoLivre {
 	 * </p>
 	 * 
 	 * 
-	 * @param seisPrimeirosCamposConcatenados
+	 * @param seisPrimeirosCamposConcatenados seisPrimeirosCamposConcatenados
 	 * @return duplo dígito
 	 * 
 	 * @since 0.2
@@ -141,7 +141,7 @@ abstract class AbstractCLBanrisul extends AbstractCampoLivre {
 	 * Calcula o segundo dígito verificador.
 	 * </p>
 	 * 
-	 * @param restoMod11
+	 * @param restoMod11 restoMod11
 	 * @return segundo dígito
 	 * 
 	 * @since 0.2
@@ -160,7 +160,7 @@ abstract class AbstractCLBanrisul extends AbstractCampoLivre {
 	 * Calcula o primeiro dígito verificador.
 	 * </p>
 	 * 
-	 * @param restoMod10
+	 * @param restoMod10 restoMod10
 	 * @return primeiro dígito verificador
 	 * 
 	 * @since 0.2
@@ -179,7 +179,7 @@ abstract class AbstractCLBanrisul extends AbstractCampoLivre {
 	 * Calcula o resto da soma módulo 10.
 	 * </p>
 	 * 
-	 * @param somaMod10
+	 * @param somaMod10 somaMod10
 	 * @return Resto do modúlo 10
 	 * 
 	 * @since 0.2
@@ -198,7 +198,7 @@ abstract class AbstractCLBanrisul extends AbstractCampoLivre {
 	 * Encontra um valor válido para o primeiro dígito.
 	 * </p>
 	 * 
-	 * @param primeiroDV
+	 * @param primeiroDV primeiroDV
 	 * @return valor válido para o primeiro dígito
 	 * 
 	 * @since 0.2
@@ -217,7 +217,7 @@ abstract class AbstractCLBanrisul extends AbstractCampoLivre {
 	 * Calcula o resto do módulo 11.
 	 * </p>
 	 * 
-	 * @param somaMod11
+	 * @param somaMod11 somaMod11
 	 * @return restro do módulo 11
 	 * 
 	 * @since 0.2

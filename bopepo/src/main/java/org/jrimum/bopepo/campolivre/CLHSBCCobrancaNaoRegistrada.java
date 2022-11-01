@@ -47,16 +47,16 @@ import org.jrimum.utilix.Objects;
  * 	O campo livre do HSBC, para cobrança não registrada(CNR), deve seguir esta forma:
  * </p>
  * 
- * 	<table border="1" cellpadding="0" cellspacing="0" style="border-collapse:
- * 	collapse" bordercolor="#111111" width="60%" id="campolivre">
+ * 	<table>
+ * <caption>table</caption>
  * 		<tr>
- * 			<thead>
+ * 			
  *				<th>Posição </th>
  * 				<th>Tamanho</th>
  * 				<th>Picture</th>
  * 				<th>Conteúdo (terminologia padrão)</th>
  * 				<th>Conteúdo (terminologia do banco)</th>
- * 			</thead>
+ * 			
  * 		</tr>
  * 
  * 		<tr>
@@ -125,7 +125,7 @@ class CLHSBCCobrancaNaoRegistrada extends AbstractCLHSBC {
 	 * o tipo de cobrança não registrada.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 *            título com as informações para geração do campo livre
 	 */
 	CLHSBCCobrancaNaoRegistrada(Titulo titulo) {

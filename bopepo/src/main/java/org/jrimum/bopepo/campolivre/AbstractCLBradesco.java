@@ -60,7 +60,7 @@ abstract class AbstractCLBradesco extends AbstractCampoLivre {
 	 * 
 	 * @see AbstractCampoLivre
 	 * 
-	 * @param fieldsLength - Número de campos
+	 * @param fieldsLength - Número de campos fieldsLength - Número de campos
 	 * 
 	 * @since 0.2
 	 */

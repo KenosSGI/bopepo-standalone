@@ -133,8 +133,6 @@ public class JasperViewer extends AbstractViewer {
 	 * </p>
 	 * 
 	 * @return String template
-	 * 
-	 * @since
 	 */
 	private String getTemplateFromResource() {
 		return TEMPLATE_PADRAO;

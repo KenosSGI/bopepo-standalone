@@ -57,9 +57,9 @@ class PdfViewerMultiProcessor {
 	 * Agrupa os boletos da lista em um único arquivo PDF.
 	 * 
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param boletoViewer
+	 * @param boletoViewer boletoViewer
 	 *            Visualizador contendo o template para geração
 	 * 
 	 * @return Arquivo PDF em array de bytes gerado com os boletos da lista
@@ -94,11 +94,11 @@ class PdfViewerMultiProcessor {
 	 * Agrupa os boletos da lista em um único arquivo PDF.
 	 * 
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param boletoViewer
+	 * @param boletoViewer boletoViewer
 	 *            Visualizador contendo o template para geração
-	 * @param fileDest
+	 * @param fileDest fileDest
 	 *            Arquivo o qual armazenará os boletos
 	 * @return Arquivo PDF gerado com os boletos da lista
 	 * 
@@ -121,7 +121,7 @@ class PdfViewerMultiProcessor {
 	 * arquivo PDF. Caso exista sequência na coleção, a mesma é mantida.
 	 * 
 	 * 
-	 * @param templatesAndBoletos
+	 * @param templatesAndBoletos templatesAndBoletos
 	 *            Coleção de templates e boletos a serem agrupados
 	 * 
 	 * @return Arquivo PDF em array de bytes gerado com os boletos fornecidos
@@ -150,29 +150,27 @@ class PdfViewerMultiProcessor {
 
 	/**
 	 * Gera um arquivo PDF para cada boleto contido na lista. O nome do arquivo
-	 * segue a forma:<br />
-	 * <br />
-	 * <tt>diretorio + (/ ou \\) prefixo + (indice do arquivo na lista + 1) + sufixo + ".pdf"</tt>
+	 * segue a forma:
 	 * 
-	 * <p>
+	 * diretorio + (/ ou \\) prefixo + (indice do arquivo na lista + 1) + sufixo + ".pdf"
+	 * 
 	 * Exemplo, uma lista com 3 boletos: {@code onePerPDF(boletos, file,
-	 * "BoletoPrefixo", "exSufixo");} <br />
-	 * <br />
+	 * "BoletoPrefixo", "exSufixo");} 
+	 * 
 	 * Arquivos gerados:
 	 * <ul>
 	 * <li><strong>BoletoPrefixo1exSufixo.pdf</strong></li>
 	 * <li><strong>BoletoPrefixo2exSufixo.pdf</strong></li>
 	 * <li><strong>BoletoPrefixo3exSufixo.pdf</strong></li>
 	 * </ul>
-	 * </p>
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param destDir
+	 * @param destDir destDir
 	 *            Diretório o qual os boletos serão criados
-	 * @param prefixo
+	 * @param prefixo prefixo
 	 *            Prefixo do nome do arquivo
-	 * @param sufixo
+	 * @param sufixo sufixo
 	 *            Sufixo do nome do arquivo
 	 * @return Lista contendo os arquivos PDF gerados a partir da lista de
 	 *         boletos
@@ -196,7 +194,7 @@ class PdfViewerMultiProcessor {
 	 * Gera um arquivo PDF para cada boleto contido na lista utilizando o
 	 * template padrão do Bopepo.
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
 	 * 
 	 * @return Lista contendo os arquivos PDF gerados a partir da lista de
@@ -213,9 +211,9 @@ class PdfViewerMultiProcessor {
 	 * Gera um arquivo PDF para cada boleto contido na lista utilizando o Viewer
 	 * informado.
 	 * 
-	 * @param boletos
+	 * @param boletos boletos
 	 *            Lista com os boletos a serem agrupados
-	 * @param boletoViewer
+	 * @param boletoViewer boletoViewer
 	 *            Viewer contendo as informações necessárias, incluindo template
 	 * 
 	 * @return Lista contendo os arquivos PDF gerados a partir da lista de
@@ -239,7 +237,7 @@ class PdfViewerMultiProcessor {
 	 * Entry. Caso exista sequência na coleção, a mesma é mantida.
 	 * 
 	 * 
-	 * @param templatesAndBoletos
+	 * @param templatesAndBoletos templatesAndBoletos
 	 *            - Coleção de templates e boletos para geração de arquivo PDF
 	 * 
 	 * @return Lista contendo os arquivos PDF gerados com cada template e seus

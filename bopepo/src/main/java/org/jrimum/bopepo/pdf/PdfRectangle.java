@@ -49,6 +49,7 @@ public class PdfRectangle extends Rectangle {
 	/**
 	 *Constrói um retângulo com os seguintes valores do array: 
 	 *[page, llx, lly, urx, ury].
+	 @param positions positions
 	 */
 	public PdfRectangle(float[] positions) {
 		super(positions[1], positions[2], positions[3], positions[4]);
@@ -56,10 +57,10 @@ public class PdfRectangle extends Rectangle {
 	}
 
 	/**
-	 * @param llx - lower left x
-	 * @param lly - lower left y
-	 * @param urx - upper right x
-	 * @param ury - upper right y
+	 * @param llx - lower left x llx - lower left x
+	 * @param lly - lower left y lly - lower left y
+	 * @param urx - upper right x urx - upper right x
+	 * @param ury - upper right y ury - upper right y
 	 */
 	public PdfRectangle(float llx, float lly, float urx, float ury) {
 		super(llx, lly, urx, ury);
@@ -68,8 +69,8 @@ public class PdfRectangle extends Rectangle {
 	/**
 	 * Cria um retângulo iniciando da origem (0,0).
 	 * 
-	 * @param urx - upper right x
-	 * @param ury - upper right y
+	 * @param urx - upper right x urx - upper right x
+	 * @param ury - upper right y ury - upper right y
 	 */
 	public PdfRectangle(float urx, float ury) {
 		super(urx, ury);
@@ -77,7 +78,7 @@ public class PdfRectangle extends Rectangle {
 
 	/**
 	 * Cria um retângulo a partir do objeto <code>Rectangle</code>.
-	 * @param rect
+	 * @param rect rect
 	 */
 	public PdfRectangle(Rectangle rect) {
 		super(rect);

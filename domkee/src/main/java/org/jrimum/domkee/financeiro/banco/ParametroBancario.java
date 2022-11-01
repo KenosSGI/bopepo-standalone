@@ -36,7 +36,7 @@ package org.jrimum.domkee.financeiro.banco;
  * 
  * @author <a href="http://gilmatryx.googlepages.com">Gilmar P.S.L.</a>
  * 
- * @param <P>
+ * @param <P> <P>
  *            Enum usado como key do parâmetro bancário.
  */
 public interface ParametroBancario<P extends Enum<P>> {

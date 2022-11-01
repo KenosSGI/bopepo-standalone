@@ -46,8 +46,8 @@ public class TexgitLanguageException extends TexgitException {
 	}
 
 	/**
-	 * @param arg0
-	 * @param arg1
+	 * @param arg0 arg0
+	 * @param arg1 arg1
 	 */
 	public TexgitLanguageException(String arg0, Throwable arg1) {
 		super(arg0, arg1);
@@ -55,7 +55,7 @@ public class TexgitLanguageException extends TexgitException {
 	}
 
 	/**
-	 * @param arg0
+	 * @param arg0 arg0
 	 */
 	public TexgitLanguageException(String arg0) {
 		super(arg0);
@@ -63,7 +63,7 @@ public class TexgitLanguageException extends TexgitException {
 	}
 
 	/**
-	 * @param arg0
+	 * @param arg0 arg0
 	 */
 	public TexgitLanguageException(Throwable arg0) {
 		super(arg0);

@@ -66,7 +66,7 @@ public final class Strings {
 	/**
 	 * Utility class pattern: classe não instanciável
 	 * 
-	 * @throws AssertionError
+	 * @throws AssertionError AssertionError
 	 *             caso haja alguma tentativa de utilização deste construtor.
 	 */
 	private Strings() {
@@ -77,11 +77,11 @@ public final class Strings {
 	/**
 	 * Elimina simbolos como:
 	 * 
-	 * <pre>>
-	 * <,;.:!*&%+-_<>[]\/
+	 * <pre>
+	 * ,;.:!*&amp;%+-_&lt;&gt;[]\/
 	 * </pre>
 	 * 
-	 * @param str
+	 * @param str str
 	 *            String com os símbolos a serem removidos.
 	 * @return String sem símbolos.
 	 * @since 0.2
@@ -129,12 +129,12 @@ public final class Strings {
 	 * Remove os zeros iniciais de uma <code>String</code>, seja ela numérica ou
 	 * não.
 	 * <p>
-	 * <code>removeStartWithZeros("00000") => 0</code><br />
-	 * <code>removeStartWithZeros("00023") => 23</code><br />
-	 * <code>removeStartWithZeros("02003") => 2003</code>
+	 * <code>removeStartWithZeros("00000") =&gt; 0</code>
+	 * <code>removeStartWithZeros("00023") =&gt; 23</code>
+	 * <code>removeStartWithZeros("02003") =&gt; 2003</code>
 	 * <p>
 	 * 
-	 * @param str
+	 * @param str str
 	 * @return a string sem zeros inicias ou um único zero.
 	 * 
 	 * @since 0.2
@@ -182,7 +182,7 @@ public final class Strings {
 	 * maiúsculas.
 	 * </p>
 	 * 
-	 * @param value
+	 * @param value value
 	 *            String com os caracteres a serem removidos.
 	 * @return String sem acentuação.
 	 * @since 0.2
@@ -271,13 +271,13 @@ public final class Strings {
 	 * String), caso não preencha estes requisitos.
 	 * </p>
 	 * 
-	 * @param value
+	 * @param value value
 	 *            - String analisada
 	 * 
-	 * @param message
+	 * @param message message
 	 *            - Mensagem utiliada na exceção.
 	 * 
-	 * @throws IllegalArgumentException - Caso a string seja <code>null</code> ou
+	 * @throws IllegalArgumentException - Caso a string seja <code>null</code> ou IllegalArgumentException - Caso a string seja <code>null</code> ou
 	 *        caso a string não seja numérica.
 	 * 
 	 * @since 0.2
@@ -296,10 +296,10 @@ public final class Strings {
 	 * String), caso não preencha estes requisitos.
 	 * </p>
 	 * 
-	 * @param value
+	 * @param value value
 	 *            - String analisada
 	 * 
-	 * @throws IllegalArgumentException - Caso a string seja <code>null</code> ou
+	 * @throws IllegalArgumentException - Caso a string seja <code>null</code> ou IllegalArgumentException - Caso a string seja <code>null</code> ou
 	 *        caso a string não seja numérica.
 	 * 
 	 * @since 0.2
@@ -319,13 +319,13 @@ public final class Strings {
 	 * String), caso não preencha estes requisitos.
 	 * </p>
 	 * 
-	 * @param value
+	 * @param value value
 	 *            - String analisada
 	 * 
-	 * @param message
+	 * @param message message
 	 *            - Mensagem utiliada na exceção.
 	 * 
-	 * @throws IllegalArgumentException - Caso a string seja <code>null</code> ou
+	 * @throws IllegalArgumentException - Caso a string seja <code>null</code> ou IllegalArgumentException - Caso a string seja <code>null</code> ou
 	 *        caso a string seja vazia.
 	 * 
 	 * @since 0.2
@@ -340,10 +340,10 @@ public final class Strings {
 	 * <code>null</code>, não é vazia (<code>EMPTY</code>) e não possui apenas
 	 * espaços em branco. Lança exceção caso não preencha estes requisitos.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            - String analisada
 	 * 
-	 * @throws IllegalArgumentException - Caso a string seja <code>null</code> ou
+	 * @throws IllegalArgumentException - Caso a string seja <code>null</code> ou IllegalArgumentException - Caso a string seja <code>null</code> ou
 	 *        caso a string seja vazia.
 	 * 
 	 * @since 0.2
@@ -371,10 +371,10 @@ public final class Strings {
 	 * whenBlank("abc", *)    = "abc"
 	 * </pre>
 	 * 
-	 * @param str
+	 * @param str str
 	 *            String a testar e ser usada como valor de retorno se não for
 	 *            blank, pode ser <code>null</code>
-	 * @param defaultValue
+	 * @param defaultValue defaultValue
 	 *            - O valor padrão retornado caso a string testada seja blank,
 	 *            pode ser <code>null</code>
 	 * @return <code>String</code> - Se não for blank, caso contrário
@@ -405,17 +405,17 @@ public final class Strings {
 	 * valor passado não seja numérico.
 	 * </p>
 	 * 
-	 * @param value
+	 * @param value value
 	 *            - String analisada
 	 * 
-	 * @param messageNullPointer
+	 * @param messageNullPointer messageNullPointer
 	 *            - Mensagem utiliada na exceção.
 	 * 
-	 * @param messageIllegalArgument
+	 * @param messageIllegalArgument messageIllegalArgument
 	 *            - Mensagem utiliada na exceção.
 	 * 
 	 * 
-	 * @throws IllegalArgumentException - Caso a string seja <code>null</code> ou
+	 * @throws IllegalArgumentException - Caso a string seja <code>null</code> ou IllegalArgumentException - Caso a string seja <code>null</code> ou
 	 *        caso a string não seja numérica.
 	 * 
 	 * @since 0.2
@@ -448,16 +448,16 @@ public final class Strings {
 	 * valor passado seja vazio.
 	 * </p>
 	 * 
-	 * @param value
+	 * @param value value
 	 *            - String analisada
 	 * 
-	 * @param messageNullPointer
+	 * @param messageNullPointer messageNullPointer
 	 *            - Mensagem utiliada na exceção.
 	 * 
-	 * @param messageIllegalArgument
+	 * @param messageIllegalArgument messageIllegalArgument
 	 *            - Mensagem utiliada na exceção.
 	 * 
-	 * @throws IllegalArgumentException - Caso a string seja <code>null</code> ou
+	 * @throws IllegalArgumentException - Caso a string seja <code>null</code> ou IllegalArgumentException - Caso a string seja <code>null</code> ou
 	 *        caso a string seja vazia.
 	 * 
 	 * @since 0.2
@@ -476,9 +476,9 @@ public final class Strings {
 	 * Retorna uma string de tamanho informado {@code length} com o
 	 * preenchimento de zeros à esquerda para o número informado.
 	 * 
-	 * @param numberToFill
+	 * @param numberToFill numberToFill
 	 *            Número a ser transformado em string com zeros à esquerda
-	 * @param length
+	 * @param length length
 	 *            Tamanho final da string com zeros à esquerda
 	 * @return string com zeros a esquerda
 	 */
@@ -490,9 +490,9 @@ public final class Strings {
 	 * Retorna uma string de tamanho informado {@code length} com o
 	 * preenchimento de zeros à esquerda para o número informado.
 	 * 
-	 * @param numberToFill
+	 * @param numberToFill numberToFill
 	 *            Número a ser transformado em string com zeros à esquerda
-	 * @param length
+	 * @param length length
 	 *            Tamanho final da string com zeros à esquerda
 	 * @return string com zeros a esquerda
 	 */
@@ -504,9 +504,9 @@ public final class Strings {
 	 * Retorna uma string de tamanho informado {@code length} com o
 	 * preenchimento de zeros à esquerda para a string informada.
 	 * 
-	 * @param stringToFill
+	 * @param stringToFill stringToFill
 	 *            String a ser preenchida com zeros à esquerda
-	 * @param length
+	 * @param length length
 	 *            Tamanho final da string com zeros à esquerda
 	 * @return string com zeros a esquerda
 	 */

@@ -88,7 +88,7 @@ public class Modulo {
 	/**
 	 * Inicializa um módulo com valores default.
 	 * 
-	 * @param mod
+	 * @param mod mod
 	 *            tipo do módulo
 	 * @see #initDefault
 	 * @see #calcule(String)
@@ -106,11 +106,11 @@ public class Modulo {
 	/**
 	 * Inicializa um módulo com o tipo definido com valores default.
 	 * 
-	 * @param limiteMaximo
+	 * @param limiteMaximo limiteMaximo
 	 *            peso máximo
-	 * @param limiteMinimo
+	 * @param limiteMinimo limiteMinimo
 	 *            peso mínimo
-	 * @param mod
+	 * @param mod mod
 	 *            tipo do módulo
 	 * @see #calcule(String)
 	 * @since 0.2
@@ -133,7 +133,7 @@ public class Modulo {
 	 * Se por um acaso a instância <code>enum</code> for nula uma
 	 * <code>NullPointerException</code> será lançada. Caso a <code>enum</code>
 	 * contenha um módulo não implementado por essa classe o retorno será
-	 * <tt>-1</tt>
+	 * -1
 	 * </p>
 	 * 
 	 * @return valor da instância do módulo.
@@ -165,9 +165,9 @@ public class Modulo {
 	 * resultado em % 11
 	 * </p>
 	 * 
-	 * @param numero
-	 * @param limiteMin
-	 * @param limiteMax
+	 * @param numero numero
+	 * @param limiteMin limiteMin
+	 * @param limiteMax limiteMax
 	 * @return Resultado de calculeSomaSequencialMod11 % 11
 	 * 
 	 * @since 0.2
@@ -189,9 +189,9 @@ public class Modulo {
 	 * calculeMod11
 	 * </p>
 	 * 
-	 * @param numero
-	 * @param limiteMin
-	 * @param limiteMax
+	 * @param numero numero
+	 * @param limiteMin limiteMin
+	 * @param limiteMax limiteMax
 	 * @return resultado do cálculo
 	 * 
 	 * @since 0.2
@@ -214,8 +214,7 @@ public class Modulo {
 	 * sucessivamente até o limite máxmio definido, então inicia-se novamente a
 	 * contagem.
 	 * </p>
-	 * <p>
-	 * Exemplo para o número <tt>654321</tt>:
+	 * Exemplo para o número 654321:
 	 * 
 	 * <pre>
 	 * +---+---+---+---+---+---+
@@ -226,15 +225,13 @@ public class Modulo {
 	 *   |   |   |   |   |   |
 	 *  =42 =30 =20 =12 =6  =2
 	 *   +---+---+---+---+---+-&gt;
-	 * </pre
+	 * </pre>
 	 * 
-	 * </p>
-	 * 
-	 * @param numero
-	 * @param limiteMin
-	 * @param limiteMax
+	 * @param numero numero
+	 * @param limiteMin limiteMin
+	 * @param limiteMax limiteMax
 	 * @return Soma da sequencia sem executar Mod 11
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 * 
 	 * @since 0.2
 	 */
@@ -274,9 +271,9 @@ public class Modulo {
 	 * calculeMod10
 	 * </p>
 	 * 
-	 * @param numero
-	 * @param limiteMin
-	 * @param limiteMax
+	 * @param numero numero
+	 * @param limiteMin limiteMin
+	 * @param limiteMax limiteMax
 	 * @return resultado do cálculo
 	 * 
 	 * @since 0.2
@@ -295,9 +292,9 @@ public class Modulo {
 	 * resultado em % 10
 	 * </p>
 	 * 
-	 * @param numero
-	 * @param limiteMin
-	 * @param limiteMax
+	 * @param numero numero
+	 * @param limiteMin limiteMin
+	 * @param limiteMax limiteMax
 	 * @return resultado de calculeSomaSequencialMod10 % 10
 	 * 
 	 * @since 0.2
@@ -321,8 +318,7 @@ public class Modulo {
 	 * sucessivamente até o limite máxmio definido, então inicia-se novamente a
 	 * contagem.
 	 * </p>
-	 * <p>
-	 * Exemplo para o número <tt>123456</tt>:
+	 * Exemplo para o número 123456:
 	 * 
 	 * <pre>
 	 * +---+---+---+---+---+---+
@@ -335,17 +331,15 @@ public class Modulo {
 	 *   +---+---+---+---+---+-&gt; = (24 / 10) = 3, resto 3; Então o módulo é igual a 3.
 	 * </pre>
 	 * 
-	 * </p>
-	 * 
 	 * <p>
 	 * Geralmente os limites para o módulo 10 são mínimo 1 e máximo 2 apenas.
 	 * </p>
 	 * 
-	 * @param numero
-	 * @param limiteMin
-	 * @param limiteMax
+	 * @param numero numero
+	 * @param limiteMin limiteMin
+	 * @param limiteMax limiteMax
 	 * @return soma sequencial usada no cálculo do módulo
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 * 
 	 * @since 0.2
 	 */
@@ -387,9 +381,9 @@ public class Modulo {
 	/**
 	 * Executa o cáculo do módulo da instância.
 	 * 
-	 * @param numero
+	 * @param numero numero
 	 * @return Módulo
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 * 
 	 * @since 0.2
 	 */
@@ -418,7 +412,7 @@ public class Modulo {
 	/**
 	 * Executa o cáculo do módulo da instância.
 	 * 
-	 * @param numero
+	 * @param numero numero
 	 * @return módulo
 	 * 
 	 * @since 0.2
@@ -434,11 +428,11 @@ public class Modulo {
 	 * instância do módulo da classe.
 	 * 
 	 * <p>
-	 * Valores padrões: <br />
-	 * <br />
-	 * <code>MODULO10</code>: (limiteMinimo = 1 e limiteMaximo = 2)<br />
+	 * Valores padrões: 
 	 * 
-	 * <code>MODULO11</code>: (limiteMinimo = 2 e limiteMaximo = 9)<br />
+	 * <code>MODULO10</code>: (limiteMinimo = 1 e limiteMaximo = 2)
+	 * 
+	 * <code>MODULO11</code>: (limiteMinimo = 2 e limiteMaximo = 9)
 	 * </p>
 	 * 
 	 * @since 0.2
@@ -471,7 +465,7 @@ public class Modulo {
 	}
 
 	/**
-	 * @param limiteMaximo
+	 * @param limiteMaximo limiteMaximo
 	 *            the limiteMaximo to set
 	 */
 	public void setLimiteMaximo(int limiteMaximo) {
@@ -486,7 +480,7 @@ public class Modulo {
 	}
 
 	/**
-	 * @param limiteMinimo
+	 * @param limiteMinimo limiteMinimo
 	 *            the limiteMinimo to set
 	 */
 	public void setLimiteMinimo(int limiteMinimo) {
@@ -501,7 +495,7 @@ public class Modulo {
 	}
 
 	/**
-	 * @param mod
+	 * @param mod mod
 	 *            Tipo do módulo
 	 */
 	public void setMod(TipoDeModulo mod) {

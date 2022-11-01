@@ -94,7 +94,7 @@ public class MetaField {
 	/**
 	 * Sets the value of the filler property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link MetaFiller }
 	 * 
 	 */
@@ -115,7 +115,7 @@ public class MetaField {
 	/**
 	 * Sets the value of the formatter property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link MetaFormatter }
 	 * 
 	 */
@@ -140,7 +140,7 @@ public class MetaField {
 	/**
 	 * Sets the value of the blankAccepted property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -165,7 +165,7 @@ public class MetaField {
 	/**
 	 * Sets the value of the blankAccepted property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link Boolean }
 	 * 
 	 */
@@ -186,7 +186,7 @@ public class MetaField {
 	/**
 	 * Sets the value of the format property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link EnumFormats }
 	 * 
 	 */
@@ -223,7 +223,7 @@ public class MetaField {
 	/**
 	 * Sets the value of the name property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -248,7 +248,7 @@ public class MetaField {
 	/**
 	 * Sets the value of the padding property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link EnumPaddings }
 	 * 
 	 */
@@ -273,7 +273,7 @@ public class MetaField {
 	/**
 	 * Sets the value of the type property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link EnumTypes }
 	 * 
 	 */
@@ -298,7 +298,7 @@ public class MetaField {
 	/**
 	 * Sets the value of the value property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link String }
 	 * 
 	 */

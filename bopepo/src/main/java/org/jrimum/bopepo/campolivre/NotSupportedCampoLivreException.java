@@ -60,8 +60,8 @@ public class NotSupportedCampoLivreException extends CampoLivreException {
 	}
 
 	/**
-	 * @param message
-	 * @param cause
+	 * @param message message
+	 * @param cause cause
 	 */
 	public NotSupportedCampoLivreException(String message, Throwable cause) {
 		super(message, cause);
@@ -69,7 +69,7 @@ public class NotSupportedCampoLivreException extends CampoLivreException {
 	}
 
 	/**
-	 * @param message
+	 * @param message message
 	 */
 	public NotSupportedCampoLivreException(String message) {
 		super(message);
@@ -77,7 +77,7 @@ public class NotSupportedCampoLivreException extends CampoLivreException {
 	}
 
 	/**
-	 * @param cause
+	 * @param cause cause
 	 */
 	public NotSupportedCampoLivreException(Throwable cause) {
 		super(cause);

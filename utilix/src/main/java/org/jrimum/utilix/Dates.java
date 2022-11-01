@@ -77,7 +77,7 @@ public final class Dates {
 	/**
 	 * Utility class pattern: classe não instanciável
 	 * 
-	 * @throws IllegalStateException
+	 * @throws IllegalStateException IllegalStateException
 	 *             Caso haja alguma tentativa de utilização deste construtor.
 	 */
 	private Dates() {
@@ -104,7 +104,7 @@ public final class Dates {
 	 * Compara uma dada data qualquer com a data invalida 01/01/0001.
 	 * </p>
 	 * 
-	 * @param date - Data qualquer
+	 * @param date - Data qualquer date - Data qualquer
 	 * 
 	 * @return igualdade - Se igual a data inválida
 	 */
@@ -127,13 +127,13 @@ public final class Dates {
 	 * necessariamente maior que a data inicial.
 	 * </p>
 	 * 
-	 * @param dataInicial
+	 * @param dataInicial dataInicial
 	 *            - data inicial do intervalo.
-	 * @param dataFinal
+	 * @param dataFinal dataFinal
 	 *            - data final do intervalo.
 	 * @return número(módulo) de dias entre as datas.
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso pelo menos uma das duas datas seja <code>null</code>.
 	 * @since 0.2
 	 */
@@ -178,14 +178,14 @@ public final class Dates {
 	 * realizar a conversão.
 	 * </p>
 	 * 
-	 * @param dateAsString
+	 * @param dateAsString dateAsString
 	 *            - um valor de data em forma de <code>String</code>.
-	 * @param dateFormat
+	 * @param dateFormat dateFormat
 	 *            - formato de data em forma de <code>String</code>.
 	 * @return Objeto <code>java.util.Date</code> convertido a partir do objeto
 	 *         <code>String</code>
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             caso o objeto <code>String</code> não seja um valor válido de
 	 *             data suportado pelo formato.
 	 * @since 0.2
@@ -206,14 +206,14 @@ public final class Dates {
 	 * <code>java.text.DateFormat</code> especificado.
 	 * </p>
 	 * 
-	 * @param dateAsString
+	 * @param dateAsString dateAsString
 	 *            - um valor de data em forma de <code>String</code>.
-	 * @param dateFormat
+	 * @param dateFormat dateFormat
 	 *            - formatador para objetos <code>java.util.Date</code>.
 	 * @return Objeto <code>java.util.Date</code> convertido a partir do objeto
 	 *         <code>String</code>
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             caso o objeto <code>String</code> não seja um valor válido de
 	 *             data suportado pelo formatador.
 	 * @since 0.2

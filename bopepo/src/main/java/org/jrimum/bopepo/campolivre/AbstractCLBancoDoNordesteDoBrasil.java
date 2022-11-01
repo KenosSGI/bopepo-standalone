@@ -31,7 +31,7 @@ public abstract class AbstractCLBancoDoNordesteDoBrasil extends AbstractCampoLiv
 	 * 
 	 * @see AbstractCampoLivre
 	 * 
-	 * @param fieldsLength - Número de campos
+	 * @param fieldsLength - Número de campos fieldsLength - Número de campos
 	 * 
 	 * @since 0.2
 	 */
@@ -41,7 +41,7 @@ public abstract class AbstractCLBancoDoNordesteDoBrasil extends AbstractCampoLiv
 	}
 	
 	/**
-	 * @param titulo
+	 * @param titulo titulo
 	 * @return um CampoLivre
 	 * 
 	 * @see org.jrimum.bopepo.campolivre.AbstractCLBancoDoNordesteDoBrasil#create(Titulo)

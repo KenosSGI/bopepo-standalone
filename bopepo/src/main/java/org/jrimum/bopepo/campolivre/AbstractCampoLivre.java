@@ -56,13 +56,9 @@ import org.jrimum.utilix.text.Strings;
  * Factory.
  * </p>
  * 
- * <p>
- * <dl>
- * <dt><strong>Field Livre:</strong>
- * <dd>É um espaço reservado no código de barras e a sua implementação varia de
- * banco para banco.</dd></dt>
- * </dl>
- * </p>
+ * Field Livre:
+ * É um espaço reservado no código de barras e a sua implementação varia de
+ * banco para banco.
  * 
  * 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L</a>
@@ -137,6 +133,8 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 
 	/**
 	 * Subclasses não precisam definir o tamanho.
+	 * @param fieldsLength Número de campos
+	 * @param stringLength stringLength
 	 */
 	@SuppressWarnings("unused")
 	private AbstractCampoLivre(Integer fieldsLength, Integer stringLength) {
@@ -146,8 +144,7 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	/**
 	 * Cria um campo livre com um determinado número de campos
 	 * 
-	 * @param fieldsLength
-	 *            - Número de campos
+	 * @param fieldsLength Número de campos
 	 */
 	protected AbstractCampoLivre(Integer fieldsLength) {
 		super();
@@ -158,17 +155,17 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	/**
 	 * Cria um campo livre a partir dos dados contidos no título fornecido.
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 *            com todos os dados para a geração do campo livre
 	 * @return instância de campo livre ou nulo.
-	 * @throws NotSupportedBancoException
+	 * @throws NotSupportedBancoException NotSupportedBancoException
 	 *             Caso o banco informado na conta bancária não tenha nenhuma
 	 *             implementação de campo livre.
-	 * @throws NotSupportedCampoLivreException
+	 * @throws NotSupportedCampoLivreException NotSupportedCampoLivreException
 	 *             Caso exista implementações de campo livre para o banco
 	 *             informa na conta bancária, mas nenhuma dessas implementações
 	 *             foram adequadas para os dados do título.
-	 * @throws CampoLivreException
+	 * @throws CampoLivreException CampoLivreException
 	 *             Caso ocorra algum problema na geração do campo livre.
 	 */
 	protected static CampoLivre create(Titulo titulo) throws NotSupportedBancoException,
@@ -269,7 +266,7 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * seguida esta instância pronta para escrita.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @return a instância pronta para escrita
 	 * 
@@ -291,7 +288,7 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * lança-la.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */
@@ -303,7 +300,7 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * livre deixando-o pronto para escrita.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */
@@ -341,7 +338,7 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */
@@ -356,7 +353,7 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * {@code IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */
@@ -371,7 +368,7 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * uma {@code IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */
@@ -394,7 +391,7 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * lança uma {@code IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */
@@ -409,7 +406,7 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * senão lança uma {@code IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */
@@ -421,11 +418,11 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	/**
 	 * <p>
 	 * Verifica se o código da carteira da conta bancária do título não é nulo e
-	 * se é um número > 0, caso contrário lança uma {@code
+	 * se é um número &gt; 0, caso contrário lança uma {@code
 	 * IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */
@@ -445,8 +442,8 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
-	 * @param limite - Limite máximo permitido
+	 * @param titulo titulo
+	 * @param limite - Limite máximo permitido limite - Limite máximo permitido
 	 * 
 	 * @since 0.2
 	 */
@@ -463,7 +460,7 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * uma {@code IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */
@@ -475,10 +472,10 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	/**
 	 * <p>
 	 * Verifica se o código do número da agência bancária não é nulo e se é
-	 * um número > 0, caso contrário lança uma {@code IllegalArgumentException}.
+	 * um número &gt; 0, caso contrário lança uma {@code IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */
@@ -498,8 +495,8 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
-	 * @param limite
+	 * @param titulo titulo
+	 * @param limite limite
 	 *            - Limite máximo permitido
 	 * 
 	 * @since 0.2
@@ -518,7 +515,7 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */
@@ -535,7 +532,7 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * senão lança uma {@code IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */
@@ -547,10 +544,10 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	/**
 	 * <p>
 	 * Verifica se o código do do número da conta bancária não é nulo e se é um
-	 * número > 0, caso contrário lança uma {@code IllegalArgumentException}.
+	 * número &gt; 0, caso contrário lança uma {@code IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */
@@ -570,8 +567,8 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
-	 * @param limite - Limite máximo permitido
+	 * @param titulo titulo
+	 * @param limite - Limite máximo permitido limite - Limite máximo permitido
 	 * 
 	 * @since 0.2
 	 */
@@ -589,7 +586,7 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */
@@ -606,7 +603,7 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * numérico, caso contrário lança uma {@code IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */
@@ -621,11 +618,11 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * <p>
 	 * Verifica se o nosso número do título tem o tamanho determinado, caso
 	 * contrário lança uma {@code IllegalArgumentException} com a mensagem
-	 * <tt>"Tamanho do nosso número [%s] diferente do esperado [%s]!"</tt>.
+	 * "Tamanho do nosso número [%s] diferente do esperado [%s]!".
 	 * </p>
 	 * 
-	 * @param titulo
-	 * @param length
+	 * @param titulo titulo
+	 * @param length length
 	 *            - Tamanho que deve ser
 	 * 
 	 * @since 0.2
@@ -644,10 +641,10 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * determinada.
 	 * </p>
 	 * 
-	 * @param titulo
-	 * @param length
+	 * @param titulo titulo
+	 * @param length length
 	 *            - Tamanho que deve ser
-	 * @param msg
+	 * @param msg msg
 	 *            - Mensagem para erro
 	 * 
 	 * @since 0.2
@@ -664,7 +661,7 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * {@code IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */
@@ -679,11 +676,11 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * <p>
 	 * Verifica se o dígito do nosso número do título tem o tamanho determinado, caso
 	 * contrário lança uma {@code IllegalArgumentException} com a mensagem
-	 * <tt>"Tamanho [%s] do dígito do nosso número [\"%s\"] diferente do esperado [%s]!"</tt>.
+	 * "Tamanho [%s] do dígito do nosso número [\"%s\"] diferente do esperado [%s]!".
 	 * </p>
 	 * 
-	 * @param titulo
-	 * @param length
+	 * @param titulo titulo
+	 * @param length length
 	 *            - Tamanho que deve ser
 	 * 
 	 * @since 0.2
@@ -702,10 +699,10 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * determinada.
 	 * </p>
 	 * 
-	 * @param titulo
-	 * @param length
+	 * @param titulo titulo
+	 * @param length length
 	 *            - Tamanho que deve ser
-	 * @param msg
+	 * @param msg msg
 	 *            - Mensagem para erro
 	 * 
 	 * @since 0.2
@@ -721,7 +718,7 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * {@code IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @since 0.2
 	 */
@@ -738,8 +735,8 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * uma {@code IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
-	 * @param param
+	 * @param titulo titulo
+	 * @param param param
 	 *            Parâmetro a ser validado
 	 * 
 	 * @since 0.2
@@ -758,10 +755,10 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	 * {@code IllegalArgumentException}.
 	 * </p>
 	 * 
-	 * @param titulo
-	 * @param param
+	 * @param titulo titulo
+	 * @param param param
 	 *            Parâmetro a ser validado
-	 * @param limite
+	 * @param limite limite
 	 *            Limite máximo permitido
 	 * 
 	 * @since 0.2

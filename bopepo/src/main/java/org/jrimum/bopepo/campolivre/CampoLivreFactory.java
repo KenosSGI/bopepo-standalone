@@ -69,11 +69,11 @@ public final class CampoLivreFactory {
 	 * Caso exista implementação para o banco o retorno terá uma referência não nula.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * 
 	 * @return Uma referência para um CampoLivre.
-	 * @throws NotSupportedBancoException 
-	 * @throws NotSupportedCampoLivreException 
+	 * @throws NotSupportedBancoException  NotSupportedBancoException 
+	 * @throws NotSupportedCampoLivreException  NotSupportedCampoLivreException 
 	 */
 	public static CampoLivre create(Titulo titulo) throws NotSupportedBancoException, NotSupportedCampoLivreException {
 
@@ -83,12 +83,12 @@ public final class CampoLivreFactory {
 	/**
 	 * Devolve um CampoLivre a partir de uma String.
 	 * 
-	 * @param strCampoLivre
+	 * @param strCampoLivre strCampoLivre
 	 * 
 	 * @return Referência para uma instância anônima de CampoLivre.
 	 * 
-	 * @throws NullPointerException
-	 * @throws IllegalArgumentException
+	 * @throws NullPointerException NullPointerException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 */
 	public static CampoLivre create(String strCampoLivre) {
 		Objects.checkNotNull(strCampoLivre);

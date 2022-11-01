@@ -123,7 +123,7 @@ public enum UnidadeFederativa {
 	 * será lançada.
 	 * </p>
 	 * 
-	 * @param sigla
+	 * @param sigla sigla
 	 *            - Sigla correspondente a um estado
 	 * @return UnidadeFederativa
 	 * 

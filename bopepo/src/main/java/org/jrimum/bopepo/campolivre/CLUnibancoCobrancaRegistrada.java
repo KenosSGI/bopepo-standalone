@@ -20,49 +20,46 @@ import org.jrimum.utilix.text.Strings;
  * com registro.
  * </p>
  * 
+ * Layout:
  * <p>
- * Layout:<br />
- * <div align="center">
- * <p align="center">
- * <font face="Arial">Cobrança Direta (com registro)</font>
+ * Cobrança Direta (com registro)
  * </p>
  * 
- * <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:
- * collapse" bordercolor="#111111" >
+ * <table>
+ * <caption>table</caption>
  * <tr>
- * <td align="center" bgcolor="#C0C0C0"><strong><font face="Arial">Posição</font></strong></td>
- * <td bgcolor="#C0C0C0"><strong><font face="Arial">Campo Livre No Código De
- * Barras (20 a 44)</font></strong></td>
+ * <td><strong>Posição</strong></td>
+ * <td><strong>Campo Livre No Código De
+ * Barras (20 a 44)</strong></td>
  * <tr>
- * <td align="center"><font face="Arial">20 a 21</font></td>
- * <td><font face="Arial">Código da transação = 04</font></td>
+ * <td>20 a 21</td>
+ * <td>Código da transação = 04</td>
  * 
  * </tr>
  * <tr>
- * <td align="center"><font face="Arial">22 a 27</font></td>
- * <td><font face="Arial">Data do Vencimento do Título (AAMMDD)</font></td>
+ * <td>22 a 27</td>
+ * <td>Data do Vencimento do Título (AAMMDD)</td>
  * </tr>
  * <tr>
- * <td align="center"><font face="Arial">28 a 31</font></td>
+ * <td>28 a 31</td>
  * 
- * <td><font face="Arial">Agência do Cedente</font></td>
+ * <td>Agência do Cedente</td>
  * </tr>
  * <tr>
- * <td align="center"><font face="Arial">32</font></td>
+ * <td>32</td>
  * 
- * <td><font face="Arial">Dígito Verificador da Agência do Cedente</font></td>
+ * <td>Dígito Verificador da Agência do Cedente</td>
  * </tr>
  * <tr>
- * <td align="center"><font face="Arial">33 a 43</font></td>
- * <td><font face="Arial">Nosso Número</font></td>
+ * <td>33 a 43</td>
+ * <td>Nosso Número</td>
  * </tr>
  * <tr>
  * 
- * <td align="center"><font face="Arial">44</font></td>
- * <td><font face="Arial">Super Digito do Nosso Número (*)</font></td>
+ * <td>44</td>
+ * <td>Super Digito do Nosso Número (*)</td>
  * </tr>
- * </table> </div>
- * </p>
+ * </table>
  * 
  * 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L.</a>
@@ -91,7 +88,7 @@ class CLUnibancoCobrancaRegistrada extends AbstractCLUnibanco {
 	 *   Dado um título, cria um campo livre para o padrão do Banco Unibanco
 	 *   que tenha o tipo de cobrança registrada.
 	 * </p>
-	 * @param titulo título com as informações para geração do campo livre
+	 * @param titulo título com as informações para geração do campo livre titulo título com as informações para geração do campo livre
 	 */
 	CLUnibancoCobrancaRegistrada(Titulo titulo) {
 		super(FIELDS_LENGTH);
@@ -164,7 +161,7 @@ class CLUnibancoCobrancaRegistrada extends AbstractCLUnibanco {
 	 * </p>
 	 * 
 	 * 
-	 * @param nossoNumero
+	 * @param nossoNumero nossoNumero
 	 * 
 	 * @return Dígito verficador calculado
 	 * 

@@ -67,7 +67,7 @@ public class TestValoresDosCamposDoBoletoBradescoPDF {
 	/**
 	 * Por definição, o pdf do boleto contém apenas duas imagens: logo do banco e o código de barras.
 	 * 
-	 * @throws IOException
+	 * @throws IOException IOException
 	 */
 	@Test
 	public void deve_gerar_boleto_com_apenas_duas_imagens() throws IOException{

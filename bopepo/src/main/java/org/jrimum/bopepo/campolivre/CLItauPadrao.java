@@ -45,19 +45,18 @@ import org.jrimum.utilix.Exceptions;
  * Campo livre padrão do Banco Itaú
  * </p>
  * 
-  * <p>
  * <h2>Layout do Banco Itaú para o campo livre PADRÃO</h2>
- * <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:
- * collapse" bordercolor="#111111" id="campolivre">
- * <thead>
+ * <table>
+ * <caption>table</caption>
+ * 
  * <tr>
  * <th>Posição</th>
  * <th>Tamanho</th>
  * <th>Picture</th>
  * <th>Conteúdo</th>
  * </tr>
- * </thead>
- * <tbody>
+ * 
+ * 
  * <tr>
  * <td >20 a 22</td>
  * <td >3</td>
@@ -100,9 +99,8 @@ import org.jrimum.utilix.Exceptions;
  * <td >9(03)</td>
  * <td >Zeros</td>
  * </tr>
- * </tbody>
+ * 
  * </table>
- * </p>
  * 
  * @author <a href="mailto:romulomail@gmail.com">Rômulo Augusto</a>
  * @author <a href="mailto:misaelbarreto@gmail.com">Misael Barreto</a>
@@ -129,7 +127,7 @@ class CLItauPadrao extends AbstractCLItau {
 	 * <p>
 	 *   Dado um título, cria o campo livre padrão do Banco Itaú.
 	 * </p>
-	 * @param titulo título com as informações para geração do campo livre
+	 * @param titulo título com as informações para geração do campo livre titulo título com as informações para geração do campo livre
 	 */
 	public CLItauPadrao(Titulo titulo) {
 		super(FIELDS_LENGTH);
@@ -169,7 +167,7 @@ class CLItauPadrao extends AbstractCLItau {
 	 * </p>
 	 * <p>
 	 * Exemplo do cálculo:
-	 * <br />
+	 * </p>
 	 * <pre>
 	 * AG / CONTA = 0057 / 12345-7 CART / NNº = 110 / 12345678-?
 	 * 
@@ -198,17 +196,16 @@ class CLItauPadrao extends AbstractCLItau {
 	 * 
 	 * Total 								            72
 	 * 
-	 * Dividir o resultado da soma por 10 => 72 / 10 = 7, resto = 2
+	 * Dividir o resultado da soma por 10 =&gt; 72 / 10 = 7, resto = 2
 	 *  
 	 * DAC = 10 - 2 = 8
 	 * Portanto DAC = 8
 	 * </pre>
-	 * </p>
 	 * 
-	 * @param codigoDaAgencia
-	 * @param codigoDaConta
-	 * @param codigoDaCarteira
-	 * @param nossoNumero
+	 * @param codigoDaAgencia codigoDaAgencia
+	 * @param codigoDaConta codigoDaConta
+	 * @param codigoDaCarteira codigoDaCarteira
+	 * @param nossoNumero nossoNumero
 	 * @return Integer dígito
 	 * 
 	 * @since 0.2
@@ -244,8 +241,7 @@ class CLItauPadrao extends AbstractCLItau {
 	 * Calcula o dígito verificador do campo 41 a partir do código da agência e 
 	 * do código da conta.
 	 * </p>
-	 * <p>
-	 * O cálculo é feito da seguinte forma: <br />
+	 * O cálculo é feito da seguinte forma: 
 	 * <ol>
 	 * <li>
 	 * Multiplica-se cada algarismo do campo pela sequência de multiplicadores 
@@ -259,15 +255,14 @@ class CLItauPadrao extends AbstractCLItau {
 	 * </li>
 	 * <li>
 	 * Encontre o DAC através da seguinte expressão: DAC = 10 – Mod 10 (N)
-	 * <br />
+	 * 
 	 * OBS.: Se o resultado da etapa d for 10, considere o DAC = 0.
 	 * </li>
 	 * </ol>
 	 * 
-	 * </p>
 	 * 
-	 * @param codigoDaAgencia
-	 * @param codigoDaConta
+	 * @param codigoDaAgencia codigoDaAgencia
+	 * @param codigoDaConta codigoDaConta
 	 * @return Integer digito
 	 * 
 	 * @since 0.2

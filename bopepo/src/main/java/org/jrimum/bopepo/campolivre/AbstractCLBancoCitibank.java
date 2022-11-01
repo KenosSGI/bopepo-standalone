@@ -51,7 +51,7 @@ abstract class AbstractCLBancoCitibank extends AbstractCampoLivre {
 	 * 
 	 * @see AbstractCampoLivre
 	 * 
-	 * @param fieldsLength
+	 * @param fieldsLength fieldsLength
 	 *            - NÃºmero de campos
 	 */
 	protected AbstractCLBancoCitibank(Integer fieldsLength) {
@@ -60,7 +60,7 @@ abstract class AbstractCLBancoCitibank extends AbstractCampoLivre {
 	}
 
 	/**
-	 * @param titulo
+	 * @param titulo titulo
 	 * @return um CampoLivre
 	 * 
 	 */

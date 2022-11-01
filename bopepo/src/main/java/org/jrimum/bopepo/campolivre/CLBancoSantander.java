@@ -14,14 +14,15 @@ import org.jrimum.utilix.Objects;
  * O campo livre do Banco Santander deve seguir esta forma:
  * </p>
  * 
- * <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: * collapse" bordercolor="#111111" width="60%" id="campolivre">
+ * <table>
+ * <caption>table</caption>
  * <tr>
- * <thead>
+ * 
  * <th >Posição</th>
  * <th >Tamanho</th>
  * <th >Picture</th>
  * <th>Conteúdo</th>
- * </thead>
+ * 
  * </tr>
  * <tr>
  * <td >20-20</td>
@@ -82,7 +83,7 @@ import org.jrimum.utilix.Objects;
  * 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L.</a>
  * @author <a href="mailto:misaelbarreto@gmail.com">Misael Barreto</a>
- * @author <a href="mailto:">Dani Schinniger</a>
+ * @author Dani Schinniger
  */
 class CLBancoSantander extends AbstractCLSantander implements CampoLivre {
 

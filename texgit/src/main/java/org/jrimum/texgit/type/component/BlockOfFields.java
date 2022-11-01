@@ -76,8 +76,8 @@ public class BlockOfFields extends AbstractStringOfFields<FixedField<?>> impleme
 	}
 
 	/**
-	 * @param length
-	 * @param size
+	 * @param length length
+	 * @param size size
 	 */
 	public BlockOfFields(Integer length, Integer size) {
 
@@ -190,7 +190,7 @@ public class BlockOfFields extends AbstractStringOfFields<FixedField<?>> impleme
 	}
 
 	/**
-	 * @param length the length to set
+	 * @param length the length to set length the length to set
 	 */
 	protected void setLength(Integer length) {
 		
@@ -208,7 +208,7 @@ public class BlockOfFields extends AbstractStringOfFields<FixedField<?>> impleme
 	}
 
 	/**
-	 * @param size the size to set
+	 * @param size the size to set size the size to set
 	 */
 	protected void setSize(Integer size) {
 		

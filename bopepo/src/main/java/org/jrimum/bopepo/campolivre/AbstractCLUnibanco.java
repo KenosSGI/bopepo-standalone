@@ -15,7 +15,7 @@ abstract class AbstractCLUnibanco extends AbstractCampoLivre {
 	 * 
 	 * @see AbstractCampoLivre
 	 * 
-	 * @param fieldsLength - Número de campos
+	 * @param fieldsLength - Número de campos fieldsLength - Número de campos
 	 */
 	protected AbstractCLUnibanco(Integer fieldsLength) {
 		
@@ -44,7 +44,7 @@ abstract class AbstractCLUnibanco extends AbstractCampoLivre {
 	 * cálculo do <em>super dígito do nosso numero (cobrança com registro)</em>.
 	 * </p>
 	 * 
-	 * @param numero
+	 * @param numero numero
 	 * @return String dígito
 	 * 
 	 * @since 0.2

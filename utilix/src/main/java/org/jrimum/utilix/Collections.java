@@ -52,7 +52,7 @@ public final class Collections {
 	/**
 	 * Utility class pattern: classe não instanciável
 	 * 
-	 * @throws IllegalStateException
+	 * @throws IllegalStateException IllegalStateException
 	 *             Caso haja alguma tentativa de utilização deste construtor.
 	 */
 	private Collections() {
@@ -65,10 +65,10 @@ public final class Collections {
 	 * <code>null</code> ou <strong>não</strong> possui elementos e lança
 	 * exceção caso não preencha estes requisitos.
 	 * 
-	 * @param collection
+	 * @param collection collection
 	 *            - Instância de <code>Collection</code> analisada.
 	 * 
-	 * @throws IllegalArgumentException - Caso a coleção <strong>não</strong>
+	 * @throws IllegalArgumentException - Caso a coleção <strong>não</strong> IllegalArgumentException - Caso a coleção <strong>não</strong>
 	 *        seja <code>null</code> e possua elementos.
 	 * 
 	 * @see #checkEmpty(Collection, String)
@@ -88,12 +88,12 @@ public final class Collections {
 	 * <code>null</code> ou <strong>não</strong> possui elementos e lança
 	 * exceção, com a mensagem informada, caso não preencha estes requisitos.
 	 * 
-	 * @param collection
+	 * @param collection collection
 	 *            - Instância de <code>Collection</code> analisada.
-	 * @param message
+	 * @param message message
 	 *            - Mensagem utilizada na exceção.
 	 * 
-	 * @throws IllegalArgumentException - Caso a coleção <strong>não</strong>
+	 * @throws IllegalArgumentException - Caso a coleção <strong>não</strong> IllegalArgumentException - Caso a coleção <strong>não</strong>
 	 *        seja <code>null</code> e possua elementos.
 	 * 
 	 * @see #isEmpty(Collection)
@@ -114,10 +114,10 @@ public final class Collections {
 	 * <strong>não</strong> é <code>null</code> e possui elementos e lança
 	 * exceção caso não preencha estes requisitos.
 	 * 
-	 * @param collection
+	 * @param collection collection
 	 *            - Instância de <code>Collection</code> analisada.
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             - Caso a coleção seja <code>null</code> ou a coleção
 	 *             <strong>não</strong> possua elementos.
 	 * 
@@ -137,12 +137,12 @@ public final class Collections {
 	 * <strong>não</strong> é <code>null</code> e possui elementos e lança
 	 * exceção, com a mensagem informada, caso não preencha estes requisitos.
 	 * 
-	 * @param collection
+	 * @param collection collection
 	 *            - Instância de <code>Collection</code> analisada.
-	 * @param message
+	 * @param message message
 	 *            - Mensagem utiliada na exceção.
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             - Caso a coleção seja <code>null</code> ou a coleção
 	 *             <strong>não</strong> possua elementos.
 	 * 
@@ -161,10 +161,10 @@ public final class Collections {
 	 * ou <strong>não</strong> possui elementos e lança exceção caso não
 	 * preencha estes requisitos.
 	 * 
-	 * @param map
+	 * @param map map
 	 *            - Instância de <code>Map</code> analisada.
 	 * 
-	 * @throws IllegalArgumentException - Caso o mapa <strong>não</strong> seja
+	 * @throws IllegalArgumentException - Caso o mapa <strong>não</strong> seja IllegalArgumentException - Caso o mapa <strong>não</strong> seja
 	 *        <code>null</code> e possua elementos.
 	 * 
 	 * @see #checkEmpty(Map, String)
@@ -183,12 +183,12 @@ public final class Collections {
 	 * ou <strong>não</strong> possui elementos e lança exceção, com a mensagem
 	 * informada, caso não preencha estes requisitos.
 	 * 
-	 * @param map
+	 * @param map map
 	 *            - Instância de <code>Map</code> analisada.
-	 * @param message
+	 * @param message message
 	 *            - Mensagem utilizada na exceção.
 	 * 
-	 * @throws IllegalArgumentException - Caso o mapa <strong>não</strong> seja
+	 * @throws IllegalArgumentException - Caso o mapa <strong>não</strong> seja IllegalArgumentException - Caso o mapa <strong>não</strong> seja
 	 *        <code>null</code> e possua elementos.
 	 * 
 	 * @see #isEmpty(Map)
@@ -209,10 +209,10 @@ public final class Collections {
 	 * é <code>null</code> e possui elementos e lança exceção caso não preencha
 	 * estes requisitos.
 	 * 
-	 * @param map
+	 * @param map map
 	 *            - Instância de <code>Map</code> analisada.
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             - Caso o mapa seja <code>null</code> ou o mapa
 	 *             <strong>não</strong> possua elementos.
 	 * 
@@ -232,12 +232,12 @@ public final class Collections {
 	 * é <code>null</code> e possui elementos e lança exceção, com a mensagem
 	 * informada, caso não preencha estes requisitos.
 	 * 
-	 * @param map
+	 * @param map map
 	 *            - Instância de <code>Map</code> analisada.
-	 * @param message
+	 * @param message message
 	 *            - Mensagem utiliada na exceção.
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             - Caso o mapa seja <code>null</code> ou o mapa
 	 *             <strong>não</strong> possua elementos.
 	 * 
@@ -255,7 +255,7 @@ public final class Collections {
 	 * Verifica se a <code>Collection</code> passada por parâmetro é
 	 * <code>null</code> ou <strong>não</strong> possui elementos.
 	 * 
-	 * @param collection
+	 * @param collection collection
 	 *            - Instância de <code>Collection</code> analisada.
 	 * @return <code>!hasElement(collection)</code>
 	 * 
@@ -270,7 +270,7 @@ public final class Collections {
 	 * Verifica se a <code>Collection</code> passada por parâmetro
 	 * <strong>não</strong> é <code>null</code> e possui elementos.
 	 * 
-	 * @param collection
+	 * @param collection collection
 	 *            - Instância de <code>Collection</code> analisada.
 	 * @return <code>hasElement(collection)</code>
 	 * 
@@ -287,7 +287,7 @@ public final class Collections {
 	 * Verifica se o <code>Map</code> passado por parâmetro é <code>null</code>
 	 * ou <strong>não</strong> possui elementos.
 	 * 
-	 * @param map
+	 * @param map map
 	 *            - Instância de <code>Map</code> analisada.
 	 * @return <code>!hasElement(map)</code>
 	 * 
@@ -302,7 +302,7 @@ public final class Collections {
 	 * Verifica se o <code>Map</code> passado por parâmetro <strong>não</strong>
 	 * é <code>null</code> e possui elementos.
 	 * 
-	 * @param map
+	 * @param map map
 	 *            - Instância de <code>Map</code> analisada.
 	 * @return <code>hasElement(map)</code>
 	 * 
@@ -318,7 +318,7 @@ public final class Collections {
 	/**
 	 * Indica se pelo menos uma coleção tem algum elemento sem gerar NPE.
 	 * 
-	 * @param cols
+	 * @param cols cols
 	 *            - Coleções para teste.
 	 * 
 	 * @return indicativo
@@ -340,7 +340,7 @@ public final class Collections {
 	/**
 	 * Indica se pelo menos um mapa tem algum elemento sem gerar NPE.
 	 * 
-	 * @param maps
+	 * @param maps maps
 	 *            - Mapas para teste.
 	 * 
 	 * @return indicativo
@@ -363,13 +363,13 @@ public final class Collections {
 	 * Indica se uma dada coleção tem elementos sem gerar NPE.
 	 * <p>
 	 * Resposta direta para o seguinte código:
-	 * <code>(c != null && !c.isEmpty())</code>.
+	 * <code>(c != null &#38;&#38; !c.isEmpty())</code>.
 	 * </p>
 	 * 
-	 * @param c
+	 * @param c c
 	 *            - A coleção a ser testada.
 	 * 
-	 * @return (c != null && !c.isEmpty())
+	 * @return (c != null &#38;&#38; !c.isEmpty())
 	 * 
 	 * @since 0.2
 	 */
@@ -382,13 +382,13 @@ public final class Collections {
 	 * Indica se um dado mapa tem elementos sem gerar NPE.
 	 * <p>
 	 * Resposta direata para o seguinte código:
-	 * <code>(m != null && !m.isEmpty())</code>.
+	 * <code>(m != null &#38;&#38; !m.isEmpty())</code>.
 	 * </p>
 	 * 
-	 * @param m
+	 * @param m m
 	 *            - O mapa a ser testado.
 	 * 
-	 * @return (m != null && !m.isEmpty())
+	 * @return (m != null &#38;&#38; !m.isEmpty())
 	 * 
 	 * @since 0.2
 	 */
@@ -404,7 +404,7 @@ public final class Collections {
 	 * <code>(c != null ? c.size() : 0)</code>.
 	 * </p>
 	 * 
-	 * @param c
+	 * @param c c
 	 *            - Coleção com ou sem elementos.
 	 * 
 	 * @return (c != null ? c.size() : 0)
@@ -421,7 +421,7 @@ public final class Collections {
 	 * <code>(m != null ? m.size() : 0)</code>.
 	 * </p>
 	 * 
-	 * @param m
+	 * @param m m
 	 *            - Mapa com ou sem elementos.
 	 * 
 	 * @return (m != null ? m.size() : 0)
@@ -443,16 +443,16 @@ public final class Collections {
 	 * parâmetro <code>messageIllegalArgument</code> (segundo parâmetro String).
 	 * </p>
 	 * 
-	 * @param collection
+	 * @param collection collection
 	 *            - Objeto analisado.
-	 * @param messageNullPointer
+	 * @param messageNullPointer messageNullPointer
 	 *            - Mensagem utiliada na exceção
 	 *            <code>IllegalArgumentException</code>.
-	 * @param messageIllegalArgument
+	 * @param messageIllegalArgument messageIllegalArgument
 	 *            - Mensagem utiliada na exceção
 	 *            <code>IllegalArgumentException</code>.
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 * 
 	 * @since 0.2
 	 */
@@ -482,16 +482,16 @@ public final class Collections {
 	 * parâmetro <code>messageIllegalArgument</code> (segundo parâmetro String).
 	 * </p>
 	 * 
-	 * @param map
+	 * @param map map
 	 *            - Objeto analisado.
-	 * @param messageNullPointer
+	 * @param messageNullPointer messageNullPointer
 	 *            - Mensagem utiliada na exceção
 	 *            <code>IllegalArgumentException</code>.
-	 * @param messageIllegalArgument
+	 * @param messageIllegalArgument messageIllegalArgument
 	 *            - Mensagem utiliada na exceção
 	 *            <code>IllegalArgumentException</code>.
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 * 
 	 * @since 0.2
 	 */

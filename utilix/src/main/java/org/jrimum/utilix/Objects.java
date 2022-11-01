@@ -53,7 +53,7 @@ public final class Objects {
 	/**
 	 * Utility class pattern: classe não instanciável
 	 * 
-	 * @throws IllegalStateException
+	 * @throws IllegalStateException IllegalStateException
 	 *             Caso haja alguma tentativa de utilização deste construtor.
 	 */
 	private Objects() {
@@ -64,7 +64,7 @@ public final class Objects {
 	/**
 	 * Verifica se o objeto passado por parâmetro é {@code null}.
 	 * 
-	 * @param object
+	 * @param object object
 	 *            - Objeto analisado
 	 * 
 	 * @return (object == null)
@@ -84,7 +84,7 @@ public final class Objects {
 	 * {@code !isNull(obj)}, porém de forma mais legível.
 	 * </p>
 	 * 
-	 * @param object
+	 * @param object object
 	 *            - Objeto analisado
 	 * 
 	 * @return (object != null)
@@ -101,7 +101,7 @@ public final class Objects {
 	/**
 	 * Verifica se existe uma referência ao objeto dado.
 	 * 
-	 * @param object
+	 * @param object object
 	 *            - Objeto analisado
 	 * 
 	 * @return (object != null);
@@ -120,9 +120,9 @@ public final class Objects {
 	 * {@code IllegalArgumentException}, caso a expressão seja
 	 * <strong>false</strong>.
 	 * 
-	 * @param expression
+	 * @param expression expression
 	 *            - Qualquer expressão booleana
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             se {@code expression == false}
 	 * 
 	 * @since 0.2
@@ -139,11 +139,11 @@ public final class Objects {
 	 * {@code IllegalArgumentException}, com a mensagem iformada, caso a
 	 * expressão seja <strong>false</strong>.
 	 * 
-	 * @param expression
+	 * @param expression expression
 	 *            - Qualquer expressão booleana
-	 * @param message
+	 * @param message message
 	 *            - Mensagem utilizada na exceção
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             se {@code expression == false}
 	 * 
 	 * @since 0.2
@@ -160,9 +160,9 @@ public final class Objects {
 	 * {@code IllegalStateException}, caso a expressão seja
 	 * <strong>false</strong>.
 	 * 
-	 * @param expression
+	 * @param expression expression
 	 *            - Qualquer expressão booleana
-	 * @throws IllegalStateException
+	 * @throws IllegalStateException IllegalStateException
 	 *             se {@code expression == false}
 	 * 
 	 * @since 0.2
@@ -179,11 +179,11 @@ public final class Objects {
 	 * {@code IllegalStateException}, com a mensagem iformada, caso a
 	 * expressão seja <strong>false</strong>.
 	 * 
-	 * @param expression
+	 * @param expression expression
 	 *            - Qualquer expressão booleana
-	 * @param message
+	 * @param message message
 	 *            - Mensagem utilizada na exceção
-	 * @throws IllegalStateException
+	 * @throws IllegalStateException IllegalStateException
 	 *             se {@code expression == false}
 	 * 
 	 * @since 0.2
@@ -199,7 +199,7 @@ public final class Objects {
 	 * Verifica se o objeto é nulo e lança {@code IllegalArgumentException}
 	 * , com a mensagem informada, caso <strong>não</strong> seja.
 	 * 
-	 * @throws IllegalArgumentException - Caso o objeto <strong>não</strong> seja
+	 * @throws IllegalArgumentException - Caso o objeto <strong>não</strong> seja IllegalArgumentException - Caso o objeto <strong>não</strong> seja
 	 *        {@code null}.
 	 * 
 	 * @see #isNull(Object)
@@ -207,9 +207,9 @@ public final class Objects {
 	 * 
 	 * @since 0.2
 	 * 
-	 * @param object
+	 * @param object object
 	 *            - Objeto analisado
-	 * @param message
+	 * @param message message
 	 *            - Mensagem utilizada na exceção
 	 */
 	public static void checkNull(Object object, String message) {
@@ -224,10 +224,10 @@ public final class Objects {
 	 * Verifica se o objeto é nulo e lança {@code IllegalArgumentException}
 	 * caso <strong>não</strong> seja.
 	 * 
-	 * @param object
+	 * @param object object
 	 *            - Objeto analisado
 	 * 
-	 * @throws IllegalArgumentException - Caso o objeto <strong>não</strong> seja
+	 * @throws IllegalArgumentException - Caso o objeto <strong>não</strong> seja IllegalArgumentException - Caso o objeto <strong>não</strong> seja
 	 *        {@code null}.
 	 * 
 	 * @see #checkNull(Object, String)
@@ -247,12 +247,12 @@ public final class Objects {
 	 * {@code IllegalArgumentException}, com a mensagem informada, caso
 	 * seja.
 	 * 
-	 * @param object
+	 * @param object object
 	 *            - Objeto analisado
-	 * @param message
+	 * @param message message
 	 *            - Mensagem utilizada na exceção
 	 * 
-	 * @throws IllegalArgumentException - Caso o objeto seja {@code null}.
+	 * @throws IllegalArgumentException - Caso o objeto seja {@code null}. IllegalArgumentException - Caso o objeto seja {@code null}.
 	 * 
 	 * @see #isNull(Object)
 	 * @see #isNotNull(Object)
@@ -271,10 +271,10 @@ public final class Objects {
 	 * Verifica se o objeto <strong>não</strong> é nulo e lança
 	 * {@code IllegalArgumentException} caso seja.
 	 * 
-	 * @param object
+	 * @param object object
 	 *            - Objeto analisado
 	 * 
-	 * @throws IllegalArgumentException - Caso o objeto seja {@code null}.
+	 * @throws IllegalArgumentException - Caso o objeto seja {@code null}. IllegalArgumentException - Caso o objeto seja {@code null}.
 	 * 
 	 * @see #checkNotNull(Object, String)
 	 * @see #isNull(Object)
@@ -300,9 +300,9 @@ public final class Objects {
 	 * 
 	 * @param <T>
 	 *            tipo do objeto pretendido
-	 * @param object
+	 * @param object object
 	 *            - O {@code objeto} a testar, pode ser {@code null}
-	 * @param defaultValue
+	 * @param defaultValue defaultValue
 	 *            - O valor padrão retornado, pode ser {@code null}
 	 * @return {@code object} - Se não nulo, caso contrário
 	 *         {@code defaultValue}
@@ -327,11 +327,11 @@ public final class Objects {
 	 * 
 	 * @param <T>
 	 *            tipo do objeto pretendido
-	 * @param object
+	 * @param object object
 	 *            - O {@code objeto} a testar, pode ser {@code null}
-	 * @param defaultValue
+	 * @param defaultValue defaultValue
 	 *            - O valor padrão retornado, pode ser {@code null}
-	 * @param notDefaultValue
+	 * @param notDefaultValue notDefaultValue
 	 *            - O valor quando {@code object} é nulo, pode ser
 	 *            {@code null}
 	 * @return {@code defaultValue} - Se não nulo, caso contrário

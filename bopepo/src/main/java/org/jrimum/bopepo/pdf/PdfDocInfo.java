@@ -42,8 +42,8 @@ import org.jrimum.utilix.Objects;
 import com.lowagie.text.pdf.PdfDate;
 
 /**
- * Pricipais informações de um documento PDF: <tt>Título, Autor, Assunto,
- * Palavras-chave, Aplicativo criador, Data de criação e Data de modificação</tt>
+ * Pricipais informações de um documento PDF: Título, Autor, Assunto,
+ * Palavras-chave, Aplicativo criador, Data de criação e Data de modificação
  * .
  * 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L.</a>
@@ -105,7 +105,7 @@ public class PdfDocInfo {
 	/**
 	 * Apenas para uso interno.
 	 * 
-	 * @param info
+	 * @param info info
 	 */
 	private PdfDocInfo(Map<String, String> info) {
 
@@ -127,7 +127,7 @@ public class PdfDocInfo {
 	/**
 	 * Cria uma nova instância com as informações fornecidas.
 	 * 
-	 * @param info Informações sobre um documento
+	 * @param info Informações sobre um documento info Informações sobre um documento
 	 * 
 	 * @return referência prota para uso
 	 */
@@ -141,7 +141,7 @@ public class PdfDocInfo {
 	/**
 	 * Define o Título do documento.
 	 * 
-	 * @param title
+	 * @param title title
 	 * 
 	 * @return Esta instância após a operação
 	 */
@@ -157,7 +157,7 @@ public class PdfDocInfo {
 	/**
 	 * Define o Autor do documento.
 	 * 
-	 * @param author
+	 * @param author author
 	 * 
 	 * @return Esta instância após a operação
 	 */
@@ -173,7 +173,7 @@ public class PdfDocInfo {
 	/**
 	 * Define o Assunto do documento.
 	 * 
-	 * @param subject
+	 * @param subject subject
 	 * 
 	 * @return Esta instância após a operação
 	 */
@@ -189,7 +189,7 @@ public class PdfDocInfo {
 	/**
 	 * Define as Palavras-chave do documento.
 	 * 
-	 * @param keywords
+	 * @param keywords keywords
 	 * 
 	 * @return Esta instância após a operação
 	 */
@@ -205,7 +205,7 @@ public class PdfDocInfo {
 	/**
 	 * Define o Software/Ferramenta de criação do documento.
 	 * 
-	 * @param creator
+	 * @param creator creator
 	 * 
 	 * @return Esta instância após a operação
 	 */
@@ -221,12 +221,12 @@ public class PdfDocInfo {
 	/**
 	 * Define a Data de criação do documento.
 	 * 
-	 * @param date
+	 * @param date date
 	 *            Data de criação
 	 * 
 	 * @return Esta instância após a operação
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             quando a date é nula
 	 */
 	public PdfDocInfo creation(Calendar date) {
@@ -241,12 +241,12 @@ public class PdfDocInfo {
 	/**
 	 * Define a Data de modificação do documento.
 	 * 
-	 * @param date
+	 * @param date date
 	 *            Data de modificação
 	 * 
 	 * @return Esta instância após a operação
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             quando a date é nula
 	 */
 	public PdfDocInfo modification(Calendar date) {

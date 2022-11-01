@@ -17,8 +17,9 @@ import org.jrimum.utilix.text.DecimalFormat;
  * com I.O.S.), deve seguir esta forma:
  * </p>
  * 
- * <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="campolivre">
- * <thead bgcolor="#DEDEDE">
+ * <table>
+ * 
+ * <caption>table</caption>
  * <tr>
  * <th>Posição</th>
  * <th>Tamanho</th>
@@ -26,7 +27,7 @@ import org.jrimum.utilix.text.DecimalFormat;
  * <th>Conteúdo (terminologia padrão)</th>
  * <th>Conteúdo (terminologia do banco)</th>
  * </tr>
- * </thead> <tbody style="text-align:center">
+ *  
  * <tr>
  * <td>20-20</td>
  * <td>1</td>
@@ -71,7 +72,7 @@ import org.jrimum.utilix.text.DecimalFormat;
  * 02 (duas) decimais</td>
  * <td style="text-align:left;padding-left:10">Valor do imposto</td>
  * </tr>
- * </tbody>
+ * 
  * </table>
  * 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L.</a>
@@ -98,7 +99,7 @@ class CLBancoRuralCobrancaNaoRegistradaSeguradora extends AbstractCLBancoRural{
 	 * Dado um título, cria um campo livre para cobrança sem registro – apólice de seguro com I.O.S..
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 *            - título com as informações para geração do campo livre
 	 */
 	CLBancoRuralCobrancaNaoRegistradaSeguradora(Titulo titulo) {

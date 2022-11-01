@@ -64,8 +64,8 @@ public class CPFException extends RuntimeException {
 	}
 
 	/**
-	 * @param message
-	 * @param cause
+	 * @param message message
+	 * @param cause cause
 	 */
 	public CPFException(String message, Throwable cause) {
 		super(message, cause);
@@ -73,7 +73,7 @@ public class CPFException extends RuntimeException {
 	}
 
 	/**
-	 * @param message
+	 * @param message message
 	 */
 	public CPFException(String message) {
 		super(message);
@@ -81,7 +81,7 @@ public class CPFException extends RuntimeException {
 	}
 
 	/**
-	 * @param cause
+	 * @param cause cause
 	 */
 	public CPFException(Throwable cause) {
 		super(cause);

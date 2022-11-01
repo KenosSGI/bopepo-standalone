@@ -49,7 +49,7 @@ public final class Arrays {
 	/**
 	 * Utility class pattern: classe não instanciável
 	 * 
-	 * @throws IllegalStateException
+	 * @throws IllegalStateException IllegalStateException
 	 *             Caso haja alguma tentativa de utilização deste construtor.
 	 */
 	private Arrays() {
@@ -63,12 +63,12 @@ public final class Arrays {
 	 * </p>
 	 * <p>
 	 * Resposta direta para o seguinte código:
-	 * <code>(a != null && a > 0)</code>.
+	 * <code>(a != null &#38;&#38; a &gt; 0)</code>.
 	 * </p>
 	 * 
-	 * @param a - O array a ser testado.
+	 * @param a - O array a ser testado. a - O array a ser testado.
 	 * 
-	 * @return (a != null && a > 0)
+	 * @return (a != null &#38;&#38; a &gt; 0)
 	 * 
 	 * @since 0.2
 	 */
@@ -83,13 +83,13 @@ public final class Arrays {
 	 * </p>
 	 * <p>
 	 * Resposta direta para o seguinte código:
-	 * <code>(a != null && a > 0)</code>.
+	 * <code>(a != null &#38;&#38; a &gt; 0)</code>.
 	 * </p>
 	 * 
-	 * @param a
+	 * @param a a
 	 *            - O array a ser testado.
 	 * 
-	 * @return (a != null && a > 0)
+	 * @return (a != null &#38;&#38; a &gt; 0)
 	 * 
 	 * @since 0.2
 	 */
@@ -104,12 +104,12 @@ public final class Arrays {
 	 * </p>
 	 * <p>
 	 * Resposta direta para o seguinte código:
-	 * <code>(a != null && a > 0)</code>.
+	 * <code>(a != null &#38;&#38; a &gt; 0)</code>.
 	 * </p>
 	 * 
-	 * @param a - O array a ser testado.
+	 * @param a - O array a ser testado. a - O array a ser testado.
 	 * 
-	 * @return (a != null && a > 0)
+	 * @return (a != null &#38;&#38; a &gt; 0)
 	 * 
 	 * @since 0.2
 	 */
@@ -124,12 +124,12 @@ public final class Arrays {
 	 * </p>
 	 * <p>
 	 * Resposta direta para o seguinte código:
-	 * <code>(a != null && a > 0)</code>.
+	 * <code>(a != null &#38;&#38; a &gt; 0)</code>.
 	 * </p>
 	 * 
-	 * @param a - O array a ser testado.
+	 * @param a - O array a ser testado. a - O array a ser testado.
 	 * 
-	 * @return (a != null && a > 0)
+	 * @return (a != null &#38;&#38; a &gt; 0)
 	 * 
 	 * @since 0.2
 	 */
@@ -144,12 +144,12 @@ public final class Arrays {
 	 * </p>
 	 * <p>
 	 * Resposta direta para o seguinte código:
-	 * <code>(a != null && a > 0)</code>.
+	 * <code>(a != null &#38;&#38; a &gt; 0)</code>.
 	 * </p>
 	 * 
-	 * @param a - O array a ser testado.
+	 * @param a - O array a ser testado. a - O array a ser testado.
 	 * 
-	 * @return (a != null && a > 0)
+	 * @return (a != null &#38;&#38; a &gt; 0)
 	 * 
 	 * @since 0.2
 	 */
@@ -164,12 +164,12 @@ public final class Arrays {
 	 * </p>
 	 * <p>
 	 * Resposta direta para o seguinte código:
-	 * <code>(a != null && a > 0)</code>.
+	 * <code>(a != null &#38;&#38; a &gt; 0)</code>.
 	 * </p>
 	 * 
-	 * @param a - O array a ser testado.
+	 * @param a - O array a ser testado. a - O array a ser testado.
 	 * 
-	 * @return (a != null && a > 0)
+	 * @return (a != null &#38;&#38; a &gt; 0)
 	 * 
 	 * @since 0.2
 	 */
@@ -184,12 +184,12 @@ public final class Arrays {
 	 * </p>
 	 * <p>
 	 * Resposta direta para o seguinte código:
-	 * <code>(a != null && a > 0)</code>.
+	 * <code>(a != null &#38;&#38; a &gt; 0)</code>.
 	 * </p>
 	 * 
-	 * @param a - O array a ser testado.
+	 * @param a - O array a ser testado. a - O array a ser testado.
 	 * 
-	 * @return (a != null && a > 0)
+	 * @return (a != null &#38;&#38; a &gt; 0)
 	 * 
 	 * @since 0.2
 	 */
@@ -204,12 +204,12 @@ public final class Arrays {
 	 * </p>
 	 * <p>
 	 * Resposta direta para o seguinte código:
-	 * <code>(a != null && a > 0)</code>.
+	 * <code>(a != null &#38;&#38; a &gt; 0)</code>.
 	 * </p>
 	 * 
-	 * @param a - O array a ser testado.
+	 * @param a - O array a ser testado. a - O array a ser testado.
 	 * 
-	 * @return (a != null && a > 0)
+	 * @return (a != null &#38;&#38; a &gt; 0)
 	 * 
 	 * @since 0.2
 	 */
@@ -224,12 +224,12 @@ public final class Arrays {
 	 * </p>
 	 * <p>
 	 * Resposta direta para o seguinte código:
-	 * <code>(a != null && a > 0)</code>.
+	 * <code>(a != null &#38;&#38; a &gt; 0)</code>.
 	 * </p>
 	 * 
-	 * @param a - O array a ser testado.
+	 * @param a - O array a ser testado. a - O array a ser testado.
 	 * 
-	 * @return (a != null && a > 0)
+	 * @return (a != null &#38;&#38; a &gt; 0)
 	 * 
 	 * @since 0.2
 	 */
@@ -247,7 +247,7 @@ public final class Arrays {
 	 * <code>(a != null ? a.length : 0)</code>.
 	 * </p>
 	 * 
-	 * @param a
+	 * @param a a
 	 *            - Array com ou sem elementos.
 	 * 
 	 * @return (a != null ? a.length : 0)
@@ -266,7 +266,7 @@ public final class Arrays {
 	 * <code>(a != null ? a.length : 0)</code>.
 	 * </p>
 	 * 
-	 * @param a
+	 * @param a a
 	 *            - Array com ou sem elementos.
 	 * 
 	 * @return (a != null ? a.length : 0)
@@ -285,7 +285,7 @@ public final class Arrays {
 	 * <code>(a != null ? a.length : 0)</code>.
 	 * </p>
 	 * 
-	 * @param a
+	 * @param a a
 	 *            - Array com ou sem elementos.
 	 * 
 	 * @return (a != null ? a.length : 0)
@@ -304,7 +304,7 @@ public final class Arrays {
 	 * <code>(a != null ? a.length : 0)</code>.
 	 * </p>
 	 * 
-	 * @param a
+	 * @param a a
 	 *            - Array com ou sem elementos.
 	 * 
 	 * @return (a != null ? a.length : 0)
@@ -323,7 +323,7 @@ public final class Arrays {
 	 * <code>(a != null ? a.length : 0)</code>.
 	 * </p>
 	 * 
-	 * @param a
+	 * @param a a
 	 *            - Array com ou sem elementos.
 	 * 
 	 * @return (a != null ? a.length : 0)
@@ -342,7 +342,7 @@ public final class Arrays {
 	 * <code>(a != null ? a.length : 0)</code>.
 	 * </p>
 	 * 
-	 * @param a
+	 * @param a a
 	 *            - Array com ou sem elementos.
 	 * 
 	 * @return (a != null ? a.length : 0)
@@ -361,7 +361,7 @@ public final class Arrays {
 	 * <code>(a != null ? a.length : 0)</code>.
 	 * </p>
 	 * 
-	 * @param a
+	 * @param a a
 	 *            - Array com ou sem elementos.
 	 * 
 	 * @return (a != null ? a.length : 0)
@@ -380,7 +380,7 @@ public final class Arrays {
 	 * <code>(a != null ? a.length : 0)</code>.
 	 * </p>
 	 * 
-	 * @param a
+	 * @param a a
 	 *            - Array com ou sem elementos.
 	 * 
 	 * @return (a != null ? a.length : 0)
@@ -399,7 +399,7 @@ public final class Arrays {
 	 * <code>(a != null ? a.length : 0)</code>.
 	 * </p>
 	 * 
-	 * @param a
+	 * @param a a
 	 *            - Array com ou sem elementos.
 	 * 
 	 * @return (a != null ? a.length : 0)

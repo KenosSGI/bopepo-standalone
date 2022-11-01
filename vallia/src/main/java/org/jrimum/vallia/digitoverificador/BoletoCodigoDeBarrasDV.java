@@ -33,32 +33,23 @@ import org.apache.commons.lang.StringUtils;
 import org.jrimum.utilix.Exceptions;
 
 /**
- * <p>
- * Lógica de cálculo do dígito verificador do código de barras de um boleto.<br />
+ * Lógica de cálculo do dígito verificador do código de barras de um boleto.
  * A lógica funciona da seguinte forma:
- * </p>
- * <p>
  * Utilizando-se o módulo 11, considerando-se os 43 dígitos que compõem o código
  * de barras, já excluída a 5ª posição (posição do dígito verificador), segue-se
  * o procedimento abaixo:
- * </p>
- * <p>
  * Calcula-se o dígito verificador através da expressão <code>DV = 11 - R</code>
- * , onde R é o resultado do cálculo do módulo.<br />
+ * , onde R é o resultado do cálculo do módulo.
  * Observação: O dígito verificador será 1 para os restos (resultado do módulo):
  * 0 , 10 ou 1 (zero, dez, um).
- * </p>
- * <p>
  * Obs.: A rotina de módulo utilizada é o módulo 11.
- * </p>
  * 
  * @see Modulo
  * 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L</a>
  * @author <a href="mailto:misaelbarreto@gmail.com">Misael Barreto</a>
  * @author <a href="mailto:romulomail@gmail.com">Rômulo Augusto</a>
- * @author <a href="http://www.nordestefomento.com.br">Nordeste Fomento
- *         Mercantil</a>
+ * @author <a href="http://www.nordestefomento.com.br">Nordeste Fomento Mercantil</a>
  * 
  * @version 0.2
  * 

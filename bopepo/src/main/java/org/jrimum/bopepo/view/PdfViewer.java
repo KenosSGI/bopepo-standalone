@@ -84,7 +84,7 @@ class PdfViewer {
 	/**
 	 * Para uso interno do componente
 	 * 
-	 * @param boleto
+	 * @param boleto boleto
 	 * 
 	 * @since 0.2
 	 * 
@@ -99,8 +99,8 @@ class PdfViewer {
 	/**
 	 * Para uso interno do componente
 	 * 
-	 * @param boleto Boleto para visualização
-	 * @param template Template a ser utilizado na visualização
+	 * @param boleto Boleto para visualização boleto Boleto para visualização
+	 * @param template Template a ser utilizado na visualização template Template a ser utilizado na visualização
 	 * 
 	 * @since 0.2
 	 * 
@@ -115,7 +115,7 @@ class PdfViewer {
 	/**
 	 * Retorna o boleto em forma de arquivo PDF.
 	 * 
-	 * @param destPath
+	 * @param destPath destPath
 	 *            Caminho completo do arquivo o qual o boleto será gerado
 	 * @return Boleto em forma de arquivo PDF
 	 * 
@@ -131,10 +131,10 @@ class PdfViewer {
 	/**
 	 * Retorna o boleto em forma de arquivo PDF.
 	 * 
-	 * @param destFile
+	 * @param destFile destFile
 	 *            Arquivo o qual o boleto será gerado
 	 * @return Boleto em forma de arquivo PDF
-	 * @throws IllegalStateException
+	 * @throws IllegalStateException IllegalStateException
 	 *             Caso ocorral algum problema imprevisto
 	 *             
 	 * @since 0.2
@@ -219,7 +219,7 @@ class PdfViewer {
 	/**
 	 * Define o template que será utilizado para construir o boleto.
 	 * 
-	 * @param template
+	 * @param template template
 	 * 
 	 * @since 0.2
 	 * 
@@ -231,7 +231,7 @@ class PdfViewer {
 	/**
 	 * Define o template que será utilizado para construir o boleto.
 	 * 
-	 * @param templateUrl
+	 * @param templateUrl templateUrl
 	 * 
 	 * @since 0.2
 	 * 
@@ -247,7 +247,7 @@ class PdfViewer {
 	/**
 	 * Define o template que será utilizado para construir o boleto.
 	 * 
-	 * @param templateInput
+	 * @param templateInput templateInput
 	 * 
 	 * @since 0.2
 	 * 
@@ -263,7 +263,7 @@ class PdfViewer {
 	/**
 	 * Define o template que será utilizado para construir o boleto.
 	 * 
-	 * @param templatePath
+	 * @param templatePath templatePath
 	 * 
 	 * @since 0.2
 	 * 
@@ -275,7 +275,7 @@ class PdfViewer {
 	/**
 	 * Define o template que será utilizado para construir o boleto.
 	 * 
-	 * @param templateFile
+	 * @param templateFile templateFile
 	 * 
 	 * @since 0.2
 	 * 
@@ -297,7 +297,7 @@ class PdfViewer {
 	 * object streams and xref streams.</i>
 	 * </p>
 	 * 
-	 * @param option
+	 * @param option option
 	 *            Escolha de compressão.
 	 *            
 	 * @since 0.2
@@ -310,7 +310,7 @@ class PdfViewer {
 	/**
 	 * Define o título do documento PDF gerado.
 	 * 
-	 * @param title
+	 * @param title title
 	 *            para ser exibido como título do documento PDF
 	 * 
 	 * @since 0.2
@@ -322,7 +322,7 @@ class PdfViewer {
 	/**
 	 * Define se o título do documento PDF gerado será mostrado ou não (padrão true).
 	 * 
-	 * @param option
+	 * @param option option
 	 *            para exibir título do documento PDF (true)
 	 * 
 	 * @since 0.2
@@ -334,7 +334,7 @@ class PdfViewer {
 	/**
 	 * Define o autor do documento PDF gerado.
 	 * 
-	 * @param author
+	 * @param author author
 	 *            do documento PDF
 	 * 
 	 * @since 0.2
@@ -346,7 +346,7 @@ class PdfViewer {
 	/**
 	 * Define o assunto do documento PDF gerado.
 	 * 
-	 * @param subject
+	 * @param subject subject
 	 *            do documento PDF
 	 * 
 	 * @since 0.2
@@ -358,7 +358,7 @@ class PdfViewer {
 	/**
 	 * Define as palavras chave do documento PDF gerado.
 	 * 
-	 * @param keywords
+	 * @param keywords keywords
 	 *            do documento PDF
 	 * 
 	 * @since 0.2
@@ -370,7 +370,7 @@ class PdfViewer {
 	/**
 	 * Define se o os campos do documento PDF gerado devem ser removidos ou não (padrão true).
 	 * 
-	 * @param option
+	 * @param option option
 	 *            para remover campos do documento PDF (true)
 	 * 
 	 * @since 0.2
@@ -392,7 +392,7 @@ class PdfViewer {
 	/**
 	 * Define o boleto a ser usado no preenchimento do PDF.
 	 * 
-	 * @param boleto
+	 * @param boleto boleto
 	 * 
 	 * @since 0.2
 	 */

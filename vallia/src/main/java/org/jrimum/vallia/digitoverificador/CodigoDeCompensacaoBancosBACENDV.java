@@ -73,10 +73,10 @@ public class CodigoDeCompensacaoBancosBACENDV extends AbstractDigitoVerificador 
 	 * 
 	 * @see org.jrimum.vallia.digitoverificador.AbstractDigitoVerificador#calcule(java.lang.String)
 	 * 
-	 * @param numero - Código de compensação
+	 * @param numero - Código de compensação numero - Código de compensação
 	 * @return Dígito verificador que foi calculado
 	 * 
-	 * @throws IllegalArgumentException Caso não seja um código válido
+	 * @throws IllegalArgumentException Caso não seja um código válido IllegalArgumentException Caso não seja um código válido
 	 * 
 	 * @since 0.2
 	 */
@@ -95,7 +95,7 @@ public class CodigoDeCompensacaoBancosBACENDV extends AbstractDigitoVerificador 
 	 * Calcula o dígito verificador para o código de compensação passado.
 	 * </p>
 	 * 
-	 * @param numero - Código de compensação
+	 * @param numero - Código de compensação numero - Código de compensação
 	 * 
 	 * @return Dígito verificador que foi calculado
 	 * 
@@ -111,7 +111,7 @@ public class CodigoDeCompensacaoBancosBACENDV extends AbstractDigitoVerificador 
 	 * Calcula o dígito verificador para o código de compensação passado.
 	 * </p>
 	 * 
-	 * @param numero - Código de compensação
+	 * @param numero - Código de compensação numero - Código de compensação
 	 * 
 	 * @return Dígito verificador que foi calculado
 	 * 
@@ -146,7 +146,7 @@ public class CodigoDeCompensacaoBancosBACENDV extends AbstractDigitoVerificador 
 	 * valores inteiros de 1 a 999.
 	 * </p>
 	 * 
-	 * @param codigo - Código de compensação
+	 * @param codigo - Código de compensação codigo - Código de compensação
 	 * @return true se for númerio entre 1 e 999; false caso contrário
 	 * 
 	 * @since 0.2
@@ -167,7 +167,7 @@ public class CodigoDeCompensacaoBancosBACENDV extends AbstractDigitoVerificador 
 	 * Retorna se um código de compensação passado é válido.
 	 * </p>
 	 * 
-	 * @param codigo - Código de compensação
+	 * @param codigo - Código de compensação codigo - Código de compensação
 	 * @return true se entre 0 (não incluso) e 999; false caso contrário
 	 * 
 	 * @since 0.2
@@ -182,7 +182,7 @@ public class CodigoDeCompensacaoBancosBACENDV extends AbstractDigitoVerificador 
 	 * Retorna se um código de compensação passado é válido.
 	 * </p>
 	 * 
-	 * @param codigo - Código de compensação
+	 * @param codigo - Código de compensação codigo - Código de compensação
 	 * @return true se entre 0 (não incluso) e 999; false caso contrário
 	 * 
 	 * @since 0.2

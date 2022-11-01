@@ -13,8 +13,8 @@ import org.jrimum.utilix.Exceptions;
  * forma:
  * </p>
  * 
- * <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="campolivre">
- * <thead bgcolor="#DEDEDE">
+ * <table>
+ * <caption>table</caption>
  * <tr>
  * <th>Posição</th>
  * <th>Tamanho</th>
@@ -22,7 +22,7 @@ import org.jrimum.utilix.Exceptions;
  * <th>Conteúdo (terminologia padrão)</th>
  * <th>Conteúdo (terminologia do banco)</th>
  * </tr>
- * </thead> <tbody style="text-align:center">
+ *  
  * <tr>
  * <td>20-20</td>
  * <td>1</td>
@@ -59,7 +59,7 @@ import org.jrimum.utilix.Exceptions;
  * <td style="text-align:left;padding-left:10">Constante "000"</td>
  * <td style="text-align:left;padding-left:10">Zeros</td>
  * </tr>
- * </tbody>
+ * 
  * </table>
  * 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L.</a>
@@ -92,7 +92,7 @@ class CLBancoRuralCobrancaNaoRegistrada extends AbstractCLBancoRural{
 	 * Rural.
 	 * </p>
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 *            - Título com as informações para geração do campo livre
 	 */
 	CLBancoRuralCobrancaNaoRegistrada(Titulo titulo) {

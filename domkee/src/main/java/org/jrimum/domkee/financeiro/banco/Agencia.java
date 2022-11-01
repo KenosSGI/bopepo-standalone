@@ -35,14 +35,12 @@ package org.jrimum.domkee.financeiro.banco;
  * <p>
  * Define o contrato para classes Agencia. Esse contrato é baseado na especificação FEBRABAN:
  * </p>
- * <p>
  * Invariantes:
  * <ul>
  * <li>Código: deve ser um inteiro natural (incluindo zero) entre 1 e 5 dígitos</li>
  * <li>Dígito Verificador: alpha-numérico sendo um inteiro natural (incluindo zero)
  * ou caracter não vazio (' ') com um dígito.</li>
  * </ul>
- * </p>
  * 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L.</a> 
  * @author <a href="mailto:romulomail@gmail.com">Rômulo Augusto</a>

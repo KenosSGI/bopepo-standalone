@@ -74,7 +74,7 @@ public class MetaLayout {
 	/**
 	 * Sets the value of the name property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -95,7 +95,7 @@ public class MetaLayout {
 	/**
 	 * Sets the value of the version property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link String }
 	 * 
 	 */
@@ -116,7 +116,7 @@ public class MetaLayout {
 	/**
 	 * Sets the value of the description property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link String }
 	 * 
 	 */

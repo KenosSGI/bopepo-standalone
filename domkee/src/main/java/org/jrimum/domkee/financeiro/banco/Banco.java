@@ -91,9 +91,9 @@ public interface Banco extends PessoaJuridica {
 	
 	/**	 * <p>
 	 * Código de compensação <a href="http://www.bcb.gov.br/">BACEN</a>
-	 * </p>>
+	 * </p>
 	 * 
-	 * @param codigoDeCompensacaoBACEN
+	 * @param codigoDeCompensacaoBACEN codigoDeCompensacaoBACEN
 	 * 
 	 * @since 0.2
 	 */
@@ -104,7 +104,6 @@ public interface Banco extends PessoaJuridica {
 	 * Segmento registrado no <a href="http://www.bcb.gov.br/">BACEN</a>.
 	 * </p>
 	 * 
-	 * <p>
 	 * Exemplos: 
 	 * <ul>
 	 * <li>Banco Comercial Estrangeiro - Filial no país</li>
@@ -112,9 +111,8 @@ public interface Banco extends PessoaJuridica {
 	 * <li>Banco Comercial</li>
 	 * <li>Banco Múltiplo Cooperativo</li>
 	 * </ul>
-	 * </p>>
 	 * 
-	 * @param segmento
+	 * @param segmento segmento
 	 * 
 	 * @since 0.2 
 	 */
@@ -124,9 +122,9 @@ public interface Banco extends PessoaJuridica {
 	/**
 	  <p>
 	 * Imagem da logo-marca do banco.
-	 * </p>>
+	 * </p>
 	 * 
-	 * @param imgLogo
+	 * @param imgLogo imgLogo
 	 * 
 	 * @since 0.2 
 	 */

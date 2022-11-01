@@ -45,7 +45,8 @@ import org.jrimum.utilix.Objects;
  * PDF defines standard date format, which closely follows that of the
  * international standard ASN.1 (Abstract Syntax Notation One), defined in
  * ISO/IEC 8824. A date is a string of the form (<b>D:YYYYMMDDHHmmSSOHH'mm'</b>)
- * where: <br />
+ * where: 
+ * </p>
  * <ul>
  * <li><b>YYYY</b> is the year</li>
  * <li><b>MM</b> is the month</li>
@@ -63,7 +64,6 @@ import org.jrimum.utilix.Objects;
  * The apostrophe character (') after HH and mm is part of the syntax. All
  * fields after the year are optional. (The prefix D:, although also optional,
  * is strongly recommended.)
- * </p>
  * <p>
  * The default values for MM and DD are both 01; all other numerical fields
  * default to zero values. A plus sign (+) as the value of the O field signifies
@@ -92,7 +92,7 @@ public class PdfDateConverter {
 	 * horário do meridiano de Greenwich então será usado, resultando em
 	 * D:YYYYMMDDHHmm{@code "Z00'00'"}.
 	 * 
-	 * @param date
+	 * @param date date
 	 * 
 	 * @return data no formato PDF: {@code D:YYYYMMDDHHmmSSOHH'mm'}
 	 */
@@ -120,7 +120,7 @@ public class PdfDateConverter {
 	 * time zone, o fuso horário do meridiano de Greenwich então será usado,
 	 * resultando no valor {@code "Z00'00'"}.
 	 * 
-	 * @param date
+	 * @param date date
 	 * 
 	 * @return time zone no formato {@code "OHH'mm'"}
 	 */

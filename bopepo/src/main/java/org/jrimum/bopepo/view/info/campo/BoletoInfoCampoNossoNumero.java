@@ -46,7 +46,7 @@ public class BoletoInfoCampoNossoNumero {
 	 * Retorna o nosso número fomatado no estilo "123456-7".
 	 * 
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * @return string formatada para ser exibida no boleto
 	 */
 	public static String getTextoNossoNumero(Titulo titulo) {

@@ -70,7 +70,7 @@ public enum TipoDeMoeda {
 	private int codigo;
 	
 	/**
-	 * @param codigo
+	 * @param codigo codigo
 	 */
 	private TipoDeMoeda(int codigo) {
 		this.codigo = codigo;

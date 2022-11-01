@@ -56,7 +56,7 @@ public class CodigoDeCompensacaoBACEN {
 	private Integer digito;
 
 	/**
-	 * @param codigo
+	 * @param codigo codigo
 	 */
 	public CodigoDeCompensacaoBACEN(Integer codigo) {
 		super();
@@ -65,7 +65,7 @@ public class CodigoDeCompensacaoBACEN {
 	}
 
 	/**
-	 * @param codigo
+	 * @param codigo codigo
 	 */
 	public CodigoDeCompensacaoBACEN(String codigo) {
 		super();
@@ -95,7 +95,7 @@ public class CodigoDeCompensacaoBACEN {
 	}
 
 	/**
-	 * @param codigo the codigo to set
+	 * @param codigo the codigo to set codigo the codigo to set
 	 */
 	public void setCodigo(Integer codigo) {
 		
@@ -106,7 +106,7 @@ public class CodigoDeCompensacaoBACEN {
 	}
 	
 	/**
-	 * @param codigo the codigo to set
+	 * @param codigo the codigo to set codigo the codigo to set
 	 */
 	public void setCodigo(String codigo) {
 		

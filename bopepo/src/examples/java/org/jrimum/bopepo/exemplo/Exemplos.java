@@ -71,7 +71,7 @@ public class Exemplos {
 	/**
 	 * Utility class pattern: classe não instanciável
 	 * 
-	 * @throws AssertionError Caso haja alguma tentativa de utilização deste construtor.
+	 * @throws AssertionError Caso haja alguma tentativa de utilização deste construtor. AssertionError Caso haja alguma tentativa de utilização deste construtor.
 	 */
 	private Exemplos() {
 		Exceptions.throwIllegalStateException("Instanciação não permitida!");
@@ -265,9 +265,9 @@ public class Exemplos {
 	/**
 	 * Cria um título a partir de um cedente, um sacado e um sacador avalista.
 	 * 
-	 * @param cedente
-	 * @param sacado
-	 * @param sacadorAvalista
+	 * @param cedente cedente
+	 * @param sacado sacado
+	 * @param sacadorAvalista sacadorAvalista
 	 * @return
 	 */
 	public static Titulo crieTitulo(Cedente cedente, Sacado sacado, SacadorAvalista sacadorAvalista) {
@@ -299,7 +299,7 @@ public class Exemplos {
 	 * Cria um boleto a partir de um título. Para as informações extras, como instruções, 
 	 * é configurado um texto padrão.
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 * @return
 	 */
 	public static Boleto crieBoleto(Titulo titulo) {
@@ -325,7 +325,7 @@ public class Exemplos {
 	/**
 	 * Gera o boleto.
 	 * 
-	 * @param boleto
+	 * @param boleto boleto
 	 */
 	public static void execute(Boleto boleto) {
 		execute(boleto, null);
@@ -338,7 +338,7 @@ public class Exemplos {
 	/**
 	 * Abre o arquivo no aplicativo padrão do sistema.
 	 * 
-	 * @param arquivoBoleto
+	 * @param arquivoBoleto arquivoBoleto
 	 */
 	public static void mostreBoletoNaTela(File arquivoBoleto) {
 		

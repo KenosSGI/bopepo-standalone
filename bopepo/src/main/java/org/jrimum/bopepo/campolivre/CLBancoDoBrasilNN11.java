@@ -41,15 +41,15 @@ import org.jrimum.utilix.Exceptions;
  * O campo livre do Banco do Brasil com o nosso número de 11 dígitos deve seguir
  * esta forma:
  * 
- * <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:
- * collapse" bordercolor="#111111" width="60%" id="campolivre">
- * <tr> <thead>
+ * <table>
+ * <caption>table</caption>
+ * <tr> 
  * <th>Posição </th>
  * <th>Tamanho</th>
  * <th>Picture</th>
  * <th>Conteúdo (terminologia padrão)</th>
  * <th>Conteúdo (terminologia do banco)</th>
- * </thead> </tr>
+ *  </tr>
  * <tr>
  * <td>20-30</td>
  * <td>11</td>
@@ -109,7 +109,7 @@ class CLBancoDoBrasilNN11 extends AbstractCLBancoDoBrasil {
 	 *   Dado um título, cria um campo livre para o padrão do Banco do Brasil
 	 *   que tenha o nosso número de tamanho 11.  
 	 * </p>
-	 * @param titulo título com as informações para geração do campo livre
+	 * @param titulo título com as informações para geração do campo livre titulo título com as informações para geração do campo livre
 	 */
 	CLBancoDoBrasilNN11(Titulo titulo) {
 		

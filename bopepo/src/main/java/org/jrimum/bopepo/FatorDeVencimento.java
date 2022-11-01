@@ -44,7 +44,7 @@ import org.jrimum.utilix.Exceptions;
 /**
  * <p>
  * Serviços utilitários do universo bancário, como por exemplo calcular o fator
- * de vencimento de boletos.</code>
+ * de vencimento de boletos.
  * </p>
  * 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L</a>
@@ -99,7 +99,7 @@ public class FatorDeVencimento{
 	 * <p>
 	 * Exemplos:
 	 * </p>
-	 * <ul type="circule"> <li>07/10/1997 (Fator = 0);</li> <li>03/07/2000
+	 * <ul> <li>07/10/1997 (Fator = 0);</li> <li>03/07/2000
 	 * (Fator = 1000);</li> <li>05/07/2000 (Fator = 1002);</li> <li>01/05/2002
 	 * (Fator = 1667);</li> <li>21/02/2025 (Fator = 9999).</li> </ul>
 	 * 
@@ -107,7 +107,7 @@ public class FatorDeVencimento{
 	 * Funcionamento:
 	 * </p>
 	 * 
-	 * <ul type="square"> <li>Caso a data de vencimento seja anterior a data
+	 * <ul> <li>Caso a data de vencimento seja anterior a data
 	 * base (Teoricamente fator negativo), uma exceção do tipo
 	 * IllegalArgumentException será lançada.</li> <li>A data limite para o
 	 * cálculo do fator de vencimento é 21/02/2025 (Fator de vencimento = 9999).
@@ -125,10 +125,10 @@ public class FatorDeVencimento{
 	 * inversa, ou seja, adicionar à data base o fator de vencimento capturado.
 	 * Obtendo então a data de vencimento deste boleto.
 	 * </p>
-	 * @param data
+	 * @param data data
 	 *            data de vencimento de um título
 	 * @return fator de vencimento calculado
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 * 
 	 * @since 0.2
 	 */
@@ -154,11 +154,11 @@ public class FatorDeVencimento{
 	 * descrita em {@linkplain #toFator(Date)}.
 	 * </p>
 	 * 
-	 * @param fator
+	 * @param fator fator
 	 *            - Número entre o intervalo (incluíndo) 0 e 9999
 	 * @return Data do vencimento
-	 * @throws IllegalArgumentException
-	 *             Caso o {@code fator} < 0 ou {@code fator} > 9999
+	 * @throws IllegalArgumentException IllegalArgumentException
+	 *             Caso o {@code fator} &lt; 0 ou {@code fator} &gt; 9999
 	 */
 	public static Date toDate(int fator) throws IllegalArgumentException {
 		
@@ -178,10 +178,10 @@ public class FatorDeVencimento{
 	 * {@linkplain #DATA_LIMITE_DO_FATOR_DE_VENCIMENTO}.
 	 * </p>
 	 * 
-	 * @param dataVencimentoTruncada
+	 * @param dataVencimentoTruncada dataVencimentoTruncada
 	 *            data de vencimento truncada com {@code
 	 *            DateUtils.truncate(date, Calendar.DATE)}
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso a data esteja {@code dataVencimentoTruncada} esteja fora
 	 *             do intervalo entre a
 	 *             {@linkplain #DATA_BASE_DO_FATOR_DE_VENCIMENTO} e a
@@ -202,8 +202,8 @@ public class FatorDeVencimento{
 	/**
 	 * <p>Lança exceção caso o {@code fator} estja fora do intervalo.</p> 
 	 * 
-	 * @param fatorDeVencimento - Número entre o intervalo (incluíndo) 0 e 9999
-	 * @throws IllegalArgumentException Caso o {@code fator} < 0 ou {@code fator} > 9999
+	 * @param fatorDeVencimento - Número entre o intervalo (incluíndo) 0 e 9999 fatorDeVencimento - Número entre o intervalo (incluíndo) 0 e 9999
+	 * @throws IllegalArgumentException Caso o {@code fator} &lt; 0 ou {@code fator} &gt; 9999 IllegalArgumentException Caso o {@code fator} &lt; 0 ou {@code fator} &gt; 9999
 	 */
 	private static void checkIntervalo(int fatorDeVencimento) throws IllegalArgumentException {
 

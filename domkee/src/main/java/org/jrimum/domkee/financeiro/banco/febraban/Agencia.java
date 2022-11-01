@@ -37,16 +37,13 @@ import org.jrimum.utilix.Objects;
 
 
 /**
- * <p>
  * Esta classe segue o padrão especificado pela FEBRABAN:
- * <br/>
  * Invariantes:
  * <ul>
  * <li>Código: deve ser um inteiro natural (incluindo zero) entre 1 e 5 dígitos</li>
  * <li>Dígito Verificador: alpha-numérico sendo um inteiro natural (incluindo zero)
  * ou caracter não vazio (' ') com um dígito.</li>
  * </ul>
- * </p>
  * 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L.</a> 
  * @author <a href="mailto:romulomail@gmail.com">Rômulo Augusto</a>

@@ -135,11 +135,11 @@ public class PdfDocMix {
 	 * Cria uma instância com o template que será utilizado para construir o
 	 * documento.
 	 * 
-	 * @param template
+	 * @param template template
 	 * 
 	 * @since 0.2
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public PdfDocMix(byte[] template) {
@@ -152,11 +152,11 @@ public class PdfDocMix {
 	 * Cria uma instância com o template que será utilizado para construir o
 	 * documento.
 	 * 
-	 * @param templateUrl
+	 * @param templateUrl templateUrl
 	 * 
 	 * @since 0.2
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public PdfDocMix(URL templateUrl) {
@@ -169,11 +169,11 @@ public class PdfDocMix {
 	 * Cria uma instância com o template que será utilizado para construir o
 	 * documento.
 	 * 
-	 * @param templateInput
+	 * @param templateInput templateInput
 	 * 
 	 * @since 0.2
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public PdfDocMix(InputStream templateInput) {
@@ -186,11 +186,11 @@ public class PdfDocMix {
 	 * Cria uma instância com o template que será utilizado para construir o
 	 * documento.
 	 * 
-	 * @param templatePath
+	 * @param templatePath templatePath
 	 * 
 	 * @since 0.2
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public PdfDocMix(String templatePath) {
@@ -203,11 +203,11 @@ public class PdfDocMix {
 	 * Cria uma instância com o template que será utilizado para construir o
 	 * documento.
 	 * 
-	 * @param templateFile
+	 * @param templateFile templateFile
 	 * 
 	 * @since 0.2
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public PdfDocMix(File templateFile) {
@@ -233,13 +233,13 @@ public class PdfDocMix {
 	 * Cria uma instância com o template que será utilizado para construir o
 	 * documento.
 	 * 
-	 * @param template
+	 * @param template template
 	 * 
 	 * @since 0.2
 	 * 
 	 * @return Esta instância após a operação
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public static PdfDocMix createWithTemplate(byte[] template) {
@@ -253,13 +253,13 @@ public class PdfDocMix {
 	 * Cria uma instância com o template que será utilizado para construir o
 	 * documento.
 	 * 
-	 * @param templateUrl
+	 * @param templateUrl templateUrl
 	 * 
 	 * @since 0.2
 	 * 
 	 * @return Esta instância após a operação
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public static PdfDocMix createWithTemplate(URL templateUrl) {
@@ -273,13 +273,13 @@ public class PdfDocMix {
 	 * Cria uma instância com o template que será utilizado para construir o
 	 * documento.
 	 * 
-	 * @param templateInput
+	 * @param templateInput templateInput
 	 * 
 	 * @since 0.2
 	 * 
 	 * @return Esta instância após a operação
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public static PdfDocMix createWithTemplate(InputStream templateInput) {
@@ -293,13 +293,13 @@ public class PdfDocMix {
 	 * Cria uma instância com o template que será utilizado para construir o
 	 * documento.
 	 * 
-	 * @param templatePath
+	 * @param templatePath templatePath
 	 * 
 	 * @since 0.2
 	 * 
 	 * @return Esta instância após a operação
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public static PdfDocMix createWithTemplate(String templatePath) {
@@ -313,13 +313,13 @@ public class PdfDocMix {
 	 * Cria uma instância com o template que será utilizado para construir o
 	 * documento.
 	 * 
-	 * @param templateFile
+	 * @param templateFile templateFile
 	 * 
 	 * @since 0.2
 	 * 
 	 * @return Esta instância após a operação
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public static PdfDocMix createWithTemplate(File templateFile) {
@@ -333,13 +333,13 @@ public class PdfDocMix {
 	 * Define o template que será utilizado para construir o
 	 * documento.
 	 * 
-	 * @param template
+	 * @param template template
 	 * 
 	 * @since 0.2
 	 * 
 	 * @return Esta instância após a operação
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public PdfDocMix withTemplate(byte[] template) {
@@ -353,13 +353,13 @@ public class PdfDocMix {
 	 * Define o template que será utilizado para construir o
 	 * documento.
 	 * 
-	 * @param templateUrl
+	 * @param templateUrl templateUrl
 	 * 
 	 * @since 0.2
 	 * 
 	 * @return Esta instância após a operação
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public PdfDocMix withTemplate(URL templateUrl) {
@@ -373,13 +373,13 @@ public class PdfDocMix {
 	 * Define o template que será utilizado para construir o
 	 * documento.
 	 * 
-	 * @param templateInput
+	 * @param templateInput templateInput
 	 * 
 	 * @since 0.2
 	 * 
 	 * @return Esta instância após a operação
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public PdfDocMix withTemplate(InputStream templateInput) {
@@ -393,13 +393,13 @@ public class PdfDocMix {
 	 * Define o template que será utilizado para construir o
 	 * documento.
 	 * 
-	 * @param templatePath
+	 * @param templatePath templatePath
 	 * 
 	 * @since 0.2
 	 * 
 	 * @return Esta instância após a operação
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public PdfDocMix withTemplate(String templatePath) {
@@ -413,13 +413,13 @@ public class PdfDocMix {
 	 * Define o template que será utilizado para construir o
 	 * documento.
 	 * 
-	 * @param templateFile
+	 * @param templateFile templateFile
 	 * 
 	 * @since 0.2
 	 * 
 	 * @return Esta instância após a operação
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             Caso o {@code template} seja nulo
 	 */
 	public PdfDocMix withTemplate(File templateFile) {
@@ -447,7 +447,7 @@ public class PdfDocMix {
 	 * {@code Map} informado para uso no preenchimento de campos de Texto na
 	 * instância.
 	 * 
-	 * @param txtMap
+	 * @param txtMap txtMap
 	 *            Map com os campos(key) e textos(value)
 	 * @return Esta instância após a operação
 	 * 
@@ -470,9 +470,9 @@ public class PdfDocMix {
 	 * Coloca um par {@code key,value} para uso no preenchimento de campos de
 	 * Texto na instância.
 	 * 
-	 * @param name
+	 * @param name name
 	 *            Nome do campo
-	 * @param value
+	 * @param value value
 	 *            Valor em texto do campo
 	 * 
 	 * @return Esta instância após a operação
@@ -510,7 +510,7 @@ public class PdfDocMix {
 	 * {@code Map} informado para uso no preenchimento de campos de Imagem na
 	 * instância.
 	 * 
-	 * @param imgMap
+	 * @param imgMap imgMap
 	 *            Map com os campos(key) e imagens(value)
 	 * @return Esta instância após a operação
 	 * 
@@ -533,9 +533,9 @@ public class PdfDocMix {
 	 * Coloca um par {@code key,value} para uso no preenchimento de campos de
 	 * Imagem na instância.
 	 * 
-	 * @param name
+	 * @param name name
 	 *            Nome do campo
-	 * @param value
+	 * @param value value
 	 *            Valor em {@link java.awt.Image} do campo
 	 * 
 	 * @return Esta instância após a operação
@@ -564,7 +564,7 @@ public class PdfDocMix {
 	 * object streams and xref streams.</i>
 	 * </p>
 	 * 
-	 * @param option
+	 * @param option option
 	 *            Escolha de compressão
 	 * 
 	 * @return Esta instância após a operação
@@ -584,7 +584,7 @@ public class PdfDocMix {
 	 * Por padrão os campos são removidos, ou seja, default = true.
 	 * </p>
 	 * 
-	 * @param option
+	 * @param option option
 	 *            Escolha por remoção
 	 * 
 	 * @return Esta instância após a operação
@@ -600,7 +600,7 @@ public class PdfDocMix {
 	/**
 	 * Define o Título do documento.
 	 * 
-	 * @param title
+	 * @param title title
 	 * 
 	 * @return Esta instância após a operação
 	 */
@@ -612,7 +612,7 @@ public class PdfDocMix {
 	/**
 	 * Define o Autor do documento.
 	 * 
-	 * @param author
+	 * @param author author
 	 * 
 	 * @return Esta instância após a operação
 	 */
@@ -624,7 +624,7 @@ public class PdfDocMix {
 	/**
 	 * Define o Assunto do documento.
 	 * 
-	 * @param subject
+	 * @param subject subject
 	 * 
 	 * @return Esta instância após a operação
 	 */
@@ -636,7 +636,7 @@ public class PdfDocMix {
 	/**
 	 * Define as Palavras-chave do documento.
 	 * 
-	 * @param keywords
+	 * @param keywords keywords
 	 * 
 	 * @return Esta instância após a operação
 	 */
@@ -648,7 +648,7 @@ public class PdfDocMix {
 	/**
 	 * Define o Software/Ferramenta de criação do documento.
 	 * 
-	 * @param creator
+	 * @param creator creator
 	 * 
 	 * @return Esta instância após a operação
 	 */
@@ -660,7 +660,7 @@ public class PdfDocMix {
 	/**
 	 * Define a data de criação do documento.
 	 * 
-	 * @param date Data de criação
+	 * @param date Data de criação date Data de criação
 	 * 
 	 * @return Esta instância após a operação
 	 */
@@ -679,7 +679,7 @@ public class PdfDocMix {
 	 * substituídas pelo conteúdo do {@code docInfo} nessa operação.
 	 * </p>
 	 * 
-	 * @param docInfo
+	 * @param docInfo docInfo
 	 *            Informações sobre o documento
 	 * 
 	 * @return Esta instância após a operação
@@ -702,7 +702,7 @@ public class PdfDocMix {
 	 * Caso não seja informada uma opção, prevalece a definição do template PDF.
 	 * </p>
 	 * 
-	 * @param option
+	 * @param option option
 	 * 
 	 * @return Esta instância após a operação
 	 */
@@ -716,7 +716,7 @@ public class PdfDocMix {
 	/**
 	 * Retorna o documento em forma de arquivo PDF.
 	 * 
-	 * @param destPath
+	 * @param destPath destPath
 	 *            Caminho completo do arquivo o qual o documento será gerado
 	 * @return Documento em forma de arquivo PDF
 	 * 
@@ -733,7 +733,7 @@ public class PdfDocMix {
 	/**
 	 * Retorna o documento em forma de arquivo PDF.
 	 * 
-	 * @param destURL
+	 * @param destURL destURL
 	 *            URL do arquivo o qual o documento será gerado
 	 * @return Documento em forma de arquivo PDF
 	 * 
@@ -763,10 +763,10 @@ public class PdfDocMix {
 	/**
 	 * Retorna o documento em forma de arquivo PDF.
 	 * 
-	 * @param destFile
+	 * @param destFile destFile
 	 *            Arquivo o qual o boleto será gerado
 	 * @return Documento em forma de arquivo PDF
-	 * @throws IllegalStateException
+	 * @throws IllegalStateException IllegalStateException
 	 *             Caso ocorral algum problema imprevisto
 	 * 
 	 * @since 0.2
@@ -866,7 +866,7 @@ public class PdfDocMix {
 	/**
 	 * Define o template que será utilizado para construir o documento.
 	 * 
-	 * @param template
+	 * @param template template
 	 * 
 	 * @return Esta instância após a operação
 	 * 
@@ -881,7 +881,7 @@ public class PdfDocMix {
 	/**
 	 * Define o template que será utilizado para construir o documento.
 	 * 
-	 * @param templateUrl
+	 * @param templateUrl templateUrl
 	 * 
 	 * @return Esta instância após a operação
 	 * 
@@ -900,7 +900,7 @@ public class PdfDocMix {
 	/**
 	 * Define o template que será utilizado para construir o documento.
 	 * 
-	 * @param templateInput
+	 * @param templateInput templateInput
 	 * 
 	 * @return Esta instância após a operação
 	 * 
@@ -919,7 +919,7 @@ public class PdfDocMix {
 	/**
 	 * Define o template que será utilizado para construir o documento.
 	 * 
-	 * @param templatePath
+	 * @param templatePath templatePath
 	 * 
 	 * @return Esta instância após a operação
 	 * 
@@ -934,7 +934,7 @@ public class PdfDocMix {
 	/**
 	 * Define o template que será utilizado para construir o documento.
 	 * 
-	 * @param templateFile
+	 * @param templateFile templateFile
 	 * 
 	 * @return Esta instância após a operação
 	 * 
@@ -1088,8 +1088,8 @@ public class PdfDocMix {
 	/**
 	 * Coloca uma imagem no pdf de acordo com o nome do field no templante.
 	 * 
-	 * @param fieldName
-	 * @param image
+	 * @param fieldName fieldName
+	 * @param image image
 	 * 
 	 * @since 0.2
 	 */

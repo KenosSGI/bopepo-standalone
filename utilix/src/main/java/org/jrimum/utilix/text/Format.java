@@ -48,7 +48,7 @@ public interface Format<T, F extends java.text.Format> {
 	 * Formata um dado objeto para uma representação em string.
 	 * </p>
 	 * 
-	 * @param obj
+	 * @param obj obj
 	 *            - Objeto a ser formatado.
 	 * @return string - String formatada.
 	 */
@@ -59,7 +59,7 @@ public interface Format<T, F extends java.text.Format> {
 	 * Transforma uma string formatada em um objeto correspondente.
 	 * </p>
 	 * 
-	 * @param text
+	 * @param text text
 	 *            - Texto a ser analisado e transformado em objeto.
 	 * @return objeto - Resultado da transformação da string.
 	 */

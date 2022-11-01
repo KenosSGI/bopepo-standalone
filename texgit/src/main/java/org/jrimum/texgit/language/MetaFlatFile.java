@@ -74,7 +74,7 @@ public class MetaFlatFile {
 	/**
 	 * Sets the value of the layout property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link MetaLayout }
 	 * 
 	 */
@@ -95,7 +95,7 @@ public class MetaFlatFile {
 	/**
 	 * Sets the value of the groupOfRecords property.
 	 * 
-	 * @param value
+	 * @param value value
 	 *            allowed object is {@link MetaGroupRecords }
 	 * 
 	 */

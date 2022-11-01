@@ -61,22 +61,22 @@ public class CampoLivreException extends RuntimeException {
 	}
 
 	/**
-	 * @param message
-	 * @param cause
+	 * @param message message
+	 * @param cause cause
 	 */
 	public CampoLivreException(String message, Throwable cause) {
 		super(message, cause);
 	}
 
 	/**
-	 * @param message
+	 * @param message message
 	 */
 	public CampoLivreException(String message) {
 		super(message);
 	}
 
 	/**
-	 * @param cause
+	 * @param cause cause
 	 */
 	public CampoLivreException(Throwable cause) {
 		super(cause);

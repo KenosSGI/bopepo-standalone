@@ -43,7 +43,7 @@ public class Exceptions {
 	/**
 	 * Utility class pattern: classe não instanciável
 	 * 
-	 * @throws IllegalStateException
+	 * @throws IllegalStateException IllegalStateException
 	 *             Caso haja alguma tentativa de utilização deste construtor.
 	 */
 	private Exceptions() {
@@ -70,7 +70,7 @@ public class Exceptions {
 	 * 
 	 * @param <T>
 	 *            Qualquer tipo.
-	 * @param message
+	 * @param message message
 	 *            Mensagem usada na exceção
 	 * 
 	 * @return Não retorna nada, criado apenas para satisfazer alguma condição
@@ -86,7 +86,7 @@ public class Exceptions {
 	 * 
 	 * @param <T>
 	 *            Qualquer tipo.
-	 * @param cause
+	 * @param cause cause
 	 *            Causa da exceção
 	 * 
 	 * @return Não retorna nada, criado apenas para satisfazer alguma condição
@@ -103,9 +103,9 @@ public class Exceptions {
 	 * @param <T>
 	 *            Qualquer tipo.
 	 * 
-	 * @param message
+	 * @param message message
 	 *            Mensagem usada na exceção
-	 * @param cause
+	 * @param cause cause
 	 *            Causa da exceção
 	 * 
 	 * @return Não retorna nada, criado apenas para satisfazer alguma condição
@@ -136,7 +136,7 @@ public class Exceptions {
 	 * 
 	 * @param <T>
 	 *            Qualquer tipo.
-	 * @param message
+	 * @param message message
 	 *            Mensagem usada na exceção
 	 * 
 	 * @return Não retorna nada, criado apenas para satisfazer alguma condição
@@ -152,7 +152,7 @@ public class Exceptions {
 	 * 
 	 * @param <T>
 	 *            Qualquer tipo.
-	 * @param cause
+	 * @param cause cause
 	 *            Causa da exceção
 	 * 
 	 * @return Não retorna nada, criado apenas para satisfazer alguma condição
@@ -169,9 +169,9 @@ public class Exceptions {
 	 * @param <T>
 	 *            Qualquer tipo.
 	 * 
-	 * @param message
+	 * @param message message
 	 *            Mensagem usada na exceção
-	 * @param cause
+	 * @param cause cause
 	 *            Causa da exceção
 	 * 
 	 * @return Não retorna nada, criado apenas para satisfazer alguma condição
@@ -202,7 +202,7 @@ public class Exceptions {
 	 * 
 	 * @param <T>
 	 *            Qualquer tipo.
-	 * @param message
+	 * @param message message
 	 *            Mensagem usada na exceção
 	 * 
 	 * @return Não retorna nada, criado apenas para satisfazer alguma condição
@@ -218,7 +218,7 @@ public class Exceptions {
 	 * 
 	 * @param <T>
 	 *            Qualquer tipo.
-	 * @param cause
+	 * @param cause cause
 	 *            Causa da exceção
 	 * 
 	 * @return Não retorna nada, criado apenas para satisfazer alguma condição
@@ -235,9 +235,9 @@ public class Exceptions {
 	 * @param <T>
 	 *            Qualquer tipo.
 	 * 
-	 * @param message
+	 * @param message message
 	 *            Mensagem usada na exceção
-	 * @param cause
+	 * @param cause cause
 	 *            Causa da exceção
 	 * 
 	 * @return Não retorna nada, criado apenas para satisfazer alguma condição

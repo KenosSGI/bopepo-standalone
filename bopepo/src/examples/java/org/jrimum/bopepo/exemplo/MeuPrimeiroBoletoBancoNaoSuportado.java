@@ -183,7 +183,7 @@ public class MeuPrimeiroBoletoBancoNaoSuportado {
 	/**
 	 * Exibe o arquivo na tela.
 	 * 
-	 * @param arquivoBoleto
+	 * @param arquivoBoleto arquivoBoleto
 	 */
 	private static void mostreBoletoNaTela(File arquivoBoleto) {
 

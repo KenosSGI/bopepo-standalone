@@ -81,10 +81,10 @@ public abstract class AbstractCPRF implements CPRF{
 	 * Cria um {@linkplain CPRF} através de um long e seu
 	 * {@linkplain TipoDeCPRF}.
 	 * 
-	 * @param cadastroDePessoa
-	 * @param tipoDeCadastro
+	 * @param cadastroDePessoa cadastroDePessoa
+	 * @param tipoDeCadastro tipoDeCadastro
 	 * @return AbstractCPRF (CPF ou CNPJ)
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 */
 	@SuppressWarnings("unchecked")
 	public static <C extends AbstractCPRF> C create(Long cadastroDePessoa, TipoDeCPRF tipoDeCadastro) throws IllegalArgumentException {
@@ -96,12 +96,12 @@ public abstract class AbstractCPRF implements CPRF{
 	 * Cria um {@linkplain CPRF} através de uma string não formatada e seu
 	 * {@linkplain TipoDeCPRF}.
 	 * 
-	 * @param cadastroDePessoa
+	 * @param cadastroDePessoa cadastroDePessoa
 	 *            não formatado
-	 * @param tipoDeCadastro
+	 * @param tipoDeCadastro tipoDeCadastro
 	 *            tipo
 	 * @return AbstractCPRF (CPF ou CNPJ)
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 */
 	@SuppressWarnings("unchecked")
 	public static <C extends AbstractCPRF> C create(String cadastroDePessoa, TipoDeCPRF tipoDeCadastro) throws IllegalArgumentException {
@@ -134,10 +134,10 @@ public abstract class AbstractCPRF implements CPRF{
 	/**
 	 * Cria um {@linkplain CPRF} através de uma string formatada ou não.
 	 * 
-	 * @param cadastroDePessoa
+	 * @param cadastroDePessoa cadastroDePessoa
 	 *            - identificador do cadastro de pessoa formatado ou não.
 	 * @return uma instância de AbstractCPRF.
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             - caso o parâmetro não esteja em um formatador válido de
 	 *             cadastro de pessoa.
 	 */

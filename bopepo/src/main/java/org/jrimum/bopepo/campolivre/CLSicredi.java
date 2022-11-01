@@ -46,8 +46,8 @@ import org.jrimum.vallia.digitoverificador.TipoDeModulo;
  * O campo livre do banco Sicredi deve seguir esta forma:
  * </p>
  * 
- * <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="campolivre">
- * <thead bgcolor="#DEDEDE">
+ * <table>
+ * <caption>table</caption>
  * <tr>
  * <th>Posição</th>
  * <th>Tamanho</th>
@@ -55,7 +55,7 @@ import org.jrimum.vallia.digitoverificador.TipoDeModulo;
  * <th>Conteúdo (terminologia padrão)</th>
  * <th>Conteúdo (terminologia do banco)</th>
  * </tr>
- * </thead> <tbody style="text-align:center">
+ *  
  * <tr>
  * <td >20-20</td>
  * <td >1</td>
@@ -240,7 +240,7 @@ class CLSicredi extends AbstractCLSicredi {
 	 * (carteira simples), caso contrário lança uma {@code
 	 * IllegalArgumentException}.
 	 * 
-	 * @param titulo
+	 * @param titulo titulo
 	 */
 	private void checkCarteiraSimples(Titulo titulo) {
 		

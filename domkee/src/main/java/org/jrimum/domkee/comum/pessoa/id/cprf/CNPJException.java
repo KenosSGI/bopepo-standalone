@@ -64,8 +64,8 @@ public class CNPJException extends RuntimeException {
 	}
 
 	/**
-	 * @param message
-	 * @param cause
+	 * @param message message
+	 * @param cause cause
 	 */
 	public CNPJException(String message, Throwable cause) {
 		super(message, cause);
@@ -73,7 +73,7 @@ public class CNPJException extends RuntimeException {
 	}
 
 	/**
-	 * @param message
+	 * @param message message
 	 */
 	public CNPJException(String message) {
 		super(message);
@@ -81,7 +81,7 @@ public class CNPJException extends RuntimeException {
 	}
 
 	/**
-	 * @param cause
+	 * @param cause cause
 	 */
 	public CNPJException(Throwable cause) {
 		super(cause);

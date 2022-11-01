@@ -113,8 +113,8 @@ public class TestBoleto{
 
 	/**
 	 * Test method for {@link org.jrimum.bopepo.Boleto#Boleto(Titulo)}.
-	 * @throws NotSupportedBancoException 
-	 * @throws NotSupportedCampoLivreException 
+	 * @throws NotSupportedBancoException  NotSupportedBancoException 
+	 * @throws NotSupportedCampoLivreException  NotSupportedCampoLivreException 
 	 */
 	@Test
 	public void testGetInstance() throws NotSupportedBancoException, NotSupportedCampoLivreException {

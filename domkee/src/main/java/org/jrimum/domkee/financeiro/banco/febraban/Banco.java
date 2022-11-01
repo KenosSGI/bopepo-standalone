@@ -81,8 +81,8 @@ public class Banco implements org.jrimum.domkee.financeiro.banco.Banco {
 	
 	
 	/**
-	 * @param codigoDeCompensacaoBACEN
-	 * @param instituicao
+	 * @param codigoDeCompensacaoBACEN codigoDeCompensacaoBACEN
+	 * @param instituicao instituicao
 	 */
 	public Banco(CodigoDeCompensacaoBACEN codigoDeCompensacaoBACEN, String instituicao) {
 		super();
@@ -95,9 +95,9 @@ public class Banco implements org.jrimum.domkee.financeiro.banco.Banco {
 	}
 
 	/**
-	 * @param codigoDeCompensacaoBACEN
-	 * @param instituicao
-	 * @param cnpj
+	 * @param codigoDeCompensacaoBACEN codigoDeCompensacaoBACEN
+	 * @param instituicao instituicao
+	 * @param cnpj cnpj
 	 */
 	public Banco(CodigoDeCompensacaoBACEN codigoDeCompensacaoBACEN, String instituicao, CNPJ cnpj) {
 		super();
@@ -112,10 +112,10 @@ public class Banco implements org.jrimum.domkee.financeiro.banco.Banco {
 	}
 
 	/**
-	 * @param codigoDeCompensacaoBACEN
-	 * @param instituicao
-	 * @param cnpj
-	 * @param segmento
+	 * @param codigoDeCompensacaoBACEN codigoDeCompensacaoBACEN
+	 * @param instituicao instituicao
+	 * @param cnpj cnpj
+	 * @param segmento segmento
 	 */
 	public Banco(CodigoDeCompensacaoBACEN codigoDeCompensacaoBACEN, String instituicao, CNPJ cnpj, String segmento) {
 		
@@ -131,11 +131,11 @@ public class Banco implements org.jrimum.domkee.financeiro.banco.Banco {
 	}
 
 	/**
-	 * @param codigoDeCompensacaoBACEN
-	 * @param instituicao
-	 * @param cnpj
-	 * @param segmento
-	 * @param imgLogo
+	 * @param codigoDeCompensacaoBACEN codigoDeCompensacaoBACEN
+	 * @param instituicao instituicao
+	 * @param cnpj cnpj
+	 * @param segmento segmento
+	 * @param imgLogo imgLogo
 	 */
 	public Banco(CodigoDeCompensacaoBACEN codigoDeCompensacaoBACEN, String instituicao, CNPJ cnpj,	String segmento, Image imgLogo) {
 		
@@ -150,20 +150,18 @@ public class Banco implements org.jrimum.domkee.financeiro.banco.Banco {
 	}
 
 	/**
-	 * <p>
 	 * Verifica se o código passado está ok em relação as regras:
 	 * <ol>
 	 * <li>Não nulo</li>
 	 * <li>Numérico</li>
 	 * <li>Com 3 digitos</li>
 	 * </ol>
-	 * </p>
 	 * 
-	 * @param codigo - Código de compensação BACEN do banco
+	 * @param codigo - Código de compensação BACEN do banco codigo - Código de compensação BACEN do banco
 	 * 
 	 * @return se ok
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 * 
 	 * @since 0.2
 	 * 
@@ -202,7 +200,7 @@ public class Banco implements org.jrimum.domkee.financeiro.banco.Banco {
 
 
 	/**
-	 * @param codigoDeCompensacaoBACEN the codigoDeCompensacaoBACEN to set
+	 * @param codigoDeCompensacaoBACEN the codigoDeCompensacaoBACEN to set codigoDeCompensacaoBACEN the codigoDeCompensacaoBACEN to set
 	 */
 	public void setCodigoDeCompensacaoBACEN(
 			CodigoDeCompensacaoBACEN codigoDeCompensacaoBACEN) {

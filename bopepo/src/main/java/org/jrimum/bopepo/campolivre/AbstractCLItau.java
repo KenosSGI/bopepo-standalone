@@ -83,7 +83,7 @@ abstract class AbstractCLItau extends AbstractCampoLivre {
 	 * 
 	 * @see AbstractCampoLivre
 	 * 
-	 * @param fieldsLength - Número de campos
+	 * @param fieldsLength - Número de campos fieldsLength - Número de campos
 	 */
 	protected AbstractCLItau(Integer fieldsLength) {
 		
@@ -118,10 +118,8 @@ abstract class AbstractCLItau extends AbstractCampoLivre {
 	 * O cálculo é feito através do módulo 10.
 	 * </p>
 	 * 
-	 * @param campo
+	 * @param campo campo
 	 * @return Dígito verificador do campo fornecido.
-	 * 
-	 * @since 
 	 */
 	protected Integer calculeDigitoVerificador(String campo) {
 				

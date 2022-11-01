@@ -46,17 +46,17 @@ import org.jrimum.texgit.type.component.FixedField;
  * recebe um título através de seu construtor.
  * </p>
  * Segue abaixo o layout desse campo livre fictício:
- * <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:
+ * <table
  * collapse" bordercolor="#111111" width="60%">
- * 	<thead>
+ * 	
  * 	<tr>
  * 		<th>Posição</th>
  * 		<th>Tamanho</th>
  * 		<th>Picture</th>
  * 		<th>Conteúdo</th>
  * 	</tr>
- * 	</thead>
- * 	<tbody>
+ * 	
+ * 	
  * 	<tr>
  * 		<td>20-25</td>
  * 		<td>6</td>
@@ -81,7 +81,7 @@ import org.jrimum.texgit.type.component.FixedField;
  * 		<td>9 (9)</td>
  * 		<td>Nosso número (sem o dígito)</td>
  * 	</tr>
- * 	</tbody>
+ * 	
  * </table>
  * 
  * @author Rômulo Augusto

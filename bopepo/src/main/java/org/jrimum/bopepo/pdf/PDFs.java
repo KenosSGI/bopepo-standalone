@@ -59,11 +59,11 @@ public class PDFs{
 	 * Muda um input field para uma imgem com as dimensões e possição do field.
 	 * </p>
 	 * 
-	 * @param stamper
-	 * @param positions
-	 * @param image
+	 * @param stamper stamper
+	 * @param positions positions
+	 * @param image image
 	 * @return rectanglePDF
-	 * @throws DocumentException
+	 * @throws DocumentException DocumentException
 	 * 
 	 * @since 0.2
 	 */
@@ -80,11 +80,11 @@ public class PDFs{
 	 * Muda um input field para uma imgem com as dimensões e possição do field.
 	 * </p>
 	 * 
-	 * @param stamper
-	 * @param rect
-	 * @param image
+	 * @param stamper stamper
+	 * @param rect rect
+	 * @param image image
 	 * @return rectanglePDF
-	 * @throws DocumentException
+	 * @throws DocumentException DocumentException
 	 * 
 	 * @since 0.2
 	 */
@@ -115,7 +115,7 @@ public class PDFs{
 	/**
 	 * Junta varios arquivos pdf em um só.
 	 * 
-	 * @param pdfFiles
+	 * @param pdfFiles pdfFiles
 	 *            Coleção de array de bytes
 	 * 
 	 * @return Arquivo PDF em forma de byte
@@ -129,9 +129,9 @@ public class PDFs{
 	/**
 	 * Junta varios arquivos pdf em um só.
 	 * 
-	 * @param pdfFiles
+	 * @param pdfFiles pdfFiles
 	 *            Coleção de array de bytes
-	 * @param info
+	 * @param info info
 	 *            Usa somente as informações
 	 *            (title,subject,keywords,author,creator)
 	 * 

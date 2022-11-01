@@ -58,7 +58,7 @@ public class CodigoDeBarras {
 	/**
 	 * Classe não instanciável
 	 * 
-	 * @throws IllegalStateException
+	 * @throws IllegalStateException IllegalStateException
 	 *             Caso haja alguma tentativa de utilização deste construtor.
 	 *             
 	 * @since 0.2

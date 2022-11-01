@@ -54,7 +54,7 @@ import org.jrimum.utilix.Objects;
  * <li>Nosso número;</li>
  * <li>Código do banco;</li>
  * <li>Data de vencimento;</li>
- * <li>Agência/Código do cedente</li>;
+ * <li>Agência/Código do cedente</li>
  * <li>Código da carteira;</li>
  * <li>Código da moeda;</li>
  * </ul>
@@ -85,12 +85,12 @@ public final class ParametrosBancariosMap {
 	 * Instancia o mapa com um mapeamento já especificado. Nomes e valores nulos
 	 * não são permitidos, o nome deve ser único.
 	 * 
-	 * @param nome
+	 * @param nome nome
 	 *            do parâmetro a ser associado
-	 * @param valor
+	 * @param valor valor
 	 *            do parâmetro a ser associado
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             se nome ou valor == NULL
 	 * 
 	 * @since 0.2
@@ -105,7 +105,7 @@ public final class ParametrosBancariosMap {
 	 * <strong>não</strong> é <code>null</code> e possui elementos.
 	 * 
 	 * 
-	 * @param params
+	 * @param params params
 	 *            - Instância de {@code ParametrosBancariosMap} testada.
 	 * @return {@code params != null && params.isNaoVazio()}
 	 * 
@@ -120,12 +120,12 @@ public final class ParametrosBancariosMap {
 	 * Indica se o mapa contém um mapeamento para o nome de parâmetro
 	 * especificado.
 	 * 
-	 * @param nome
+	 * @param nome nome
 	 *            do parâmetro cuja existência no mapa será testada.
 	 * 
 	 * @return true se o mapa contém um mapeamento para parâmetro
 	 * 
-	 * @throws NullPointerException
+	 * @throws NullPointerException NullPointerException
 	 *             se nome == NULL
 	 * 
 	 * @since 0.2
@@ -140,13 +140,13 @@ public final class ParametrosBancariosMap {
 	/**
 	 * Indica se o mapa contém o valor especificado.
 	 * 
-	 * @param valor
+	 * @param valor valor
 	 *            cuja existência no mapa será testada
 	 * 
 	 * @return true se o mapa contém uma ou mais associações de parâmetros ao
 	 *         valor especificado
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             se valor == NULL
 	 * 
 	 * @since 0.2
@@ -166,12 +166,12 @@ public final class ParametrosBancariosMap {
 	 * @param <V>
 	 *            Tipo de retorno genérico do valor contido no mapa com nome
 	 *            especificado
-	 * @param nome
+	 * @param nome nome
 	 *            do parâmetro especificado
 	 * @return o valor associado com o parâmetro bancário especificado, ou nulo
 	 *         se não houver nenhum mapeamento para o mesmo
 	 * 
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException IllegalArgumentException
 	 *             se nome == NULL
 	 * 
 	 * @since 0.2
@@ -249,13 +249,13 @@ public final class ParametrosBancariosMap {
 	 * Associa o valor especificado a um nome de parâmetro também especificado
 	 * que deve ser único neste mapa. Nomes e valores nulos não são permitidos.
 	 * 
-	 * @param nome
+	 * @param nome nome
 	 *            do parâmetro a ser associado
-	 * @param valor
+	 * @param valor valor
 	 *            do parâmetro a ser associado
 	 * @return referência a este mapa
 	 * 
-	 * @throws NullPointerException
+	 * @throws NullPointerException NullPointerException
 	 *             se nome ou valor == NULL
 	 * 
 	 * @since 0.2
@@ -281,11 +281,11 @@ public final class ParametrosBancariosMap {
 	 * neste mapa, só que uma vez para cada mapeamento.
 	 * </p>
 	 * 
-	 * @param dados
+	 * @param dados dados
 	 *            - outros parâmetros bancários a serem mapeados neste mapa.
 	 * @return referência a este mapa
 	 * 
-	 * @throws NullPointerException
+	 * @throws NullPointerException NullPointerException
 	 *             se dados == NULL
 	 * 
 	 * @since 0.2
@@ -311,12 +311,12 @@ public final class ParametrosBancariosMap {
 	 * 
 	 * @param <V>
 	 *            Tipo de retorno genérico do valor
-	 * @param nome
+	 * @param nome nome
 	 *            do parâmetro bancário que deve ser removido do mapa
 	 * @return o valor anterior associado com o parâmetro bancário, ou nulo se
 	 *         não houver nenhum mapeamento para o mesmo
 	 * 
-	 * @throws NullPointerException
+	 * @throws NullPointerException NullPointerException
 	 *             se nome == NULL
 	 * 
 	 * @since 0.2
@@ -350,7 +350,7 @@ public final class ParametrosBancariosMap {
 	}
 
 	/**
-	 * Instancia um HashMap<String,Object> para uso da deste map bancário.
+	 * Instancia um HashMap&lt;String,Object&gt; para uso da deste map bancário.
 	 * 
 	 * @since 0.2
 	 */

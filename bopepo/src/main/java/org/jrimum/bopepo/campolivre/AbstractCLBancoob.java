@@ -56,7 +56,7 @@ abstract class AbstractCLBancoob extends AbstractCampoLivre {
 	 * 
 	 * @see AbstractCampoLivre
 	 * 
-	 * @param fieldsLength
+	 * @param fieldsLength fieldsLength
 	 *            - Número de campos
 	 */
 	protected AbstractCLBancoob(Integer fieldsLength) {
@@ -65,7 +65,7 @@ abstract class AbstractCLBancoob extends AbstractCampoLivre {
 	}
 
 	/**
-	 * @param titulo
+	 * @param titulo titulo
 	 * @return um CampoLivre
 	 * 
 	 * @see org.jrimum.bopepo.campolivre.AbstractCLBancoDoNordesteDoBrasil#create(Titulo)

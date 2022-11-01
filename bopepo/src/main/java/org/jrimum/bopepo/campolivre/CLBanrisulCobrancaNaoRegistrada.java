@@ -40,8 +40,9 @@ import org.jrimum.utilix.Exceptions;
  * "sem registro" - Sistema BDL/Carteira de Letras) deve seguir esta forma:
  * </p>
  * 
- * <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="campolivre">
- * <thead bgcolor="#DEDEDE">
+ * <table>
+ * <caption>table</caption>
+ * 
  * <tr>
  * <th>Posição</th>
  * <th>Tamanho</th>
@@ -49,7 +50,7 @@ import org.jrimum.utilix.Exceptions;
  * <th>Conteúdo (terminologia padrão)</th>
  * <th>Conteúdo (terminologia do banco)</th>
  * </tr>
- * </thead> <tbody style="text-align:center">
+ *  
  * <tr>
  * <td>20-20</td>
  * <td>1</td>
@@ -109,7 +110,7 @@ import org.jrimum.utilix.Exceptions;
  * <td style="text-align:left;padding-left:10">Duplo Dígito referente às
  * posições 20 a 42 (módulos 10 e 11)</td>
  * </tr>
- * </tbody>
+ * 
  * </table>
  * 
  * @author <a href="http://gilmatryx.googlepages.com/">Gilmar P.S.L.</a>

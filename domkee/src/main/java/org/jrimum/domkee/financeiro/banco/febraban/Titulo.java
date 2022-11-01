@@ -44,7 +44,7 @@ import org.jrimum.utilix.Objects;
 /**
  * Representa um título em cobrança, tais como:
  * 
- * <br />
+ * 
  * 
  * <ul>
  * <li>Cheque</li>
@@ -56,6 +56,7 @@ import org.jrimum.utilix.Objects;
  * <li>Nota de Crédito Industrial</li>
  * <li>Nota de Crédito Rural</li>
  * <li>E outras espécies pagáveis através da rede bancária.</li>
+ * </ul>
  * 
  * @see TipoDeTitulo
  * 
@@ -200,9 +201,9 @@ public class Titulo {
 	 * Cria uma instância de título.
 	 * </p>
 	 * 
-	 * @param contaBancaria
-	 * @param sacado
-	 * @param cedente
+	 * @param contaBancaria contaBancaria
+	 * @param sacado sacado
+	 * @param cedente cedente
 	 * 
 	 */
 	public Titulo(ContaBancaria contaBancaria, Sacado sacado, Cedente cedente) {
@@ -216,10 +217,10 @@ public class Titulo {
 	 * Cria uma instância de título com sacador avalista.
 	 * </p>
 	 * 
-	 * @param contaBancaria
-	 * @param sacado
-	 * @param cedente
-	 * @param sacadorAvalista
+	 * @param contaBancaria contaBancaria
+	 * @param sacado sacado
+	 * @param cedente cedente
+	 * @param sacadorAvalista sacadorAvalista
 	 * 
 	 */
 	public Titulo(ContaBancaria contaBancaria, Sacado sacado, Cedente cedente, SacadorAvalista sacadorAvalista) {
@@ -233,10 +234,10 @@ public class Titulo {
 	 * mesmo.
 	 * </p>
 	 * 
-	 * @param contaBancaria
-	 * @param sacado
-	 * @param cedente
-	 * @param parametrosBancariosMap
+	 * @param contaBancaria contaBancaria
+	 * @param sacado sacado
+	 * @param cedente cedente
+	 * @param parametrosBancariosMap parametrosBancariosMap
 	 * 
 	 */
 	public Titulo(ContaBancaria contaBancaria, Sacado sacado, Cedente cedente,
@@ -253,11 +254,11 @@ public class Titulo {
 	 * dados bancários além do título.
 	 * </p>
 	 * 
-	 * @param contaBancaria
-	 * @param sacado
-	 * @param cedente
-	 * @param parametrosBancariosMap
-	 * @param sacadorAvalista
+	 * @param contaBancaria contaBancaria
+	 * @param sacado sacado
+	 * @param cedente cedente
+	 * @param parametrosBancariosMap parametrosBancariosMap
+	 * @param sacadorAvalista sacadorAvalista
 	 * 
 	 */
 	public Titulo(ContaBancaria contaBancaria, Sacado sacado, Cedente cedente,
@@ -298,7 +299,7 @@ public class Titulo {
 	 * Indicação de aceite.
 	 * </p>
 	 * 
-	 * @param aceite
+	 * @param aceite aceite
 	 *            the aceite to set
 	 */
 	public void setAceite(Aceite aceite) {
@@ -319,7 +320,7 @@ public class Titulo {
 	 * Data de emissão do documento.
 	 * </p>
 	 * 
-	 * @param dataDoDocumento
+	 * @param dataDoDocumento dataDoDocumento
 	 *            the dataDoDocumento to set
 	 */
 	public void setDataDoDocumento(Date dataDoDocumento) {
@@ -341,7 +342,7 @@ public class Titulo {
 	 * para pagamento do título.
 	 * </p>
 	 * 
-	 * @param dataDoVencimento
+	 * @param dataDoVencimento dataDoVencimento
 	 *            the dataDoVencimento to set
 	 */
 	public void setDataDoVencimento(Date dataDoVencimento) {
@@ -362,7 +363,7 @@ public class Titulo {
 	 * Dígito verificador do nosso número, caso exista.
 	 * </p>
 	 * 
-	 * @param digitoDoNossoNumero
+	 * @param digitoDoNossoNumero digitoDoNossoNumero
 	 *            the dígitoDoNossoNúmero to set
 	 */
 	public void setDigitoDoNossoNumero(String digitoDoNossoNumero) {
@@ -381,7 +382,7 @@ public class Titulo {
 	/**
 	 * @see org.jrimum.domkee.financeiro.banco.febraban.TipoDeMoeda
 	 * 
-	 * @param tipoDeMoeda
+	 * @param tipoDeMoeda tipoDeMoeda
 	 *            the enumMoeda to set
 	 */
 	public void setTipoDeMoeda(TipoDeMoeda tipoDeMoeda) {
@@ -403,7 +404,7 @@ public class Titulo {
 	 * ou identificação do título atribuído pelo esmissor do título de cobrança.
 	 * </p>
 	 * 
-	 * @param nossoNumero
+	 * @param nossoNumero nossoNumero
 	 *            the nossoNúmero to set
 	 */
 	public void setNossoNumero(String nossoNumero) {
@@ -425,7 +426,7 @@ public class Titulo {
 	 * nosso número.
 	 * </p>
 	 * 
-	 * @param numeroDoDocumento
+	 * @param numeroDoDocumento numeroDoDocumento
 	 *            the númeroDoDocumento to set
 	 */
 	public void setNumeroDoDocumento(String numeroDoDocumento) {
@@ -446,7 +447,7 @@ public class Titulo {
 	 * Conta na qual o título se encontra, conta do favorecido (Cedente).
 	 * </p>
 	 * 
-	 * @param contaBancaria
+	 * @param contaBancaria contaBancaria
 	 *            the contaBancaria to set
 	 */
 	public void setContaBancaria(ContaBancaria contaBancaria) {
@@ -472,7 +473,7 @@ public class Titulo {
 	 * Cliente que entrega os títulos ao Banco para serem cobrados.
 	 * </p>
 	 * 
-	 * @param cedente
+	 * @param cedente cedente
 	 *            the cedente to set
 	 */
 	public void setCedente(Cedente cedente) {
@@ -498,7 +499,7 @@ public class Titulo {
 	 * cliente do Cedente.
 	 * </p>
 	 * 
-	 * @param sacado
+	 * @param sacado sacado
 	 *            the sacado to set
 	 */
 	public void setSacado(Sacado sacado) {
@@ -523,7 +524,7 @@ public class Titulo {
 	 * Cedente original do Título.
 	 * </p>
 	 * 
-	 * @param sacadorAvalista
+	 * @param sacadorAvalista sacadorAvalista
 	 *            the sacadorAvalista to set
 	 */
 	public void setSacadorAvalista(SacadorAvalista sacadorAvalista) {
@@ -542,7 +543,7 @@ public class Titulo {
 	}
 
 	/**
-	 * @param tipoDeDocumento
+	 * @param tipoDeDocumento tipoDeDocumento
 	 *            the tipoDeDocumento to set
 	 */
 	public void setTipoDeDocumento(TipoDeTitulo tipoDeDocumento) {
@@ -567,7 +568,7 @@ public class Titulo {
 	 * Exemplo: Para o valor 12,349 ele definirá o valor para 12,34.
 	 * </p>
 	 * 
-	 * @param valor
+	 * @param valor valor
 	 *            the valor to set
 	 */
 	public void setValor(BigDecimal valor) {
@@ -593,7 +594,7 @@ public class Titulo {
 	 * Exemplo: Para o valor 12,349 ele definirá o valor para 12,34.
 	 * </p>
 	 * 
-	 * @param desconto
+	 * @param desconto desconto
 	 *            the desconto to set
 	 */
 	public void setDesconto(BigDecimal desconto) {
@@ -622,7 +623,7 @@ public class Titulo {
 	 * Exemplo: Para o valor 12,349 ele definirá o valor para 12,34.
 	 * </p>
 	 * 
-	 * @param mora
+	 * @param mora mora
 	 */
 	public void setMora(BigDecimal mora) {
 		if (mora != null) {
@@ -649,7 +650,7 @@ public class Titulo {
 	 * Exemplo: Para o valor 12,349 ele definirá o valor para 12,34.
 	 * </p>
 	 * 
-	 * @param deducao
+	 * @param deducao deducao
 	 */
 	public void setDeducao(BigDecimal deducao) {
 		if (deducao != null) {
@@ -677,7 +678,7 @@ public class Titulo {
 	 * Exemplo: Para o valor 12,349 ele definirá o valor para 12,34.
 	 * </p>
 	 * 
-	 * @param acrecimo
+	 * @param acrecimo acrecimo
 	 */
 	public void setAcrecimo(BigDecimal acrecimo) {
 		if (acrecimo != null) {
@@ -709,7 +710,7 @@ public class Titulo {
 	 * resultante de deduções ou acrécimos.
 	 * </p>
 	 * 
-	 * @param valorCobrado
+	 * @param valorCobrado valorCobrado
 	 */
 	public void setValorCobrado(BigDecimal valorCobrado) {
 		if (valorCobrado != null) {
@@ -763,7 +764,7 @@ public class Titulo {
 	 * 
 	 * @see org.jrimum.domkee.financeiro.banco.ParametrosBancariosMap
 	 * 
-	 * @param parametrosBancariosMap
+	 * @param parametrosBancariosMap parametrosBancariosMap
 	 * 
 	 * @since 0.2
 	 */
