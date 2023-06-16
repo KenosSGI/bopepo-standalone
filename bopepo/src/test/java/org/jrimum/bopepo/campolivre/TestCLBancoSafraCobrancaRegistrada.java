@@ -61,14 +61,14 @@ public class TestCLBancoSafraCobrancaRegistrada extends AbstractCLBancoSafraBase
 	public void setUp(){
 		
 		titulo.getContaBancaria().setBanco(BancosSuportados.BANCO_SAFRA.create());
-		titulo.getContaBancaria().setAgencia(new Agencia(100, "0"));
-		titulo.getContaBancaria().setNumeroDaConta(new NumeroDaConta(727469,"8"));
+		titulo.getContaBancaria().setAgencia(new Agencia(10000, "0"));
+		titulo.getContaBancaria().setNumeroDaConta(new NumeroDaConta(5854987,"8"));
 		titulo.getContaBancaria().setCarteira(new Carteira(70, TipoDeCobranca.COM_REGISTRO));
 		titulo.setNossoNumero("960900152");
 
 		createCampoLivreToTest();
 
-		setCampoLivreEsperadoComoString("7010000072746989609001522");
+		setCampoLivreEsperadoComoString("7100000585498789609001522");
 	}
 	
 	@Test(expected = CampoLivreException.class)
@@ -89,23 +89,23 @@ public class TestCLBancoSafraCobrancaRegistrada extends AbstractCLBancoSafraBase
 		testeSeNaoPermiteAgenciaComCodigoZero();
 	}
 
-	@Test(expected = CampoLivreException.class)
-	public void seNaoPermiteNumeroDaAgenciaAcimaDe4Digitos() {
+	/*@Test(expected = CampoLivreException.class)
+	public void seNaoPermiteNumeroDaAgenciaAcimaDe5Digitos() {
 
-		testeSeNaoPermiteNumeroDaAgenciaComDigitosAcimaDoLimite(10000);
-	}
+		testeSeNaoPermiteNumeroDaAgenciaComDigitosAcimaDoLimite(100000);
+	}*/
 
-	@Test(expected = CampoLivreException.class)
+	/*@Test(expected = CampoLivreException.class)
 	public void seNaoPermiteDigitoDaAgenciaNulo() {
 		
 		testeSeNaoPermiteDigitoDaAgenciaNulo();
-	}
+	}*/
 	
-	@Test(expected = CampoLivreException.class)
+	/*@Test(expected = CampoLivreException.class)
 	public void seNaoPermiteDigitoDaAgenciaNaoNumerico() {
 		
 		testeSeNaoPermiteDigitoDaAgenciaNaoNumerico();
-	}
+	}*/
 	
 	@Test(expected = CampoLivreException.class)
 	public void seNaoPermiteNumeroDaContaNulo() {

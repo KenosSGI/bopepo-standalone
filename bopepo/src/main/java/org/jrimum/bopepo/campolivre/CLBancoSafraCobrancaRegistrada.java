@@ -103,12 +103,12 @@ class CLBancoSafraCobrancaRegistrada extends AbstractCLBancoSafra {
 	/**
 	 * Tamanho do número de campos = 7.
 	 */
-	protected static final Integer FIELDS_LENGTH = Integer.valueOf(7);
+	protected static final Integer FIELDS_LENGTH = Integer.valueOf(6);
 	
 	/**
-	 * Tamanho do campo Agência = 4. 
+	 * Tamanho do campo Agência = 5. 
 	 */
-	private static final Integer AGENCIA_LENGTH = Integer.valueOf(4);
+	private static final Integer AGENCIA_LENGTH = Integer.valueOf(5);
 	
 	/**
 	 * Tamanho do campo Dígito da Agência = 1. 
@@ -151,11 +151,11 @@ class CLBancoSafraCobrancaRegistrada extends AbstractCLBancoSafra {
 		
 		checkAgenciaNotNull(titulo);
 		checkCodigoDaAgencia(titulo);
-		checkCodigoDaAgenciaMenorOuIgualQue(titulo, 9999);
-		checkDigitoDoCodigoDaAgencia(titulo);
+		checkCodigoDaAgenciaMenorOuIgualQue(titulo, 99999);
+		//checkDigitoDoCodigoDaAgencia(titulo);
 		checkNumeroDaContaNotNull(titulo);
 		checkCodigoDoNumeroDaConta(titulo);
-		checkCodigoDoNumeroDaContaMenorOuIgualQue(titulo, 999999);
+		checkCodigoDoNumeroDaContaMenorOuIgualQue(titulo, 999999999);
 		checkDigitoDoCodigoDoNumeroDaConta(titulo);
 		checkNossoNumero(titulo);
 		checkTamanhoDoNossoNumero(titulo, NN9);
@@ -171,7 +171,7 @@ class CLBancoSafraCobrancaRegistrada extends AbstractCLBancoSafra {
 
 		this.add(SISTEMA_CONSTANT_FIELD);
 		this.add(new FixedField<Integer>(titulo.getContaBancaria().getAgencia().getCodigo(), AGENCIA_LENGTH, Fillers.ZERO_LEFT));
-		this.add(new FixedField<String>(titulo.getContaBancaria().getAgencia().getDigitoVerificador(), AGENCIA_DIGITO_LENGTH));
+		//this.add(new FixedField<String>(titulo.getContaBancaria().getAgencia().getDigitoVerificador(), AGENCIA_DIGITO_LENGTH));
 		this.add(new FixedField<Integer>(titulo.getContaBancaria().getNumeroDaConta().getCodigoDaConta(), CONTA_LENGTH, Fillers.ZERO_LEFT));
 		this.add(new FixedField<String>(titulo.getContaBancaria().getNumeroDaConta().getDigitoDaConta(), CONTA_DIGITO_LENGTH));
 		this.add(new FixedField<String>(titulo.getNossoNumero(), NOSSO_NUMERO_LENGTH));
