@@ -243,11 +243,11 @@ public abstract class AbstractBoletoInfoCampoView implements BoletoInfoCampoView
 	}
 	
 	public String getTextoRsCedente(){
-		return getTextoFcCedente();
+		return getValue(boleto.getTitulo().getCedente().getNome());
 	}
 	
 	public String getTextoFcCedente(){
-		return getValue(boleto.getTitulo().getCedente().getNome());
+		return getValue(boleto.getTitulo().getCedente().getNome() + " - " + boleto.getTitulo().getCedente().getCPRF().getCodigoFormatado());
 	}
 	
 	public String getTextoRsEspecie(){
