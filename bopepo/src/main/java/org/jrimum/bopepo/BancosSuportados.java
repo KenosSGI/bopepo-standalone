@@ -305,7 +305,25 @@ public enum BancosSuportados{
 	 * 
 	 * @since 0.2
 	 */
-	BANCOOB("756", "02038232000164", "BANCO COOPERATIVO DO BRASIL S.A. - BANCOOB", "Banco Comercial Cooperativo");
+	BANCOOB("756", "02038232000164", "BANCO COOPERATIVO DO BRASIL S.A. - BANCOOB", "Banco Comercial Cooperativo"),
+
+	/**
+	 * Tipo enumerado que representa o <strong>C6 Bank</strong>, código de
+	 * compensação <strong>336</strong> <a
+	 * href="http://www.c6bank.com.br/">site</a>.
+	 * 
+	 * @since 0.4.6
+	 */
+	C6_BANK("336", "31872495000172", "BANCO C6 S.A.", "C6 Bank"),
+
+	/**
+	 * Tipo enumerado que representa o <strong>BMP</strong>, código de
+	 * compensação <strong>274</strong> <a
+	 * href="http://www.moneyp.com.br/">site</a>.
+	 * 
+	 * @since 0.4.6
+	 */
+	BANCO_MONEY_PLUS("274", "11581339000145", "BMP SOCIEDADE DE CREDITO AO MICROEMPREENDEDOR E A EMPRESA DE PEQUENO PORTE LTDA", "Banco Money Plus");
 	
 	/**
 	 * Singleton <code>Map</code> para pesquisa por bancos suportados no
@@ -339,6 +357,8 @@ public enum BancosSuportados{
 		suportados.put(BANCO_DE_BRASILIA.codigoDeCompensacaoBACEN, BANCO_DE_BRASILIA);
 		suportados.put(CECRED.codigoDeCompensacaoBACEN, CECRED);
 		suportados.put(BANCO_FIBRA.codigoDeCompensacaoBACEN, BANCO_FIBRA);
+		suportados.put(C6_BANK.codigoDeCompensacaoBACEN, C6_BANK);
+		suportados.put(BANCO_MONEY_PLUS.codigoDeCompensacaoBACEN, BANCO_MONEY_PLUS);
 	}
 
 	/**

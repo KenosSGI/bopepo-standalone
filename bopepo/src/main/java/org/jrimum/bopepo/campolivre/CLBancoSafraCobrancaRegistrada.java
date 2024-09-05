@@ -113,6 +113,7 @@ class CLBancoSafraCobrancaRegistrada extends AbstractCLBancoSafra {
 	/**
 	 * Tamanho do campo Dígito da Agência = 1. 
 	 */
+	@SuppressWarnings("unused")
 	private static final Integer AGENCIA_DIGITO_LENGTH = Integer.valueOf(1);
 	
 	/**
